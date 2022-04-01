@@ -327,6 +327,7 @@ h2 {
 .office-image {
   width: 60vw;
   height: 45vw;
+  border: 1px solid #2E3233;
 }
 
 .office-image img {
