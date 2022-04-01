@@ -151,6 +151,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  -webkit-animation: loop-slide 15s infinite linear 1s both;
+          animation: loop-slide 15s infinite linear 1s both;
   list-style: none;
 }
 
