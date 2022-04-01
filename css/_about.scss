@@ -1,0 +1,117 @@
+//
+// about
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+
+.about {
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+
+    text-align: center;
+    position: relative;
+}
+
+.about p{
+    line-height: 1;
+}
+
+
+.about-border{
+    margin: 0 20px 0 20px;
+    padding: 0 0 20px 0;
+    border: 2px solid $light-blue;
+}
+
+
+.section-tytle{
+    &.about{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    .tytle{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+
+} 
+
+
+//////////////////////////////////
+//////////////////////// more-button
+.more-button{
+    &.about-b{
+        position: absolute;
+        top: 215px;
+        left: calc(calc(100vw /2) - 63px);
+        margin: 0 auto;
+    }
+} 
+
+
+
+//////////////////////////////////
+//////////////////////// 下層ページ
+
+
+.flexbox-sample{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sample{
+    height: 600px;
+    width: 350px;
+    background:
+        linear-gradient(127deg, $white, $invisible 70.71%), 
+        linear-gradient(217deg, $light-blue, $invisible 70.71%),
+        linear-gradient(336deg, $dark-gray, $invisible 70.71%);
+
+//    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+//            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+//            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+.sample2{
+    height: 600px;
+    width: 350px;
+    background:
+    linear-gradient(127deg, $pure-black, $invisible 70.71%), 
+    linear-gradient(217deg, $dark-gray, $invisible 70.71%),
+    linear-gradient(336deg, $black, $invisible 70.71%);
+
+}
+
+.sample3{
+    height: 600px;
+    width: 350px;
+    background:
+    linear-gradient(127deg, rgba(255,0,0,0.5), $invisible 70.71%), 
+    linear-gradient(217deg, rgba(255,255,0,0.5), $invisible 70.71%),
+    linear-gradient(336deg, rgba(255,0,255,0.5), $invisible 70.71%);
+
+}
+
+.sample4{
+    height: 600px;
+    width: 350px;
+    background:
+    linear-gradient(70deg, rgba(161, 159, 17, 0.5), $invisible 70.71%), 
+    //linear-gradient(270deg, rgba(202, 128, 16, 0.5), $invisible 70.71%),
+    linear-gradient(200deg, rgba(35, 200, 230, 0.5), $invisible 70.71%);
+
+}
+
+.sample5{
+    height: 600px;  
+    width: 350px;
+    background:
+    linear-gradient(125deg, rgba(211, 49, 0, 0.5), $invisible 70.71%), 
+    //linear-gradient(72deg, rgba(133, 56, 32,0.8), $invisible 70.71%),
+    linear-gradient(215deg, rgba(255, 153, 172, 0.9), $invisible 70.71%),
+    //linear-gradient(216deg, rgba(214, 237, 211,0.8), $invisible 70.71%),
+    linear-gradient(335deg, rgba(255, 147, 192, 0.7), $invisible 70.71%);
+
+}

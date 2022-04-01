@@ -1,0 +1,104 @@
+//
+// plan
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+
+.plan{
+    margin-top: 2px;
+    padding-bottom: 50px;
+
+  //  background-color: $light-blue-90;
+    background:
+    linear-gradient(127deg, $light-blue, $invisible 70.71%), 
+    linear-gradient(217deg, $light-gray, $invisible 70.71%),
+    linear-gradient(336deg, $light-blue, $invisible 70.71%);
+
+    text-align: center;
+}
+
+.plan-content{
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.plan-line{
+    height: auto;
+    width: 5px;
+    margin-top: 20px;
+    border-left: 5px solid $white;
+    background-color: $light-blue;
+
+    &.two-place{
+        border-left: 5px solid $black;
+    }
+}
+
+
+.plan-detail{
+    height: auto;
+    width: calc(100% - 10px);
+    margin-top: 20px;
+    padding: 20px 0 20px 16vw;
+    box-sizing: border-box;
+    text-align: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    line-height: 1.2;
+
+    background-color: $white;
+
+    .plan-tytle{
+        font-size: 2.4rem;
+        font-weight: bold;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .plan-month{
+        font-size: 1.4rem;
+        margin: 0 0 3px 0;
+    }
+
+    .plan-price{
+        font-size: 2.6rem;
+        margin: 0;
+    }
+
+    .plan-price-yen{
+        width: auto;
+        font-size: 1.2rem;
+        margin: 0 0 3px 0;
+    }
+
+    &.two-place{
+        background-color: $black;
+        color: $white;
+    }
+
+
+    .spacer{
+        width: 100%;
+    }
+}
+
+
+
+//////////////////////////////////
+//////////////////////// more-button
+.more-button{
+    &.plan-b{
+        margin-top: $margin-top;
+
+        background-color: $light-gray;
+        border-color: $white;
+        box-shadow: 3px 3px 0px 0 $white;
+    }
+} 

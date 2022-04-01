@@ -1,0 +1,81 @@
+//
+// office
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+
+.office{
+    margin-top: 75px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    
+  //  background-color: $black;
+    background:
+        linear-gradient(127deg, $black, $invisible 70.71%), 
+        linear-gradient(217deg, $dark-gray, $invisible 70.71%),
+        linear-gradient(336deg, $black, $invisible 70.71%);
+
+
+    color: $white;
+    text-align: center;
+}
+
+.office-content{
+    margin-top: $margin-top;
+
+    display: flex;
+   // flex-wrap: wrap;
+
+    &.two{
+        margin-top: 0; 
+        flex-direction: row-reverse;
+    }
+    &.three{
+        margin-top: 0; 
+        
+    }
+}
+
+
+.office-image { 
+    width: 60vw;
+    height: 45vw;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.office-detail{
+    margin-top: 20vw;
+    margin-left: -60px;
+    height: 60px;
+    width: 50%;
+    
+    background-color: $black-80;
+    //box-shadow: 1px 1px 0px 0 $light-gray-80;
+    line-height: 0.5;
+
+    &.two{
+        margin-right: -60px;
+    }
+
+
+    .office-access{
+        font-size: 1.2rem;
+    }
+}
+
+
+//////////////////////////////////
+//////////////////////// more-button
+.more-button{
+    &.office-b{
+        margin-top: $margin-top;
+    }
+}
