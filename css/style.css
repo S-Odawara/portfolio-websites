@@ -151,6 +151,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  -webkit-animation: loop-slide 15s infinite linear 1s both;
+          animation: loop-slide 15s infinite linear 1s both;
   list-style: none;
 }
 
@@ -313,7 +315,7 @@ h2 {
 }
 
 .office-content.two {
-  margin-top: 0;
+  margin-top: 5px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -321,12 +323,16 @@ h2 {
 }
 
 .office-content.three {
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .office-image {
   width: 60vw;
   height: 45vw;
+  -webkit-box-shadow: 0px 2px 1px 0 rgba(92, 101, 102, 0.8);
+          box-shadow: 0px 2px 1px 0 rgba(92, 101, 102, 0.8);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .office-image img {
@@ -342,6 +348,8 @@ h2 {
   height: 60px;
   width: 50%;
   background-color: rgba(46, 50, 51, 0.8);
+  -webkit-box-shadow: 0px 2px 1px 0 rgba(92, 101, 102, 0.8);
+          box-shadow: 0px 2px 1px 0 rgba(92, 101, 102, 0.8);
   line-height: 0.5;
 }
 
@@ -360,7 +368,8 @@ h2 {
 .plan {
   margin-top: 2px;
   padding-bottom: 50px;
-  background: linear-gradient(127deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #CED7D9, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%);
+  background-color: #F7F7F7;
+  background: linear-gradient(127deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #F7F7F7, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%);
   text-align: center;
 }
 

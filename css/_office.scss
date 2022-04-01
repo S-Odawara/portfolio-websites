@@ -29,11 +29,11 @@
    // flex-wrap: wrap;
 
     &.two{
-        margin-top: 0; 
+        margin-top: 5px; 
         flex-direction: row-reverse;
     }
     &.three{
-        margin-top: 0; 
+        margin-top: 5px; 
         
     }
 }
@@ -42,7 +42,9 @@
 .office-image { 
     width: 60vw;
     height: 45vw;
-
+    //border: 1px solid $white;
+    box-shadow: 0px 2px 1px 0 $dark-gray-80;
+    box-sizing: border-box;
     img{
         width: 100%;
         height: 100%;
@@ -58,7 +60,7 @@
     width: 50%;
     
     background-color: $black-80;
-    //box-shadow: 1px 1px 0px 0 $light-gray-80;
+    box-shadow: 0px 2px 1px 0 $dark-gray-80;
     line-height: 0.5;
 
     &.two{
