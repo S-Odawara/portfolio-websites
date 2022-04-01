@@ -310,6 +310,8 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 1.8rem;
+  width: 70%;
+  margin: 0 30px;
 }
 
 /*ナビゲーション*/
@@ -397,7 +399,7 @@ h2 {
 
 /*リストのレイアウト設定*/
 #sp-nav li {
-  text-align: center;
+  text-align: left;
   list-style: none;
 }
 
@@ -408,6 +410,11 @@ h2 {
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  border-bottom: 1px solid #2E3233;
+}
+
+#sp-nav li a.logo {
+  border: none;
 }
 
 .openbtn1 {

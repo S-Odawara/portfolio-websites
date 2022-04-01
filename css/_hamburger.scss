@@ -124,6 +124,9 @@
     left: 40%;
     transform: translate(-50%,-50%);
     font-size: 1.8rem;
+
+    width: 70%;
+    margin:0 30px;
 }
 
 /*ナビゲーション*/
@@ -198,7 +201,7 @@ opacity: 1;
 
 /*リストのレイアウト設定*/
 #sp-nav li{
-  text-align: center; 
+  text-align: left; 
   list-style: none;
 }
 
@@ -207,9 +210,15 @@ opacity: 1;
   text-decoration: none;
   padding:10px;
   display: block;
+
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  //font-weight: bold;
+  border-bottom: 1px solid $black;
+
+  &.logo{
+      border: none;
+    }
+
 }
 
 
