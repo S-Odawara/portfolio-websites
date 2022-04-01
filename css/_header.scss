@@ -30,7 +30,13 @@
 }
 
 .nav-button {
-    padding: 0 15px 0 0;
+    height: 5rem;
+    width: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 15px;
     font-size: 2rem;
     @media (min-width: 769px) {
         display: none;

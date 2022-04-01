@@ -91,7 +91,18 @@ h2 {
 }
 
 .nav-button {
-  padding: 0 15px 0 0;
+  height: 5rem;
+  width: 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
   font-size: 2rem;
 }
 
@@ -425,7 +436,7 @@ h2 {
 }
 
 .plan-detail .plan-month {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0 0 3px 0;
 }
 
