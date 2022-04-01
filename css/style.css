@@ -262,7 +262,7 @@ h2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: linear-gradient(127deg, #F7F7F7, rgba(247, 247, 247, 0.7) 70.71%), linear-gradient(217deg, #99C5CC, rgba(153, 197, 204, 0.8) 70.71%), linear-gradient(336deg, #5C6566, rgba(0, 0, 0, 0) 70.71%);
+  background: linear-gradient(127deg, #F7F7F7, rgba(247, 247, 247, 0.7) 70.71%), linear-gradient(217deg, #99C5CC, rgba(153, 197, 204, 0.8) 70.71%);
   /*丸のスタート位置と形状*/
   -webkit-transform: scale(0);
           transform: scale(0);
