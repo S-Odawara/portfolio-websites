@@ -366,6 +366,7 @@ h2 {
 .plan {
   margin-top: 2px;
   padding-bottom: 50px;
+  background-color: #F7F7F7;
   background: linear-gradient(127deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #F7F7F7, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%);
   text-align: center;
 }
