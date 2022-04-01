@@ -77,7 +77,7 @@ h2 {
   height: 50px;
   width: 100%;
   background-color: rgba(247, 247, 247, 0.9);
-  z-index: 1000;
+  z-index: 500;
 }
 
 .logo {
@@ -88,28 +88,6 @@ h2 {
 .logo img {
   height: 30px;
   width: auto;
-}
-
-.nav-button {
-  height: 5rem;
-  width: 5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 15px;
-  font-size: 2rem;
-}
-
-@media (min-width: 769px) {
-  .nav-button {
-    display: none;
-  }
 }
 
 .cover {
@@ -217,12 +195,41 @@ h2 {
   background-color: #F7F7F7;
 }
 
-.sp-nav {
-  display: none;
+.nav-button {
+  height: 5rem;
+  width: 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 769px) {
-  .sp-nav {
+  .nav-button {
+    display: none;
+  }
+}
+
+.sssp-nav {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  right: 0rem;
+  height: 100vh;
+  width: 100% -5rem;
+  background-color: #F7F7F7;
+  z-index: 15;
+}
+
+@media (min-width: 769px) {
+  .sssp-nav {
     display: none;
   }
 }
@@ -235,6 +242,227 @@ h2 {
   .pc-nav {
     display: inline-block;
   }
+}
+
+/*アクティブになったエリア*/
+#sp-nav.panelactive {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg {
+  position: fixed;
+  z-index: 790;
+  /*丸の形*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(127deg, #F7F7F7, rgba(247, 247, 247, 0.7) 70.71%), linear-gradient(217deg, #99C5CC, rgba(153, 197, 204, 0.8) 70.71%), linear-gradient(336deg, #5C6566, rgba(0, 0, 0, 0) 70.71%);
+  /*丸のスタート位置と形状*/
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  /*scaleをはじめは0に*/
+  right: -50px;
+  top: -50px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  /*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive {
+  -webkit-transform: scale(50);
+          transform: scale(50);
+  /*クラスが付与されたらscaleを拡大*/
+}
+
+/*ナビゲーションの縦スクロール*/
+#sp-nav-list {
+  display: none;
+  /*はじめは表示なし*/
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#sp-nav.panelactive #sp-nav-list {
+  display: block;
+  /*クラスが付与されたら出現*/
+}
+
+/*ナビゲーション*/
+#sp-nav ul {
+  opacity: 0;
+  /*はじめは透過0*/
+  padding: 0;
+  position: absolute;
+  z-index: 1000;
+  top: 25%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+}
+
+/*ナビゲーション*/
+#sp-nav-list .contact-tel {
+  opacity: 0;
+  /*はじめは透過0*/
+  padding: 0;
+  position: absolute;
+  z-index: 1000;
+  top: 60%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 80px);
+  padding: 30px;
+  border: 1px solid #2E3233;
+  text-align: center;
+}
+
+#sp-nav-list .contact-mail {
+  opacity: 0;
+  /*はじめは透過0*/
+  padding: 0;
+  position: absolute;
+  z-index: 1000;
+  top: calc(60% + 95px);
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 80px);
+  padding: 30px;
+  border: 1px solid #2E3233;
+  text-align: center;
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#sp-nav.panelactive ul {
+  opacity: 1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+#sp-nav.panelactive ul li {
+  -webkit-animation-name: gnaviAnime;
+          animation-name: gnaviAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  /*0.2 秒遅らせて出現*/
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#sp-nav.panelactive div {
+  -webkit-animation-name: gnaviAnime;
+          animation-name: gnaviAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  /*0.2 秒遅らせて出現*/
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes gnaviAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gnaviAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*リストのレイアウト設定*/
+#sp-nav li {
+  text-align: center;
+  list-style: none;
+}
+
+#sp-nav li a {
+  color: #2E3233;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.openbtn1 {
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  z-index: 999;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+
+/*×に変化*/
+.openbtn1 span {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #2E3233;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+  width: 30%;
 }
 
 .about {
@@ -471,6 +699,7 @@ h2 {
 .faq {
   padding-bottom: 50px;
   text-align: center;
+  z-index: 10;
 }
 
 .question {
@@ -478,22 +707,22 @@ h2 {
   border: 1px solid rgba(92, 101, 102, 0.6);
   border-radius: 60px;
   line-height: 1;
-  z-index: 10;
+  z-index: 20;
 }
 
 .white-shadow {
-  margin: -30px 20px 0 20px;
-  height: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247, 0.7)), to(#F7F7F7));
-  background: linear-gradient(rgba(247, 247, 247, 0.7), #F7F7F7);
+  margin: -40px 20px 0 20px;
+  height: 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F7F7F7), color-stop(100.95%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #F7F7F7, rgba(0, 0, 0, 0) 100.95%);
   position: relative;
-  z-index: 20;
+  z-index: 30;
 }
 
 .more-button.faq-b {
   margin-top: -20px;
   position: relative;
-  z-index: 30;
+  z-index: 40;
 }
 
 .contact {

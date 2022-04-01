@@ -15,7 +15,7 @@
     height: 50px;
     width: 100%;
     background-color: $white-90;
-    z-index: 1000;
+    z-index: 500;
    
 }
 
@@ -29,19 +29,6 @@
     width: auto;
 }
 
-.nav-button {
-    height: 5rem;
-    width: 5rem;
-    box-sizing: border-box;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 0 15px;
-    font-size: 2rem;
-    @media (min-width: 769px) {
-        display: none;
-    } 
-}
 
 
 
@@ -147,33 +134,3 @@
 
 
 
-
-
-//////////////////////////////////
-////////////////////////sp-nav
-
-
-.sp-nav {
-    display: none;
-
-
-
-
-
-    @media (min-width: 769px) {
-        display: none;
-    } 
-}
-
-
-//////////////////////////////////
-////////////////////////pc-nav
-//   @media (min-width: 769px) {} 
-
-
-.pc-nav {
-    display: none;
-    @media (min-width: 769px) {
-        display: inline-block;
-    } 
-}
