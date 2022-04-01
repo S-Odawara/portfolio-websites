@@ -102,6 +102,10 @@ h2 {
   border-bottom: 2px solid #2E3233;
 }
 
+.cover.about-c {
+  background-image: url("../images/sp/sp-office-03.jpg");
+}
+
 .catch {
   position: absolute;
   margin: 40px 0 0 20px;
@@ -504,44 +508,6 @@ h2 {
   top: 215px;
   left: calc(calc(100vw /2) - 63px);
   margin: 0 auto;
-}
-
-.flexbox-sample {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.sample {
-  height: 300px;
-  width: 350px;
-  background: linear-gradient(127deg, #F7F7F7, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #5C6566, rgba(0, 0, 0, 0) 70.71%);
-}
-
-.sample2 {
-  height: 300px;
-  width: 350px;
-  background: linear-gradient(127deg, #000000, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #5C6566, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #2E3233, rgba(0, 0, 0, 0) 70.71%);
-}
-
-.sample3 {
-  height: 300px;
-  width: 350px;
-  background: linear-gradient(127deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, rgba(255, 255, 0, 0.5), rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, rgba(255, 0, 255, 0.5), rgba(0, 0, 0, 0) 70.71%);
-}
-
-.sample4 {
-  height: 300px;
-  width: 350px;
-  background: linear-gradient(70deg, rgba(161, 159, 17, 0.5), rgba(0, 0, 0, 0) 70.71%), linear-gradient(200deg, rgba(35, 200, 230, 0.5), rgba(0, 0, 0, 0) 70.71%);
-}
-
-.sample5 {
-  height: 300px;
-  width: 350px;
-  background: linear-gradient(125deg, rgba(211, 49, 0, 0.5), rgba(0, 0, 0, 0) 70.71%), linear-gradient(215deg, rgba(255, 153, 172, 0.9), rgba(0, 0, 0, 0) 70.71%), linear-gradient(335deg, rgba(255, 147, 192, 0.7), rgba(0, 0, 0, 0) 70.71%);
 }
 
 .office {

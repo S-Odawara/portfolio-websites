@@ -37,11 +37,11 @@
 
 .cover{
     position: relative;
-   // display: ;
+
     margin-top: 50px;
     width: 100%;
     height: 75vw;
-    //text-align: center;
+
     background-image: url("../images/sp-cover.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -50,6 +50,11 @@
     border-bottom: 2px solid $black;
 }
 
+.cover{
+    &.about-c{
+        background-image: url("../images/sp/sp-office-03.jpg");
+    }
+}
 
 .catch {
     position: absolute;
