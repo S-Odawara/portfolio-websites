@@ -327,7 +327,10 @@ h2 {
 .office-image {
   width: 60vw;
   height: 45vw;
-  border: 10px solid #2E3233;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(206, 215, 217, 0.8);
+          box-shadow: 1px 1px 3px 0 rgba(206, 215, 217, 0.8);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .office-image img {
@@ -343,6 +346,8 @@ h2 {
   height: 60px;
   width: 50%;
   background-color: rgba(46, 50, 51, 0.8);
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(206, 215, 217, 0.8);
+          box-shadow: 1px 1px 3px 0 rgba(206, 215, 217, 0.8);
   line-height: 0.5;
 }
 
