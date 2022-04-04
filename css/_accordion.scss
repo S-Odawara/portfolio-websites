@@ -9,7 +9,7 @@
 ====================================================================*/
 .s_01 .accordion_one {
     width: calc(100% - 40px);
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     margin-bottom: $margin-bottom;
   }
@@ -19,14 +19,15 @@
     font-size: 26px;
     //font-weight: bold;
     padding: 20px 11%;
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: +1;
     cursor: pointer;
     transition-duration: 0.2s;
-
+    ///////////////////
     border: 1px solid $dark-gray;
-    border-radius: 60px;
+    border-radius: 100px;
+    //height: 60px;
   }
 
   .s_01 .accordion_one .accordion_header:hover {
