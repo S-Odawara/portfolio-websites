@@ -6,16 +6,9 @@
         <title>サンプルオフィス</title>
         <meta name="description" content="サンプルオフィスは「じぶんらしく、はたらく」ためのコワーキングスペースです。都内５拠点に展開中です。">
         <link rel="icon" href="images/favicon/favicon.ico">
-
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <!-- Add the slick-theme.css if you want default styling
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-        <!-- Add the slick-theme.css if you want default styling 
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>-->
-
         <link rel="stylesheet" href="./css/style.css">
-
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/d8faf3b2b4.js" crossorigin="anonymous"></script>
@@ -30,9 +23,45 @@
             <!-- BAR -->    
             <div class="header-bar">
                 <a href="index.html" class="logo"><img src="./images/logo/logo-sample-01.png" alt="サンプルオフィス"></a>
-                <div id="nav-button" class="nav-button"><i class="fas fa-bars" aria-label="menu"></i></div>
+               
             </div>
 
+            <!-- nav-button -->
+            <div class="openbtn1"><span></span><span></span><span></span></div>
+            <!-- SP navigation -->
+            <nav id="sp-nav">
+                <div id="sp-nav-list">
+                    <ul>
+                        <li><a href="index.html" class="logo"><img src="./images/logo/logo-04.png" alt="サンプルオフィス"></a></li>
+                        <li class="spacer"></li>
+                        <li><a href="./about.html">サンプルオフィスとは</a></li>
+                        <li><a href="./office.html">拠点一覧</a></li>
+                        <li><a href="./plan.html">料金プラン</a></li>
+                        <li><a href="./faq.html">よくあるご質問</a></li>
+                    </ul>
+                    <div class="contact-tel">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="tel-latter">
+                            <p class="number">000-1234-5678</p>
+                            <p class="hour">平日9:00～17:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-mail">
+                        <p>お問い合わせ・見学予約</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="circle-bg"></div>
+
+            <!-- PC navigation -->
+            <nav class="pc-nav">    
+                <ul class="pc-nav-list">
+                  <li><a href="./about.html">サンプルオフィスとは</a></li>
+                  <li><a href="./office.html">拠点一覧</a></li>
+                  <li><a href="./plan.html">料金プラン</a></li>
+                  <li><a href="./faq.html">よくあるご質問</a></li>
+                </ul>
+            </nav>
 
             <!-- COVER -->            
             <div class="cover">
@@ -61,36 +90,6 @@
                 </ul>
             </div>            
 
-
-
-            <!-- SP navigation -->
-            <nav class="sp-nav">
-                <ul class="sp-nav-list">
-                    <li><a href="./about.html">サンプルオフィスとは</a></li>
-                    <li><a href="./office.html">拠点一覧</a></li>
-                    <li><a href="./plan.html">料金プラン</a></li>
-                    <li><a href="./faq.html">よくあるご質問</a></li>
-                </ul>
-                <div class="contact-tel">
-                    <i class="fas fa-phone-alt"></i>
-                    <p>000-1234-5678</p>
-                    <p>平日9:00～17:00</p>
-                </div>
-                <div class="contact-mail">
-                    <p>ネットからの</p>
-                    <p>お問い合わせはこちら</p>
-                </div>                    
-            </nav>
-            <!-- PC navigation -->
-            <nav class="pc-nav">    
-                <ul class="pc-nav-list">
-                  <li><a href="./about.html">サンプルオフィスとは</a></li>
-                  <li><a href="./office.html">拠点一覧</a></li>
-                  <li><a href="./plan.html">料金プラン</a></li>
-                  <li><a href="./faq.html">よくあるご質問</a></li>
-                </ul>
-            </nav>
-
         </header>
 
 
@@ -112,7 +111,7 @@
 
                     </div>
                 </div>
-                <div class="more-button about-b"><a href="./about.html">MORE <i class="fas fa-angle-right"></i></a></div>
+                <a href="./about.html"><div class="more-button about-b">MORE <i class="fas fa-angle-right"></i></div></a>
             </section>
 
 
@@ -161,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="more-button office-b"><a href="./office.html">MORE <i class="fas fa-angle-right"></i></a></div>
+                <a href="./office.html"><div class="more-button office-b">MORE <i class="fas fa-angle-right"></i></div></a>
             </section>
 
             <!-- plan -->   
@@ -177,29 +176,29 @@
                         <p class="plan-tytle">マンスリープラン</p>
                         <p class="plan-month">１ヵ月&ensp;</p>
                         <p class="plan-price">22,000</p>
-                        <p class="plan-price-yen">円(税込)～</p>
+                        <p class="plan-price-yen">&nbsp;円(税込)～</p>
                     </div>
                     <div class="plan-line"></div>
                     <div class="plan-detail">
                         <p class="plan-tytle">シーズンプラン</p>
                         <p class="plan-month">３ヵ月&ensp;</p>
                         <p class="plan-price">56,100</p>
-                        <p class="plan-price-yen">円(税込)～</p>
+                        <p class="plan-price-yen">&nbsp;円(税込)～</p>
                     </div>
                     <div class="plan-line two-place"></div>
                     <div class="plan-detail two-place">
                         <p class="plan-tytle">２拠点プラン</p>
                         <p class="plan-month">１ヵ月&ensp;</p>
                         <p class="plan-price">33,000</p>
-                        <p class="plan-price-yen">円(税込)～</p>
+                        <p class="plan-price-yen">&nbsp;円(税込)～</p>
                         <div class="spacer"></div>
                         <p class="plan-month">３ヵ月&ensp;</p>
                         <p class="plan-price">84,000</p>
-                        <p class="plan-price-yen">円(税込)～</p>
+                        <p class="plan-price-yen">&nbsp;円(税込)～</p>
 
                     </div>
                 </div>
-                <div class="more-button plan-b"><a href="./plan.html">MORE <i class="fas fa-angle-right"></i></a></div>
+                <a href="./plan.html"><div class="more-button plan-b">MORE <i class="fas fa-angle-right"></i></div></a>
             </section>
 
             <!-- faq -->   
@@ -211,12 +210,11 @@
                     <div class="question">
                         <p class="ques">Q.オフィスは見学できますか？</p>
                     </div>
-                    <div class="question">
+                    <div class="question white-shadow">
                         <p class="ques">Q.契約に必要な書類はありますか？</p>
                     </div>   
                 </div>
-                <div class="white-shadow"></div>
-                <div class="more-button faq-b"><a href="./faq.html">MORE <i class="fas fa-angle-right"></i></a></div>
+                <a href="./faq.html"><div class="more-button faq-b">MORE <i class="fas fa-angle-right"></i></div></a>
             </section>
 
             <!-- contact -->
@@ -237,19 +235,19 @@
                     </div>
                 </div>
             </section>
-
         </main>
 
         <!-- フッター -->
         <footer class="footer">
             <div class="footer-content">
-                <small><a href="./sample.html">運営会社 サンプル <i class="fas fa-external-link-alt"></i></a></small>
+                <small><a href="#">運営会社 サンプル <i class="fas fa-external-link-alt"></i></a></small>
                 <small>&copy; 2022 Sample Office.</small>
             </div>
         </footer>
 
         <!-- JS -->
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/hamburger.js"></script>
 
     </body>
 </html>

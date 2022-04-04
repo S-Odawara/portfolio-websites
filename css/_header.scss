@@ -15,27 +15,23 @@
     height: 50px;
     width: 100%;
     background-color: $white-90;
-    z-index: 1000;
-   
+    z-index: 500;
+
+    
+
+    .logo {
+        display: inline-block;
+        padding: 0 0 0 10px;
+    }
+    
+    .logo img{
+        height: 30px;
+        width: auto;
+    }
+    
 }
 
-.logo {
-    display: inline-block;
-    padding: 0 0 0 10px;
-}
 
-.logo img{
-    height: 30px;
-    width: auto;
-}
-
-.nav-button {
-    padding: 0 15px 0 0;
-    font-size: 2rem;
-    @media (min-width: 769px) {
-        display: none;
-    } 
-}
 
 
 
@@ -44,11 +40,11 @@
 
 .cover{
     position: relative;
-   // display: ;
+
     margin-top: 50px;
     width: 100%;
     height: 75vw;
-    //text-align: center;
+
     background-image: url("../images/sp-cover.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -57,6 +53,11 @@
     border-bottom: 2px solid $black;
 }
 
+.cover{
+    &.about-c{
+        background-image: url("../images/sp/sp-office-03.jpg");
+    }
+}
 
 .catch {
     position: absolute;
@@ -141,33 +142,3 @@
 
 
 
-
-
-//////////////////////////////////
-////////////////////////sp-nav
-
-
-.sp-nav {
-    display: none;
-
-
-
-
-
-    @media (min-width: 769px) {
-        display: none;
-    } 
-}
-
-
-//////////////////////////////////
-////////////////////////pc-nav
-//   @media (min-width: 769px) {} 
-
-
-.pc-nav {
-    display: none;
-    @media (min-width: 769px) {
-        display: inline-block;
-    } 
-}
