@@ -102,3 +102,15 @@
         box-shadow: 3px 3px 0px 0 $white;
     }
 } 
+
+
+
+
+//////////////////////////////////
+//////////////////////// 下層ページ
+
+.cover{
+    &.plan-c{
+        background-image: url("../images/sp/sp-office-05.jpg");
+    }
+}
