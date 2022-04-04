@@ -49,6 +49,10 @@
         left: calc(calc(100vw /2) - 63px);
         margin: 0 auto;
     }
+
+    &.about-office-b{
+        width:calc(100% - 40px);
+    }
 } 
 
 
