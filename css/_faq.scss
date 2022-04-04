@@ -19,7 +19,7 @@
     border: 1px solid $dark-gray;
     border-radius: 30px;
     line-height: 1;
-
+    text-align: left;
     z-index: 20;
 
     &.white-shadow{
@@ -27,6 +27,11 @@
     }
 
 }
+
+.ques{
+    margin-left: 20px;
+}
+
 
 //////////////////////////////////
 //////////////////////// more-button
