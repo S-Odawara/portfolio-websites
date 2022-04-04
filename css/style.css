@@ -696,7 +696,7 @@ h2 {
 
 .cover.faq-c {
   background-image: none;
-  background-color: #CED7D9;
+  background-color: #F7F7F7;
   background: linear-gradient(217deg, rgba(153, 197, 204, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(92, 101, 102, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, rgba(206, 215, 217, 0.8), rgba(0, 0, 0, 0) 70.71%);
   border: none;
   height: 200px;
