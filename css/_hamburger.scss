@@ -8,22 +8,6 @@
 
 
 
-.nav-button {
-
-    height: 5rem;
-    width: 5rem;
-    box-sizing: border-box;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 0 15px;
-    font-size: 2.4rem;
-    @media (min-width: 769px) {
-        display: none;
-    } 
-}
-
-
 
 //////////////////////////////////
 ////////////////////////sp-nav
@@ -231,6 +215,9 @@ opacity: 1;
     cursor: pointer;
     width: 5rem;
     height:5rem;
+    @media (min-width: 769px) {
+        display: none;
+    } 
 }
   
 /*×に変化*/  
