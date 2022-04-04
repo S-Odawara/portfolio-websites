@@ -679,13 +679,8 @@ h2 {
   z-index: 20;
 }
 
-.white-shadow {
-  margin: -40px 20px 0 20px;
-  height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#F7F7F7), color-stop(100.95%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, #F7F7F7, rgba(0, 0, 0, 0) 100.95%);
-  position: relative;
-  z-index: 30;
+.question.white-shadow {
+  opacity: 0.5;
 }
 
 .more-button.faq-b {
@@ -821,7 +816,7 @@ h2 {
 }
 
 .s_01 .accordion_one .accordion_inner .box_one {
-  height: 200px;
+  height: 150px;
 }
 
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
