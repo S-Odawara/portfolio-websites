@@ -19,11 +19,86 @@
 
     </head>
     <body>
-        <header>
+
+        <!-- ヘッダー -->
+        <header class="header">
+            <!-- BAR -->    
+            <div class="header-bar">
+                <a href="index.html" class="logo"><img src="./images/logo/logo-sample-01.png" alt="サンプルオフィス"></a>
+                <!--<div id="nav-button" class="nav-button"><i class="fas fa-bars" aria-label="menu"></i></div>-->    
+            </div>
+
+            <!-- nav-button -->
+            <div class="openbtn1"><span></span><span></span><span></span></div>
+            <!-- SP navigation -->
+            <nav id="sp-nav">
+                <div id="sp-nav-list">
+                    <ul>
+                        <li><a href="index.html" class="logo"><img src="./images/logo/logo-sample-01.png" alt="サンプルオフィス"></a></li>
+                        <li><a href="./about.html">サンプルオフィスとは</a></li>
+                        <li><a href="./office.html">拠点一覧</a></li>
+                        <li><a href="./plan.html">料金プラン</a></li>
+                        <li><a href="./faq.html">よくあるご質問</a></li>
+                    </ul>
+                    <div class="contact-tel">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="tel-latter">
+                            <p class="number">000-1234-5678</p>
+                            <p class="hour">平日9:00～17:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-mail">
+                        <p>お問い合わせ・見学予約</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="circle-bg"></div>
+
+            <!-- PC navigation -->
+            <nav class="pc-nav">    
+                <ul class="pc-nav-list">
+                  <li><a href="./about.html">サンプルオフィスとは</a></li>
+                  <li><a href="./office.html">拠点一覧</a></li>
+                  <li><a href="./plan.html">料金プラン</a></li>
+                  <li><a href="./faq.html">よくあるご質問</a></li>
+                </ul>
+            </nav>
+
+            <!-- COVER -->            
+            <div class="cover faq-c">
+                <div class="catch">
+                <p class="catch-one">サンプルオフィス</p>
+                <p class="catch-two">よくあるご質問</p>
+                </div>
+            </div>
+
 
         </header>
         <main>
             
+
+            <div class="accordion_one">
+                <div class="accordion_header">Q.よくある質問
+                  <div class="i_box"><i class="one_i"></i></div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one">
+                    <p class="txt_a_ac">A.アコーディオンの中身です。</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
         </main>
 
 
@@ -36,6 +111,8 @@
         </footer>
 
         <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/hamburger.js"></script>
 
         
 
