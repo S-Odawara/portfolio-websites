@@ -504,15 +504,11 @@ h2 {
   margin: 0 auto;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 .more-button.about-office-b {
-=======
+  width: calc(100% - 40px);
+}
+
 .about-button {
->>>>>>> Stashed changes
-=======
-.about-button {
->>>>>>> Stashed changes
   width: calc(100% - 40px);
 }
 
