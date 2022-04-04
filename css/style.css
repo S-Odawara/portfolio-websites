@@ -787,7 +787,7 @@ h2 {
   width: 18px;
   height: 2px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -799,7 +799,7 @@ h2 {
   width: 2px;
   height: 18px;
   top: 0;
-  left: 7px;
+  left: 8px;
 }
 
 .s_01 .accordion_one .accordion_header.open .i_box .one_i:before {
