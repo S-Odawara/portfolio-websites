@@ -96,7 +96,7 @@
 
   .s_01 .accordion_one .accordion_inner {
     display: none;
-    padding: 30px 30px;
+    padding: 30px 20px;
     box-sizing: border-box;
 
     ///////////
@@ -105,7 +105,7 @@
     //border-left: 1px solid $dark-gray;
     //border-right: 1px solid $dark-gray;
     //border-bottom: 1px solid $dark-gray;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 30px;
   }
 
@@ -125,11 +125,11 @@
       margin-top: -15px;
     }
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     .s_01 .accordion_one .accordion_header {
       font-size: 16px;
       text-align: left;
-      padding: 15px 60px 15px 15px;
+      padding: 10px 50px 10px 20px;
     }
   }
   
