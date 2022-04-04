@@ -199,28 +199,6 @@ h2 {
   background-color: #F7F7F7;
 }
 
-.nav-button {
-  height: 5rem;
-  width: 5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 15px;
-  font-size: 2.4rem;
-}
-
-@media (min-width: 769px) {
-  .nav-button {
-    display: none;
-  }
-}
-
 .sssp-nav {
   display: none;
   position: fixed;
@@ -429,6 +407,12 @@ h2 {
   cursor: pointer;
   width: 5rem;
   height: 5rem;
+}
+
+@media (min-width: 769px) {
+  .openbtn1 {
+    display: none;
+  }
 }
 
 /*×に変化*/
@@ -721,9 +705,6 @@ h2 {
   margin-top: 50px;
 }
 
-/*====================================================================
-.s_01 .accordion_one
-====================================================================*/
 .s_01 .accordion_one {
   width: calc(100% - 40px);
   max-width: 700px;
