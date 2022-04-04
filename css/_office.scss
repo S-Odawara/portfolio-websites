@@ -95,14 +95,24 @@
 
 .office-list{
     margin-top: $margin-top;
+
 }
+
+
+
 
 .office-item{
     margin-top: $margin-top;
-    position: relative;
+
+    .office-item-bk{
+        position: relative;
+        height: 600px;
+        margin: 30px 0;
+    }
+
 
     .office-image{
-        position: relative;
+        position: absolute;
         margin: 0 55px 0 20px;
         border-right: 1px solid $white;
         border-bottom: 1px solid $white;
@@ -111,7 +121,7 @@
 
     .office-line{
         position: absolute;
-        top: 100px;
+        top: 15vh;
         right: 35px;
         height: 175px;
         width:5px;
@@ -121,7 +131,7 @@
 
     .office-info{
         position: absolute;
-        top: 120px;
+        top: calc( 15vh + 20px);
         left: 40px;
         height: 480px;
         width: calc(100% - 60px);
@@ -161,7 +171,8 @@
     .office-info{
         .office-map{
             height: 200px;
-            width: calc(100% - 20px);
+            width: 100%;
+            margin-top: 30px;
             .google-map{
                 background-color: $light-blue;
                 height: 100%;
