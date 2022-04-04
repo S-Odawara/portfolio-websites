@@ -92,3 +92,83 @@
         background-image: url("../images/sp/sp-office-06.jpg");
     }
 }
+
+.office-list{
+    margin-top: $margin-top;
+}
+
+.office-item{
+    margin-top: $margin-top;
+    position: relative;
+
+    .office-image{
+        position: relative;
+        margin: 0 55px 0 20px;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+        z-index: 30;
+    }
+
+    .office-line{
+        position: absolute;
+        top: 100px;
+        right: 35px;
+        height: 175px;
+        width:5px;
+        z-index: 20;
+        background-color: $light-blue;
+    }
+
+    .office-info{
+        position: absolute;
+        top: 120px;
+        left: 40px;
+        height: 480px;
+        width: calc(100% - 60px);
+
+        z-index: 10;
+
+        padding: 100px 20px 30px 20px;
+        box-sizing: border-box;
+        background-color: $black;
+
+        color: $white;
+
+
+        .office-name{
+            font-size: 2.2rem;
+            z-index: 50;
+        }
+
+        .office-address{
+            line-height: 1.0;
+        }
+        .office-access{
+            line-height: 1.0;
+        }
+    }
+
+
+
+
+}
+
+
+
+//////////////////////////// google-map
+
+.office-item{
+    .office-info{
+        .office-map{
+            height: 200px;
+            width: calc(100% - 20px);
+            .google-map{
+                background-color: $light-blue;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////
