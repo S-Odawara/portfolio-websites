@@ -14,10 +14,10 @@
     margin-bottom: $margin-bottom;
   }
   .s_01 .accordion_one .accordion_header {
-    background-color: $light-gray;
-    color: $white;
+    background-color: $white;
+    color: $black;
     font-size: 26px;
-    font-weight: bold;
+    //font-weight: bold;
     padding: 20px 11%;
     text-align: center;
     position: relative;
@@ -41,7 +41,7 @@
     right: 5%;
     width: 40px;
     height: 40px;
-    border: 0px solid $white;
+    //border: 2px solid $white;
     margin-top: -20px;
     box-sizing: border-box;
     -webkit-transform: rotate(45deg);
@@ -97,12 +97,15 @@
   .s_01 .accordion_one .accordion_inner {
     display: none;
     padding: 30px 30px;
-    border-left: 1px solid $dark-gray;
-    border-right: 1px solid $dark-gray;
-    border-bottom: 1px solid $dark-gray;
     box-sizing: border-box;
+
     ///////////
-    margin-top: 0px;
+    background-color: $light-gray-60;
+    border:1px solid $dark-gray;
+    //border-left: 1px solid $dark-gray;
+    //border-right: 1px solid $dark-gray;
+    //border-bottom: 1px solid $dark-gray;
+    margin-top: 30px;
     border-radius: 30px;
   }
 
