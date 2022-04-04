@@ -676,11 +676,16 @@ h2 {
   border: 1px solid #5C6566;
   border-radius: 30px;
   line-height: 1;
+  text-align: left;
   z-index: 20;
 }
 
 .question.white-shadow {
   opacity: 0.5;
+}
+
+.ques {
+  margin-left: 20px;
 }
 
 .more-button.faq-b {
