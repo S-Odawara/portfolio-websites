@@ -95,10 +95,13 @@
 
 .office-list{
     margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
 
 }
 
-
+.office-sub-tytle{
+    margin: 50px 20px;
+}
 
 
 .office-item{
@@ -107,7 +110,7 @@
     .office-item-bk{
         position: relative;
         height: 600px;
-        margin: 30px 0;
+        margin: 50px 0;
     }
 
 

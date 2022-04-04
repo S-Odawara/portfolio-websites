@@ -661,6 +661,11 @@ h2 {
 
 .office-list {
   margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.office-sub-tytle {
+  margin: 50px 20px;
 }
 
 .office-item {
@@ -670,7 +675,7 @@ h2 {
 .office-item .office-item-bk {
   position: relative;
   height: 600px;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 .office-item .office-image {
