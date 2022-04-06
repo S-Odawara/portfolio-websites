@@ -1174,7 +1174,7 @@ h2 {
 
 .s_01 .accordion_one {
   width: calc(100% - 40px);
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -1182,7 +1182,7 @@ h2 {
 .s_01 .accordion_one .accordion_header {
   background-color: #F7F7F7;
   color: #2E3233;
-  font-size: 26px;
+  font-size: 1.6rem;
   padding: 20px 11%;
   text-align: left;
   position: relative;
@@ -1287,6 +1287,12 @@ h2 {
   border-radius: 30px;
 }
 
+@media (min-width: 769px) {
+  .s_01 .accordion_one .accordion_inner {
+    padding: 30px 11%;
+  }
+}
+
 .s_01 .accordion_one .accordion_inner .box_one {
   height: auto;
 }
@@ -1297,7 +1303,7 @@ h2 {
 
 @media screen and (max-width: 1024px) {
   .s_01 .accordion_one .accordion_header {
-    font-size: 18px;
+    font-size: 1.6rem;
   }
   .s_01 .accordion_one .accordion_header .i_box {
     width: 30px;
@@ -1308,7 +1314,7 @@ h2 {
 
 @media screen and (max-width: 769px) {
   .s_01 .accordion_one .accordion_header {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: left;
     padding: 10px 50px 10px 20px;
   }
