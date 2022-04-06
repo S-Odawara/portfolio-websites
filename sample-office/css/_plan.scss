@@ -118,9 +118,7 @@
 
 //////////////////////// price
 
-.plan-price{
 
-}
 
 .pl-pr-item{
     width: calc(100% - 40px);
@@ -142,8 +140,14 @@
     .pl-pr-line{
         height: 5px;
         width: 100%;
-        background: linear-gradient( 90deg, $light-blue, $white 90.91%);
+        background: linear-gradient( 90deg, $white, $light-blue 97.98%);
         margin: 0;
+    }
+
+    &.two-base{
+        .pl-pr-line{
+            background: linear-gradient( 90deg, $white, $black 97.98%);
+        }
     }
 
     p{
