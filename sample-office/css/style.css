@@ -313,7 +313,7 @@ h2 {
   text-align: center;
 }
 
-#sp-nav-list .contact-mail {
+#sp-nav-list .contact-web {
   opacity: 0;
   /*はじめは透過0*/
   padding: 0;
@@ -327,6 +327,10 @@ h2 {
   padding: 30px;
   border: 1px solid #2E3233;
   text-align: center;
+}
+
+#sp-nav-list a .contact-web {
+  color: #2E3233;
 }
 
 /*背景が出現後にナビゲーションを表示*/
@@ -974,7 +978,8 @@ h2 {
 .cover.faq-c {
   background-image: none;
   background-color: #F7F7F7;
-  background: linear-gradient(217deg, rgba(153, 197, 204, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(92, 101, 102, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, rgba(247, 247, 247, 0.7), rgba(0, 0, 0, 0) 70.71%);
+  background: -webkit-gradient(linear, left top, right top, from(#5C6566), color-stop(90.1%, #F7F7F7));
+  background: linear-gradient(90deg, #5C6566, #F7F7F7 90.1%);
   border: none;
   height: 200px;
 }
@@ -1217,7 +1222,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-.contact-mail {
+.contact-web {
   width: calc(100% - 80px);
   margin: 30px 40px 0 40px;
   padding: 30px;
@@ -1227,8 +1232,21 @@ h2 {
   font-size: 1.8rem;
 }
 
-.contact-mail p {
+.contact-web p {
   margin: 0;
+}
+
+a .contact-web {
+  color: #F7F7F7;
+}
+
+.cover.contact-c {
+  background-image: none;
+  background-color: #F7F7F7;
+  background: -webkit-gradient(linear, left top, right top, from(#99C5CC), color-stop(90.1%, #F7F7F7));
+  background: linear-gradient(90deg, #99C5CC, #F7F7F7 90.1%);
+  border: none;
+  height: 200px;
 }
 
 .footer {

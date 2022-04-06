@@ -19,6 +19,8 @@
     .tytle{
         margin-bottom: 50px;
     }
+
+
 }
 
 
@@ -75,18 +77,41 @@
 
 }
 
-.contact-mail{
+.contact-web{
     width: calc(100% - 80px);
     margin: 30px 40px 0 40px;
     padding: 30px;
     box-sizing: border-box;
-    //background-color: $black-50;
     border: 1px solid $white;
-    //text-align: left;
     font-size: 1.8rem;
-    //line-height: 1;
+
 
     p{
         margin: 0;
+    }
+
+
+}
+
+a{
+    .contact-web{
+        color: $white;
+    }
+}
+
+
+
+//////////////////////////////////
+//////////////////////// 下層ページ
+
+
+.cover{
+    &.contact-c{
+        background-image: none;
+        background-color: $white;
+        background: linear-gradient(90deg, $light-blue, $white 90.100%);
+
+        border: none;
+        height: 200px;
     }
 }
