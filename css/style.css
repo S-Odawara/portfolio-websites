@@ -34,7 +34,7 @@ main {
 
 ul li i{
   font-size:  2.0rem;
-  margin: 10px 0;
+  margin: 1.5rem 0;
 }
 
 ul{
@@ -45,7 +45,13 @@ ul li{
   font-weight: bold;
 }
 
+.undone{
+  display: none;
+}
 
+
+
+/**/
 h1 .fa-splotch{
   margin: 0;
   animation: 5s linear infinite rotation1;
@@ -67,4 +73,5 @@ h4 .fa-splotch{
   0%{ transform:rotate(0);}
   100%{ transform:rotate(360deg); }
 }
+
 
