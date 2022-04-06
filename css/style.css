@@ -28,3 +28,39 @@ a {
 main {
   margin: 20px;
 }
+
+ul li i{
+  font-size:  2.0rem;
+}
+
+ul{
+  padding-left: 20px;
+}
+ul li{
+  list-style:none;
+  font-weight: bold;
+}
+
+
+h1 .fa-splotch{
+  margin: 0;
+  animation: 5s linear infinite rotation1;
+}
+h2 .fa-splotch{
+  margin: 0;
+  animation: 4s linear infinite rotation1;
+}
+h3 .fa-splotch{
+  margin: 0;
+  animation: 3s linear infinite rotation1;
+}
+h4 .fa-splotch{
+  margin: 0;
+  animation: 2s linear infinite rotation1;
+}
+
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
