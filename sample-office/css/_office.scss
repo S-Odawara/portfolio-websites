@@ -53,7 +53,7 @@
     width: 80vw;
     height: 60vw;
     //border: 1px solid $white;
-    box-shadow: 0px 2px 1px 0 $dark-gray-80;
+    box-shadow: 5px 10px 10px 0 $dark-gray-80;
     box-sizing: border-box;
     img{
         width: 100%;
@@ -69,8 +69,9 @@
     height: 60px;
     width: 50%;
     
-    background-color: $black-80;
-    box-shadow: 0px 2px 1px 0 $dark-gray-80;
+    background-color:$black-50;
+
+    box-shadow: 5px 10px 10px 0 $dark-gray-80;
     line-height: 0.5;
 
     &.two{
@@ -266,14 +267,15 @@
 .office-detail{
 
     @media (min-width: 769px) {
-        height: 120px;
+        height: 100px;
         width: 100%;
         margin: 0;
         padding: 20px 0;
         font-size: 1.8rem;
         box-sizing: border-box;
-
-        box-shadow: 0px 10px 10px 0 $dark-gray-80;
+       
+        //color: $black;
+        box-shadow: 0px 5px 5px 0 $dark-gray-80;
 
         &.two{
             margin: 0;
@@ -284,7 +286,7 @@
         }
         .office-access{
             font-size: 1.6rem;
-            line-height: 1.75;
+            line-height: 1.5;
             margin: 0;
         }
 

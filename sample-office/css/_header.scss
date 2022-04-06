@@ -162,6 +162,23 @@
     }
 }
 
+.catch{
+    &.pc-catch{
+        @media (min-width: 769px) {
+            height: 100px;
+            .catch-one{
+                font-size: 1.6rem;
+                margin: 10px 0 0 40px;
+            }
+
+            .catch-two{
+                font-size: 2.8rem;
+                margin: 0px 0 0 40px;
+            }
+        } 
+    }
+}
+
 //////////////////////////////////
 ////////////////////////slideshow
 
