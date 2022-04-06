@@ -40,7 +40,7 @@
     display: none;
 
 
-    @media (min-width: 769px) {
+    @media (min-width: 930px) {
             display: inherit;
             position: fixed;
             top: 0px;
@@ -72,22 +72,6 @@
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     } 
 
 }
@@ -112,11 +96,24 @@
     background-size: cover;
 
     border-bottom: 2px solid $black;
+
+    @media (min-width: 769px) {
+
+        height: 35vw;
+        background-image: url("../images/cover.jpg");
+
+    }
+
+
 }
 
 .cover{
     &.about-c{
         background-image: url("../images/sp/sp-office-03.jpg");
+        @media (min-width: 769px) {
+            background-image: url("../images//office-03.jpg");
+    
+        }
     }
 }
 
@@ -126,22 +123,43 @@
 
     height: 90px;
     width: 230px;
-    background-color: $black-90;
+    background-color: $black-80;
     color: $white;
     line-height: 1.5;
+
+    @media (min-width: 769px) {
+        margin: 60px 0 0 40px;
+        height: 200px;
+        min-width: 500px;
+        width: 40vw;
+
+    }
 }
 
 
 .catch-one {
-    font-weight: 500;
+    font-weight: bold;
     margin: 15px 0 0 20px;
+
+    @media (min-width: 769px) {
+        margin: 50px 0 0 40px;
+        font-size: 2.0rem;
+        font-weight:400;
+
+    }
 }
 
 
 .catch-two {
     font-size: 2.4rem;
-    font-weight: 500;
+    font-weight: bold;
     margin: 0 0 0 20px;
+    @media (min-width: 769px) {
+        margin: 0 0 0 40px;
+        font-size: 4.8rem;
+        font-weight:400;
+
+    }
 }
 
 //////////////////////////////////

@@ -94,7 +94,7 @@ h2 {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 930px) {
   .pc-nav {
     display: inherit;
     position: fixed;
@@ -134,8 +134,21 @@ h2 {
   border-bottom: 2px solid #2E3233;
 }
 
+@media (min-width: 769px) {
+  .cover {
+    height: 35vw;
+    background-image: url("../images/cover.jpg");
+  }
+}
+
 .cover.about-c {
   background-image: url("../images/sp/sp-office-03.jpg");
+}
+
+@media (min-width: 769px) {
+  .cover.about-c {
+    background-image: url("../images//office-03.jpg");
+  }
 }
 
 .catch {
@@ -143,20 +156,45 @@ h2 {
   margin: 40px 0 0 20px;
   height: 90px;
   width: 230px;
-  background-color: #2e3233e6;
+  background-color: rgba(46, 50, 51, 0.8);
   color: #F7F7F7;
   line-height: 1.5;
 }
 
+@media (min-width: 769px) {
+  .catch {
+    margin: 60px 0 0 40px;
+    height: 200px;
+    min-width: 500px;
+    width: 40vw;
+  }
+}
+
 .catch-one {
-  font-weight: 500;
+  font-weight: bold;
   margin: 15px 0 0 20px;
+}
+
+@media (min-width: 769px) {
+  .catch-one {
+    margin: 50px 0 0 40px;
+    font-size: 2.0rem;
+    font-weight: 400;
+  }
 }
 
 .catch-two {
   font-size: 2.4rem;
-  font-weight: 500;
+  font-weight: bold;
   margin: 0 0 0 20px;
+}
+
+@media (min-width: 769px) {
+  .catch-two {
+    margin: 0 0 0 40px;
+    font-size: 4.8rem;
+    font-weight: 400;
+  }
 }
 
 .wrap {
@@ -444,7 +482,7 @@ h2 {
   height: 5rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 930px) {
   .openbtn1 {
     display: none;
   }
