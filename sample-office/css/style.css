@@ -1065,7 +1065,7 @@ h2 {
 }
 
 .s_01 .accordion_one .accordion_inner .box_one {
-  height: 200px;
+  height: auto;
 }
 
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
