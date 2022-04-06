@@ -124,17 +124,17 @@
 
 .pl-pr-item{
     width: calc(100% - 40px);
-    margin: 30px auto;
-    
+    margin:  0 auto;
+    margin-bottom: 50px;
+    //background-color: $light-gray-80;
 
     .bold{
-        font-weight: bold;
-        
+        font-weight: bold;  
     }
-
     h2{
         margin-bottom: 0;
     }
+
     .pl-pr-tytle{
         width: 100%;
     }
@@ -143,11 +143,11 @@
         height: 5px;
         width: 100%;
         background: linear-gradient( 90deg, $light-blue, $white 90.91%);
-        margin: -5px 0 0 0;
+        margin: 0;
     }
 
     p{
-        margin:  0;
+        margin:  0.5rem 0;
         //line-height: 1.0;
     }
 
