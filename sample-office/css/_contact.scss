@@ -197,3 +197,13 @@ a{
 
 }
 
+
+
+.input-form{
+    @media (min-width: 769px) {
+        width: 750px;
+        margin:auto;
+        margin-top: $margin-top;
+        margin-bottom: $margin-bottom;
+    } 
+}
