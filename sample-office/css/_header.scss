@@ -31,6 +31,67 @@
     
 }
 
+//////////////////////////////////
+////////////////////////pc-nav
+//   @media (min-width: 769px) {} 
+
+
+.pc-nav {
+    display: none;
+
+
+    @media (min-width: 769px) {
+            display: inherit;
+            position: fixed;
+            top: 0px;
+            z-index: 501;
+            margin:  0 auto;
+            margin-left: 200px;
+        ul{
+
+            display: flex;
+            align-items:center;
+
+            height: 50px;
+            margin: 0;
+            padding: 0;
+
+
+            li{
+
+                margin:0 30px;
+
+
+                list-style: none;
+
+                font-size: 1.8rem;
+                font-weight: bold;
+                
+            
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } 
+
+}
+
 
 
 

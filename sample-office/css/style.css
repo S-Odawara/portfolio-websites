@@ -90,6 +90,38 @@ h2 {
   width: auto;
 }
 
+.pc-nav {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .pc-nav {
+    display: inherit;
+    position: fixed;
+    top: 0px;
+    z-index: 501;
+    margin: 0 auto;
+    margin-left: 200px;
+  }
+  .pc-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  .pc-nav ul li {
+    margin: 0 30px;
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+}
+
 .cover {
   position: relative;
   margin-top: 50px;
@@ -213,16 +245,6 @@ h2 {
 @media (min-width: 769px) {
   .sssp-nav {
     display: none;
-  }
-}
-
-.pc-nav {
-  display: none;
-}
-
-@media (min-width: 769px) {
-  .pc-nav {
-    display: inline-block;
   }
 }
 
