@@ -742,17 +742,20 @@ h2 {
 }
 
 .links {
-  margin: 50px 0;
+  margin-top: 0;
 }
 
 .more-button.office-about-b {
   width: calc(100% - 40px);
-  margin: 0 auto;
+  margin-bottom: 25px;
+  border: 2px solid #CED7D9;
+  -webkit-box-shadow: 2px 2px 0px 0 #CED7D9;
+          box-shadow: 2px 2px 0px 0 #CED7D9;
 }
 
 .more-button.office-service-b {
   width: calc(100% - 40px);
-  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .plan {

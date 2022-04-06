@@ -193,19 +193,20 @@
 /////////////////////////////////////////
 
 .links{
-    margin: 50px 0;
+    margin-top: 0;
 }
 .more-button{
     &.office-about-b{
         width: calc(100% - 40px);
-        margin: 0 auto;
-
+        margin-bottom: $margin-bottom;
+        border: 2px solid $light-gray;
+        box-shadow: 2px 2px 0px 0 $light-gray;
 
     }
 
     &.office-service-b{
         width: calc(100% - 40px);
-        margin: 0 auto;
+        margin-bottom: $margin-bottom;
 
 
     }
