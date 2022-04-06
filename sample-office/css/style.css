@@ -851,6 +851,62 @@ h2 {
   background-image: url("../images/sp/sp-office-05.jpg");
 }
 
+.pl-pr-item {
+  width: calc(100% - 40px);
+  margin: 30px auto;
+}
+
+.pl-pr-item .bold {
+  font-weight: bold;
+}
+
+.pl-pr-item h2 {
+  margin-bottom: 0;
+}
+
+.pl-pr-item .pl-pr-tytle {
+  width: 100%;
+}
+
+.pl-pr-item .pl-pr-line {
+  height: 5px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#99C5CC), color-stop(90.91%, #F7F7F7));
+  background: linear-gradient(90deg, #99C5CC, #F7F7F7 90.91%);
+  margin: -5px 0 0 0;
+}
+
+.pl-pr-item p {
+  margin: 0;
+}
+
+.pl-pr-item .pl-pr-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+}
+
+.pl-pr-item .pl-pr-detail .bold {
+  width: 25%;
+}
+
+.pl-pr-item .pl-pr-detail .p-detail {
+  width: 75%;
+}
+
+.pl-pr-line-pink {
+  height: 5px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#edc5d0), color-stop(90.91%, #F7F7F7));
+  background: linear-gradient(90deg, #edc5d0, #F7F7F7 90.91%);
+  margin-top: -5px;
+}
+
 .faq {
   padding-bottom: 50px;
   text-align: center;
@@ -1009,7 +1065,7 @@ h2 {
 }
 
 .s_01 .accordion_one .accordion_inner .box_one {
-  height: 150px;
+  height: 200px;
 }
 
 .s_01 .accordion_one .accordion_inner p.txt_a_ac {
