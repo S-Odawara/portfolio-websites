@@ -136,7 +136,7 @@ h2 {
 
 @media (min-width: 769px) {
   .cover {
-    height: 35vw;
+    height: 30vw;
     background-image: url("../images/cover.jpg");
   }
 }
@@ -551,6 +551,13 @@ h2 {
   border: 2px solid #99C5CC;
 }
 
+@media (min-width: 769px) {
+  .about-border {
+    margin: -25px 15vw;
+    padding: 100px 0  150px 0;
+  }
+}
+
 .section-tytle.about {
   margin-top: 0px;
   padding-top: 20px;
@@ -566,6 +573,13 @@ h2 {
   top: 215px;
   left: calc(calc(100vw /2) - 63px);
   margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .more-button.about-b {
+    top: 385px;
+    left: calc(calc(100vw /2) - 70px);
+  }
 }
 
 .more-button.about-office-b {
@@ -650,6 +664,24 @@ h2 {
 .notice {
   margin: 20px 0;
   line-height: 1.0;
+}
+
+.pc-about-border {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .pc-about-border {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-top: 50px solid rgba(206, 215, 217, 0.8);
+    border-left: 15vw solid rgba(206, 215, 217, 0.8);
+    border-right: 15vw solid rgba(206, 215, 217, 0.8);
+    border-bottom: 50px solid rgba(206, 215, 217, 0.8);
+  }
 }
 
 .office {
