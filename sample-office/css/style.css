@@ -851,8 +851,17 @@ h2 {
   background-image: url("../images/sp/sp-office-05.jpg");
 }
 
+.plan-sub-tytle {
+  margin: 20px 20px;
+  line-height: 1.5;
+}
+
+.plan-price {
+  margin: 0 20px 50px 20px;
+}
+
 .pl-pr-item {
-  width: calc(100% - 40px);
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -905,12 +914,31 @@ h2 {
   width: 75%;
 }
 
-.pl-pr-line-pink {
-  height: 5px;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#edc5d0), color-stop(90.91%, #F7F7F7));
-  background: linear-gradient(90deg, #edc5d0, #F7F7F7 90.91%);
-  margin-top: -5px;
+.plan-service {
+  margin: 0 20px 50px 20px;
+}
+
+.plan-campaign {
+  margin: 75px 20px;
+  padding: 10px 10px;
+  border: #f5e9ec 15px solid;
+  text-align: center;
+}
+
+.p-c-tytle {
+  font-size: 2.0rem;
+}
+
+.p-c-text {
+  padding: 0px 10px;
+}
+
+.p-c-code {
+  padding: 15px;
+  font-size: 2.0rem;
+  font-weight: bold;
+  background-color: #f5e9ec;
+  border-radius: 50px;
 }
 
 .faq {

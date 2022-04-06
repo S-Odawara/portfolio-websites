@@ -115,13 +115,21 @@
     }
 }
 
+.plan-sub-tytle{
+    margin: 20px 20px;
+    line-height: 1.5;
+}
+
 
 //////////////////////// price
 
+.plan-price{
+    margin: 0 20px 50px 20px;
+}
 
 
 .pl-pr-item{
-    width: calc(100% - 40px);
+    width: 100%;
     margin:  0 auto;
     margin-bottom: 50px;
     //background-color: $light-gray-80;
@@ -185,6 +193,7 @@
 //////////////////////// service
 
 .plan-service{
+    margin: 0 20px 50px 20px;
 
 }
 
@@ -192,12 +201,27 @@
 //////////////////////// campaign
 
 .plan-campaign{
+    margin: 75px 20px;
+    padding: 10px 10px;
+    border: $light-pink 15px solid;
+    text-align: center;
+}
+
+.p-c-tytle{
+    font-size: 2.0rem;
+}
+
+.p-c-text{
+    padding: 0px 10px;
 
 }
 
-.pl-pr-line-pink{
-    height: 5px;
-    width: 100%;
-    background: linear-gradient( 90deg, $light-pink, $white 90.91%);
-   margin-top: -5px;
+.p-c-code{
+    padding: 15px;
+    font-size: 2.0rem;
+    font-weight: bold;
+
+    background-color: $light-pink;
+    border-radius: 50px;
+   
 }
