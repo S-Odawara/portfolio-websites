@@ -79,6 +79,78 @@
         </header>
         <main>
             
+            <!-- 入力フォーム -->
+            <section class="input-form">
+                <h2 class="">お問い合わせ・見学予約</h2>
+
+                <div class="input-form-border">
+                    <div class="input-form-explain">
+                        <p >お問い合わせ・見学予約 </p>
+                        <p ><i class="fas fa-check-circle"></i>は、必須入力項目です。</p>
+                    </div>
+
+                    <div class="input-form-flex">
+                        <h3>氏名</h3>
+                        <i class="fas fa-check-circle"></i>
+                        <input type="text" name="name-fi" value="" class="i-form" placeholder="三降" required >
+                        <input type="text" name="name-fa" value="" class="i-form" placeholder="花子" required >
+                    </div>
+                    <div class="input-form-flex">
+                        <h3>氏名（カナ）</h3>
+                        <i class="fas fa-check-circle"></i>
+                        <input type="text" name="kana-fi" value="" class="i-form" placeholder="サンプル" required >
+                        <input type="text" name="kana-fi" value="" class="i-form" placeholder="ハナコ" required >
+                    </div>
+                    <div class="input-form-flex">
+                        <h3>メールアドレス</h3>
+                        <i class="fas fa-check-circle"></i>
+                        <input type="email" name="email" value="" class="i-form" placeholder="hanako.sample@sample.co.jp" required >
+                    </div>
+                    <div class="input-form-flex">
+                        <h3>電話番号</h3>
+                        <i class="fas fa-check-circle"></i>
+                        <input type="number" name="phone" value="" class="i-form"  placeholder="00012345678" required >
+                    </div>
+                    <div class="input-form-flex">
+                        <h3>職業</h3>
+                        <select name="職業" class="i-form" >
+                            <option>選択</option>
+                            <option>会社員</option>
+                            <option>自営業・フリーランス</option>    
+                            <option>学生</option>
+                            <option>その他</option>   
+                        </select>
+                    </div>
+                    <div class="input-form-flex">
+                        <h3>お問い合わせ内容</h3>
+                        <select name="お問い合わせ内容" class="i-form" required >
+                            <option>選択</option>
+                            <option>ご契約</option>
+                            <option>見学希望</option>
+                            <option>その他（備考に問い合わせ内容を記入）</option>
+                        </select>
+                    </div>
+
+                    <div class="input-form-flex">
+                        <h3>備考</h3>
+                        <textarea type="text" value="" class="i-form-text" rows="5" cols="30"></textarea>
+                    </div>
+
+
+                    <div class="input-form-flex">
+                        
+                        <label for="c-code"><h3>キャンペーンコード</h3></label>
+                        <input id="c-code" type="text" value="" class="i-form">
+                    </div>
+                    <div class="input-form-flex">
+                        <button type="submit" class="submit">入力内容を送信</button>
+                    </div>
+
+                </div>
+            </section>
+
+
+
 
             <!-- contact -->
             <section class="contact">
