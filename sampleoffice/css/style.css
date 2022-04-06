@@ -660,8 +660,8 @@ h2 {
 }
 
 .office-list {
-  margin-top: 0;
-  margin-bottom: 75px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .office-sub-tytle {
@@ -742,15 +742,12 @@ h2 {
 }
 
 .links {
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .more-button.office-about-b {
   width: calc(100% - 40px);
   margin-bottom: 25px;
-  border: 2px solid #CED7D9;
-  -webkit-box-shadow: 2px 2px 0px 0 #CED7D9;
-          box-shadow: 2px 2px 0px 0 #CED7D9;
 }
 
 .more-button.office-service-b {
