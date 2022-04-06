@@ -768,7 +768,7 @@ h2 {
   margin-left: -140px;
   height: 60px;
   width: 50%;
-  background-color: rgba(46, 50, 51, 0.5);
+  background-color: rgba(46, 50, 51, 0.1);
   -webkit-box-shadow: 5px 10px 10px 0 rgba(92, 101, 102, 0.8);
           box-shadow: 5px 10px 10px 0 rgba(92, 101, 102, 0.8);
   line-height: 0.5;
