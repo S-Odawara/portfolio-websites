@@ -28,8 +28,15 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin: 20px;
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 ul li i{
@@ -45,7 +52,7 @@ ul li{
   font-weight: bold;
 }
 
-.undone{
+.uundone{
   display: none;
 }
 
