@@ -17,6 +17,14 @@
     linear-gradient(336deg, $light-blue, $invisible 70.71%);
 
     text-align: center;
+
+
+    @media (min-width: 769px) {
+        margin-top: $margin-top-pc;
+      } 
+
+
+
 }
 
 .plan-content{
@@ -63,6 +71,8 @@
         font-weight: bold;
         width: 100%;
         margin: 0;
+
+
     }
 
 
@@ -116,7 +126,12 @@
 .cover{
     &.plan-c{
         background-image: url("../images/sp/sp-office-05.jpg");
+
+        @media (min-width: 769px) {
+            background-image: url("../images/office-05.jpg");
+        } 
     }
+
 }
 
 .plan-sub-tytle{
