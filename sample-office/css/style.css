@@ -1014,6 +1014,15 @@ h2 {
   width: 100%;
 }
 
+@media (min-width: 769px) {
+  .office-item .office-info .office-map .google-map {
+    border-top: 5px solid #CED7D9;
+    border-bottom: 5px solid #CED7D9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 .links {
   margin-top: 50px;
 }

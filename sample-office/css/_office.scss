@@ -252,6 +252,14 @@
                 background-color: $light-gray-80;
                 height: 100%;
                 width: 100%;
+                @media (min-width: 769px) {
+
+                    border-top: 5px solid $light-gray;
+                    border-bottom: 5px solid $light-gray;
+                    box-sizing: border-box;
+                } 
+
+
             }
         }
     }
