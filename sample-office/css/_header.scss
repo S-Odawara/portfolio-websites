@@ -264,18 +264,28 @@
         padding-top: 5px;
     }
 }
+
 .content:nth-child(1) {
     background-color: $light-blue;
     a{
         color: $white;
     }
 }
+
 .content:nth-child(2) {
     background-color: $light-gray;
 }
+
 .content:nth-child(3) {
     background-color: $white;
 }
 
 
+
+//////////////////////////////
+////////////////////////hover
+
+.content:hover{
+    font-weight: bold;
+}
 

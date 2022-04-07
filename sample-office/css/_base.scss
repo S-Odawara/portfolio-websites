@@ -123,6 +123,16 @@ h2{
     width: 180px;
     font-size: 1.8rem;
     line-height: 2.75;
+
+    border: 3px solid $light-blue;
+    box-shadow: 3px 3px 0px 0 $light-blue;
+
+
   }
 }
 
+
+.more-button:hover{
+  box-shadow: none;
+
+}
