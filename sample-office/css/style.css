@@ -371,12 +371,12 @@ h2 {
   position: absolute;
   z-index: 1000;
   top: 200px;
-  left: 40%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 1.8rem;
-  width: 70%;
-  margin: 0 30px;
+  width: auto;
+  max-width: 450px;
 }
 
 /*ナビゲーション*/
@@ -387,10 +387,12 @@ h2 {
   position: absolute;
   z-index: 1000;
   top: 450px;
-  left: 40%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: calc(100% - 80px);
+  max-width: 400px;
+  margin: 0px;
   padding: 30px;
   border: 1px solid #2E3233;
   text-align: center;
@@ -402,11 +404,13 @@ h2 {
   padding: 0;
   position: absolute;
   z-index: 1000;
-  top: 540px;
-  left: 40%;
+  top: 570px;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: calc(100% - 80px);
+  max-width: 400px;
+  margin: 0px;
   padding: 30px;
   border: 1px solid #2E3233;
   text-align: center;

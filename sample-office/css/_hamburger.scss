@@ -94,12 +94,15 @@
     position: absolute;
     z-index: 1000;
     top: 200px;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%,-50%);
     font-size: 1.8rem;
 
-    width: 70%;
-    margin:0 30px;
+   // width: 70%;
+    width: auto; 
+    max-width: 450px;
+    //margin:0 30px;
+
 }
 
 /*ナビゲーション*/
@@ -110,11 +113,12 @@
         position: absolute;
         z-index: 1000;
         top: 450px;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%,-50%);
 
         width: calc(100% - 80px);
-        //margin: 0 40px;
+        max-width: 400px;
+        margin: 0px;
         padding: 30px;
         border: 1px solid $black;
         text-align: center;
@@ -125,12 +129,14 @@
         padding: 0;
         position: absolute;
         z-index: 1000;
-        top: 540px ;
-        left: 40%;
+        top: 570px;
+        left: 50%;
+
         transform: translate(-50%,-50%);
 
         width: calc(100% - 80px);
-        //margin: 0 40px;
+        max-width: 400px;
+        margin: 0px;
         padding: 30px;
         border: 1px solid $black;
         text-align: center;
