@@ -145,68 +145,63 @@
     }
 }
 
-.office-list{
-    margin-top: 0px;
-    margin-bottom: 0px;
 
-}
 
 .office-sub-tytle{
     margin: 20px 20px;
     line-height: 1.5;
 }
 
+.office-list{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+
+
+////////////////////////////////////
 
 .office-item{
-    margin-top: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 
-    .office-item-bk{
-        position: relative;
-        height: 670px;
-        margin: 0 0 50px 0;
-       
-    }
+    display: inline-block;
+    box-shadow: 0px 10px 10px 0 $dark-gray-80;
+
+
 
 
     .office-image{
-        position: absolute;
-        margin: 0 55px 0 20px;
-        border-right: 1px solid $white;
-        border-bottom: 1px solid $white;
-        z-index: 30;
+        width: 100%;
+        margin: 0 auto;
+       // padding-bottom: 10px;
+      //  border-right: 1px solid $white;
+      //  border-bottom: 10px double $white;
+
         box-shadow: none;
     }
 
-    .office-line{
-        position: absolute;
-        top: 15vh;
-        right: 35px;
-        height: 175px;
-        width:5px;
-        z-index: 20;
-        background-color: $light-blue;
-    }
 
     .office-info{
-        position: absolute;
-        top: calc( 15vh + 20px);
-        left: 40px;
-        height: 500px;
-        width: calc(100% - 60px);
+        height: 435px;
+        width: 100%;
+        margin: 0 auto;
 
-        z-index: 10;
 
-        padding: 100px 0px 30px 0px;
-        box-sizing: border-box;
-        background-color: $black;
-
-        color: $white;
+       // background-color: $black;
+        color: $black;
+      //  color: $white;
 
 
         .office-name{
-            padding: 0 20px;
+            width: auto;
+            margin: 30px 20px;
+            padding-bottom: 5px;
             font-size: 2.2rem;
-            z-index: 50;
+            border-bottom: 10px double $light-gray;
+
+
         }
 
         .office-address{
@@ -231,11 +226,11 @@
 .office-item{
     .office-info{
         .office-map{
-            height: 220px;
+            height: 250px;
             width: 100%;
-            margin-top: 30px;
+            margin-top: 50px;
             .google-map{
-                background-color: $light-blue;
+                background-color: $light-gray-80;
                 height: 100%;
                 width: 100%;
             }
