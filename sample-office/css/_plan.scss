@@ -20,30 +20,27 @@
 }
 
 .plan-content{
-    margin: 0 20px 0 20px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-}
 
-.plan-line{
-    height: auto;
-    width: 5px;
-    margin-top: 20px;
-    border-left: 5px solid $white;
-    background-color: $light-blue;
+    @media (min-width: 1367px) {
+        width:1347px;
+      } 
 
-    &.two-place{
-        border-left: 5px solid $black;
-    }
+
 }
 
 
 .plan-detail{
     height: auto;
-    width: calc(100% - 10px);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     margin-top: 20px;
-    padding: 20px 0 20px 16vw;
+    padding: 20px 50px;
     box-sizing: border-box;
     text-align: left;
 
@@ -53,6 +50,13 @@
     line-height: 1.2;
 
     background-color: $white;
+    box-shadow: 5px 10px 10px 0 $dark-gray-80;
+
+
+
+
+
+
 
     .plan-tytle{
         font-size: 2.4rem;
@@ -155,6 +159,7 @@
     &.two-base{
         .pl-pr-line{
             background: linear-gradient( 90deg, $white, $black 97.98%);
+            
         }
     }
 
