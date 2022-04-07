@@ -11,6 +11,28 @@
     padding-bottom: 50px;
     text-align: center;
     z-index: 10;
+
+    @media (min-width: 769px) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    } 
+
+    .tytle{
+        @media (min-width: 769px) {
+
+            width: 200px;
+            margin:0 auto;
+            border-top: 10px double $light-gray;
+            padding-top: 20px;
+    
+        } 
+    
+    }
+
+
+
+
+
 }
 
 

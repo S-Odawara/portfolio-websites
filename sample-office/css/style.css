@@ -725,15 +725,17 @@ h2 {
   .office {
     margin-top: 100px;
     padding-bottom: 100px;
-    background: linear-gradient(127deg, #CED7D9, rgba(0, 0, 0, 0) 50.1%), linear-gradient(217deg, #F7F7F7, rgba(0, 0, 0, 0) 50.1%), linear-gradient(336deg, #CED7D9, rgba(0, 0, 0, 0) 50.1%);
+    background: none;
+    background-color: rgba(92, 101, 102, 0.1);
     color: #2E3233;
   }
 }
 
 @media (min-width: 769px) {
   .office .tytle {
-    width: 150px;
-    margin: auto;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
     border-top: 10px double #2E3233;
     padding-top: 20px;
   }
@@ -804,7 +806,7 @@ h2 {
 
 @media (min-width: 769px) {
   .office-detail {
-    background: #CED7D9;
+    background-color: rgba(247, 247, 247, 0.5);
     -webkit-box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
             box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
   }
@@ -976,9 +978,9 @@ h2 {
 }
 
 .plan {
-  margin-top: 2px;
+  margin-top: 0px;
   padding-bottom: 50px;
-  background-color: #F7F7F7;
+  background-color: #99C5CC;
   background: linear-gradient(127deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #F7F7F7, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%);
   text-align: center;
 }
@@ -986,6 +988,18 @@ h2 {
 @media (min-width: 769px) {
   .plan {
     margin-top: 100px;
+    background: none;
+    background-color: rgba(153, 197, 204, 0.3);
+  }
+}
+
+@media (min-width: 769px) {
+  .plan .tytle {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-top: 10px double #99C5CC;
+    padding-top: 20px;
   }
 }
 
@@ -1178,6 +1192,22 @@ h2 {
   padding-bottom: 50px;
   text-align: center;
   z-index: 10;
+}
+
+@media (min-width: 769px) {
+  .faq {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 769px) {
+  .faq .tytle {
+    width: 200px;
+    margin: 0 auto;
+    border-top: 10px double #CED7D9;
+    padding-top: 20px;
+  }
 }
 
 .question {
