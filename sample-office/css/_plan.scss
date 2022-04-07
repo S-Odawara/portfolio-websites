@@ -131,12 +131,20 @@
 
         background-color: $light-gray;
         border-color: $white;
-        box-shadow: 3px 3px 0px 0 $white;
+        box-shadow: 2px 2px 0px 0 $white;
+
+        @media (min-width: 769px) {
+            box-shadow: 3px 3px 0px 0 $white;
+
+        } 
+
     }
 } 
 
-
-
+.more-button:hover{
+    box-shadow: none;
+  
+  }
 
 //////////////////////////////////
 //////////////////////// 下層ページ

@@ -77,14 +77,18 @@
     &.about-office-b{
         width: calc(100% - 40px);
         margin: 0 auto;
-
+        @media (min-width: 769px) {
+            max-width: 400px;
+        }
 
     }
 
     &.about-service-b{
         width: calc(100% - 40px);
         margin: 0 auto;
-
+        @media (min-width: 769px) {
+            max-width: 400px;
+        }
 
     }
 } 
