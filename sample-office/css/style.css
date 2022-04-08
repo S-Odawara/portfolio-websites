@@ -1259,18 +1259,14 @@ h2 {
   padding: 0 20px 20px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 10px solid #99C5CC;
-  border-image-slice: 1;
+  border: 5px solid #99C5CC;
   background-color: #F7F7F7;
   -webkit-box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
           box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
 }
 
 .pl-pr-item.two-base {
-  -o-border-image: linear-gradient(to right, rgba(206, 215, 217, 0.6) 0%, #5C6566 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(rgba(206, 215, 217, 0.6)), to(#5C6566));
-     border-image: linear-gradient(to right, rgba(206, 215, 217, 0.6) 0%, #5C6566 100%);
-  border-image-slice: 1;
+  border: 5px solid #5C6566;
 }
 
 @media (min-width: 769px) {
