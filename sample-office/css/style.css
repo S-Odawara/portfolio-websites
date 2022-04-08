@@ -1230,7 +1230,8 @@ h2 {
 
 @media (min-width: 769px) {
   .plan-sub-tytle {
-    margin: 20px 120px;
+    margin: 20px 150px;
+    font-size: 2.0rem;
   }
 }
 
@@ -1238,18 +1239,53 @@ h2 {
   margin: 0 20px 50px 20px;
 }
 
+@media (min-width: 769px) {
+  .pl-pr-flex {
+    max-width: 1560px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .pl-pr-item {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 0 20px 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 10px solid #99C5CC;
+  border-image-slice: 1;
+  background-color: #F7F7F7;
+  -webkit-box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
+          box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
+}
+
+.pl-pr-item.two-base {
+  -o-border-image: linear-gradient(to right, rgba(206, 215, 217, 0.6) 0%, #5C6566 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(rgba(206, 215, 217, 0.6)), to(#5C6566));
+     border-image: linear-gradient(to right, rgba(206, 215, 217, 0.6) 0%, #5C6566 100%);
+  border-image-slice: 1;
+}
+
+@media (min-width: 769px) {
+  .pl-pr-item {
+    width: calc(calc(100% - 60px) / 3);
+    min-width: 450px;
+    max-width: 500px;
+    padding: 20px 30px 50px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 
 .pl-pr-item .bold {
   font-weight: bold;
-}
-
-.pl-pr-item h2 {
-  margin-bottom: 0;
 }
 
 .pl-pr-item .pl-pr-tytle {
@@ -1257,11 +1293,11 @@ h2 {
 }
 
 .pl-pr-item .pl-pr-line {
-  height: 5px;
+  height: 15px;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#F7F7F7), color-stop(97.98%, #99C5CC));
   background: linear-gradient(90deg, #F7F7F7, #99C5CC 97.98%);
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
 .pl-pr-item.two-base .pl-pr-line {
@@ -1284,12 +1320,31 @@ h2 {
   margin: 5px 0;
 }
 
+@media (min-width: 769px) {
+  .pl-pr-item .pl-pr-detail {
+    font-size: 1.8rem;
+    line-height: 2.0;
+  }
+}
+
 .pl-pr-item .pl-pr-detail .bold {
   width: 25%;
 }
 
+@media (min-width: 769px) {
+  .pl-pr-item .pl-pr-detail .bold {
+    width: 30%;
+  }
+}
+
 .pl-pr-item .pl-pr-detail .p-detail {
   width: 75%;
+}
+
+@media (min-width: 769px) {
+  .pl-pr-item .pl-pr-detail .p-detail {
+    width: 70%;
+  }
 }
 
 .plan-service {

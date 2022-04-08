@@ -163,10 +163,12 @@
 .plan-sub-tytle{
     margin: 20px 20px;
     line-height: 1.5;
-
     @media (min-width: 769px) {
-        margin: 20px 120px;
+        
+        margin: 20px 150px;
+        font-size: 2.0rem;
     } 
+
 }
 
 
@@ -177,17 +179,51 @@
 }
 
 
+.pl-pr-flex{
+    @media (min-width: 769px) {
+        max-width: 1560px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      
+        gap: 30px;
+    }
+}
+
 .pl-pr-item{
     width: 100%;
     margin:  0 auto;
     margin-bottom: 50px;
-    //background-color: $light-gray-80;
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+    border: 10px solid $light-blue;
+   // border-image: linear-gradient(to right, $light-gray-60 0%, $light-blue 100%);
+    border-image-slice: 1;
+
+    background-color: $white;
+    box-shadow: 0px 5px 5px 0 $dark-gray-80;
+    
+    &.two-base{
+        border-image: linear-gradient(to right, $light-gray-60 0%, $dark-gray 100%);
+        border-image-slice: 1;
+    }
+
+    @media (min-width: 769px) {
+        width:  calc(calc(100% - 60px) / 3);
+        min-width: 450px;
+        max-width: 500px;
+       
+      //  box-shadow: 0px 5px 5px 0 $dark-gray-80;
+        padding: 20px 30px 50px 30px;
+        box-sizing: border-box;
+    }
+
 
     .bold{
         font-weight: bold;  
     }
     h2{
-        margin-bottom: 0;
+      //  margin-bottom: 0;
     }
 
     .pl-pr-tytle{
@@ -195,10 +231,10 @@
     }
 
     .pl-pr-line{
-        height: 5px;
+        height: 15px;
         width: 100%;
         background: linear-gradient( 90deg, $white, $light-blue 97.98%);
-        margin: 0;
+        margin: 0 0 30px 0;
     }
 
     &.two-base{
@@ -210,31 +246,33 @@
 
     p{
         margin:  0.5rem 0;
-        //line-height: 1.0;
     }
 
     .pl-pr-detail{
         display: flex;
         flex-wrap: nowrap;
-
         width: 100%;
         height: auto;
         margin: 5px 0;
-        //box-sizing: border-box;
-       //background-color: $light-gray-80;
         
+        @media (min-width: 769px) {
+            font-size: 1.8rem;
+            line-height: 2.0;
+        }
+
+
         .bold{
             width: 25%;
-            //border: 1px solid $black;
-            //background-color: $light-gray-80;
+            @media (min-width: 769px) {
+                width: 30%;
+            }
         }
-
         .p-detail{
             width: 75%;
-           // border: 1px solid $black;
-            //           background-color: $light-blue-80;
+            @media (min-width: 769px) {
+                width: 70%;
+            }
         }
-
     }
 
 }
