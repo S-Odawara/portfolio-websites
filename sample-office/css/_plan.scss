@@ -163,6 +163,10 @@
 .plan-sub-tytle{
     margin: 20px 20px;
     line-height: 1.5;
+
+    @media (min-width: 769px) {
+        margin: 20px 120px;
+    } 
 }
 
 
