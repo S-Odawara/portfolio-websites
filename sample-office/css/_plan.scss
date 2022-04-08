@@ -131,20 +131,16 @@
 
         background-color: $light-gray;
         border-color: $white;
-        box-shadow: 2px 2px 0px 0 $white;
+        box-shadow: 10px 10px 0px 0 $white;
 
         @media (min-width: 769px) {
-            box-shadow: 3px 3px 0px 0 $white;
+            box-shadow: 10px 10px 0px 0 $white;
 
         } 
 
     }
 } 
 
-.more-button:hover{
-    box-shadow: none;
-  
-  }
 
 //////////////////////////////////
 //////////////////////// 下層ページ
@@ -166,7 +162,7 @@
     @media (min-width: 769px) {
         
         margin: 20px 150px;
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     } 
 
 }
@@ -176,6 +172,9 @@
 
 .plan-price{
     margin: 0 20px 50px 20px;
+    @media (min-width: 769px) {
+        margin: 0 150px 50px 150px;
+    }
 }
 
 
@@ -201,7 +200,7 @@
     border-image-slice: 1;
    
     background-color: $white;
-    box-shadow: 0px 5px 5px 0 $dark-gray-80;
+ //   box-shadow: 0px 5px 5px 0 $dark-gray-80;
     
     &.two-base{
       //  border: 5px solid $dark-gray;
@@ -211,10 +210,10 @@
 
     @media (min-width: 769px) {
         width:  calc(calc(100% - 60px) / 3);
-        min-width: 450px;
+        min-width: 350px;
         max-width: 500px;
        
-        padding: 20px 30px 50px 30px;
+        padding: 20px 30px;
         box-sizing: border-box;
     }
 
@@ -256,7 +255,7 @@
         margin: 5px 0;
         
         @media (min-width: 769px) {
-            font-size: 1.8rem;
+          //  font-size: 1.8rem;
             line-height: 2.0;
         }
 
@@ -283,17 +282,23 @@
 .plan-service{
     margin: 0 20px 50px 20px;
 
+    @media (min-width: 769px) {
+        margin: 0 150px 50px 150px;
+      
+    }
+
+
 }
 
 
 //////////////////////// campaign
 
 .plan-campaign{
-    margin: 75px 20px;
-    padding: 10px 10px;
+    margin: 75px 30px;
+    padding: 5px 10px;
     
     border-radius: 10px;
-    border: $light-blue 15px solid;
+    border: $light-blue 3px solid;
     background-color: #fff;
     text-align: center;
 }
@@ -308,8 +313,9 @@
 }
 
 .p-c-code{
-    padding: 15px;
-    font-size: 2.0rem;
+    margin: 0 10px;
+    padding: 5px;
+    
     font-weight: bold;
 
     background-color: $light-blue;
