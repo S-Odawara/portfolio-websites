@@ -162,10 +162,11 @@
     margin: 0 auto;
 
     @media (min-width: 769px) {
-        max-width: 1500px;
+        max-width: 1520px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start; 
+        //justify-content: space-between;
+        gap: 20px;
     }
 }
 
