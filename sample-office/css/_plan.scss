@@ -249,17 +249,26 @@
         font-weight: bold;  
     }
     h2{
-        margin: 10px 0;
+        margin: 10px 0px;
     }
 
     .pl-pr-tytle{
         width: 100%;
+        text-align: center;
+        
+    //    background: linear-gradient( 90deg, $light-gray, $light-blue 90.91%);
+
+      //  border: 10px solid $black;
+        box-sizing: border-box;
+     //   color: $white;
+
     }
+
 
     .pl-pr-line{
         height: 5px;
         width: 100%;
-        background: linear-gradient( 90deg, $white, $light-blue 97.98%);
+        background: linear-gradient( 90deg, $light-gray, $light-blue 90.91%);
         margin: 0 0 10px 0;
     }
 

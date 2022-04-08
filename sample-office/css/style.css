@@ -1260,18 +1260,21 @@ h2 {
 }
 
 .pl-pr-item h2 {
-  margin: 10px 0;
+  margin: 10px 0px;
 }
 
 .pl-pr-item .pl-pr-tytle {
   width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .pl-pr-item .pl-pr-line {
   height: 5px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#F7F7F7), color-stop(97.98%, #99C5CC));
-  background: linear-gradient(90deg, #F7F7F7, #99C5CC 97.98%);
+  background: -webkit-gradient(linear, left top, right top, from(#CED7D9), color-stop(90.91%, #99C5CC));
+  background: linear-gradient(90deg, #CED7D9, #99C5CC 90.91%);
   margin: 0 0 10px 0;
 }
 
