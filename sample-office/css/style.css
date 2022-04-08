@@ -696,14 +696,44 @@ h2 {
   margin-right: 20px;
 }
 
+@media (min-width: 769px) {
+  .about-sample-office {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-bottom: 25px;
+  }
+}
+
 .a-so-tytle {
   margin-left: -5px;
 }
 
-.a-so-work-style {
+@media (min-width: 769px) {
+  .a-so-tytle {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .a-so-content {
+    line-height: 2.25;
+  }
+}
+
+.a-so-content .a-so-work-style {
   margin: 30px 0;
   font-size: 1.8rem;
   line-height: 2.0;
+}
+
+@media (min-width: 769px) {
+  .a-so-content .a-so-work-style {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 75px;
+    line-height: 2.75;
+    font-size: 2.0rem;
+  }
 }
 
 .about-office {
@@ -713,9 +743,34 @@ h2 {
   margin-right: 20px;
 }
 
+@media (min-width: 769px) {
+  .about-office {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+  }
+}
+
 .carousel {
   margin-left: -20px;
   margin-right: -20px;
+}
+
+@media (min-width: 769px) {
+  .carousel {
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .carousel .slick-list {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel .slick-list img {
+    width: 100%;
+  }
 }
 
 .about-service {
@@ -723,6 +778,14 @@ h2 {
   margin-bottom: 75px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width: 769px) {
+  .about-service {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+  }
 }
 
 .pc-about-border {
