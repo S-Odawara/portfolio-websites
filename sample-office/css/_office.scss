@@ -150,8 +150,8 @@
     margin: 20px 20px;
     line-height: 1.5;
     @media (min-width: 769px) {
-        
-        margin: 20px 150px;
+        width:800px;
+        margin: 50px auto;
         font-size: 1.8rem;
     } 
 
@@ -184,8 +184,8 @@
 
     @media (min-width: 769px) {
         display: flex;
-        height: 475px;
-        width: 700px;
+        height: 500px;
+        width: 750px;
         margin: 0 auto;
         margin-bottom: 100px;
 
@@ -199,7 +199,7 @@
 
         @media (min-width: 769px) {
             height: 100%;
-            width: 350px;
+            width: 50%;
             
             
         } 
@@ -253,8 +253,9 @@
                 background-color: $light-gray-80;
                 height: 100%;
                 width: 100%;
-                @media (min-width: 769px) {
 
+                @media (min-width: 769px) {
+                    height: 280px;
                     border-top: 5px solid $light-gray;
                     border-bottom: 5px solid $light-gray;
                     box-sizing: border-box;
