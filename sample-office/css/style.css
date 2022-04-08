@@ -1259,7 +1259,7 @@ h2 {
   padding: 0 20px 20px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 15px solid #99C5CC;
+  border: 10px solid #99C5CC;
   -o-border-image: linear-gradient(to right, #CED7D9 0%, #99C5CC 100%);
      border-image: -webkit-gradient(linear, left top, right top, from(#CED7D9), to(#99C5CC));
      border-image: linear-gradient(to right, #CED7D9 0%, #99C5CC 100%);
