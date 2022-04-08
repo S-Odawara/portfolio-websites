@@ -81,7 +81,9 @@
     background-color: $white;
     box-shadow: 0px 5px 5px 0 $dark-gray-80;
 
-
+    border: 5px solid $white;
+    border-image: linear-gradient(to right, $white 0%, $light-blue 100%);
+    border-image-slice: 1;
 
 
     .plan-tytle{
@@ -113,12 +115,36 @@
     &.two-place{
         background-color: $black;
         color: $white;
+
+        border-image: linear-gradient(to right, $black 0%, $light-gray 100%);
+        border-image-slice: 1;
+
+        a{
+            background-color: $light-gray;
+            color: $black;
+        }
+
     }
 
 
     .spacer{
         width: 100%;
     }
+
+    a{
+        position: absolute;
+
+        right: 40px;
+        
+        padding: 5px 7.5px;
+        border-radius: 5px;
+        
+        background-color: $light-blue;
+        color: $white;
+        
+    }
+
+
 }
 
 
@@ -195,12 +221,13 @@
     margin-bottom: 50px;
     padding: 0 20px 20px 20px;
     box-sizing: border-box;
-    border: 10px solid $light-blue;
+    border: 5px solid $light-blue;
+    
     border-image: linear-gradient(to right, $light-gray 0%, $light-blue 100%);
     border-image-slice: 1;
    
     background-color: $white;
- //   box-shadow: 0px 5px 5px 0 $dark-gray-80;
+    box-shadow: 0px 5px 5px 0 $dark-gray-80;
     
     &.two-base{
       //  border: 5px solid $dark-gray;
@@ -222,7 +249,7 @@
         font-weight: bold;  
     }
     h2{
-      //  margin-bottom: 0;
+        margin: 10px 0;
     }
 
     .pl-pr-tytle{
@@ -230,10 +257,10 @@
     }
 
     .pl-pr-line{
-        height: 15px;
+        height: 5px;
         width: 100%;
         background: linear-gradient( 90deg, $white, $light-blue 97.98%);
-        margin: 0 0 30px 0;
+        margin: 0 0 10px 0;
     }
 
     &.two-base{
@@ -244,7 +271,8 @@
     }
 
     p{
-        margin:  0.5rem 0;
+      margin: 0;
+      line-height: 1.5;
     }
 
     .pl-pr-detail{
@@ -252,11 +280,10 @@
         flex-wrap: nowrap;
         width: 100%;
         height: auto;
-        margin: 5px 0;
+        margin: 10px 0;
         
         @media (min-width: 769px) {
-          //  font-size: 1.8rem;
-            line-height: 2.0;
+            line-height: 1.5;
         }
 
 
@@ -289,6 +316,95 @@
 
 
 }
+
+
+
+
+
+.service-free{
+    .service-item{
+        margin: 10px 0px;
+        padding: 10px 0; 
+        background-color: $light-gray-60;
+        box-shadow: 0px 5px 5px 0 $light-gray;
+    }
+}
+
+
+.service-paid{
+    .service-item{
+        margin: 10px 0;
+        padding: 10px 0; 
+        background-color: $light-gray-60;
+        box-shadow: 0px 5px 5px 0 $light-gray;
+    }
+}
+
+.service-item{
+    .s-item{
+        display: flex;
+        align-items: center;
+
+        i{
+            height: 50px;
+            width: 50px;
+            margin: 5px 20px;
+            padding: 12.5px 5px 5px 5px;
+            box-sizing: border-box;
+            font-size: 2.2rem;
+            text-align: center;
+            background-color: $white;
+
+           border: 3px solid $dark-gray;
+           border-radius: 10px;
+           color: $dark-gray;
+
+            border: 3px solid  $black;
+            border-radius: 10px;
+            color:  $black;
+        }
+
+        p{ 
+            &.etc{
+                margin-left:auto;
+                margin-right: 40px;
+            }
+
+        }
+    }
+}
+
+.notice{
+    margin: 20px 0;
+    line-height: 1.0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //////////////////////// campaign
