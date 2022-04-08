@@ -1423,7 +1423,10 @@ h2 {
 
 @media (min-width: 769px) {
   .plan-service {
-    margin: 0 150px 50px 150px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 150px;
   }
 }
 
@@ -1435,12 +1438,28 @@ h2 {
           box-shadow: 0px 5px 5px 0 #CED7D9;
 }
 
+@media (min-width: 769px) {
+  .service-free .service-item {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
 .service-paid .service-item {
   margin: 10px 0;
   padding: 10px 0;
   background-color: rgba(206, 215, 217, 0.6);
   -webkit-box-shadow: 0px 5px 5px 0 #CED7D9;
           box-shadow: 0px 5px 5px 0 #CED7D9;
+}
+
+@media (min-width: 769px) {
+  .service-paid .service-item {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 .service-item .s-item {
@@ -1470,6 +1489,24 @@ h2 {
   color: #2E3233;
 }
 
+@media (min-width: 769px) {
+  .service-item .s-item i {
+    height: 75px;
+    width: 75px;
+    margin: 15px 30px;
+    padding: 17.5px 5px 5px 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .service-item .s-item p {
+    font-size: 1.8rem;
+  }
+}
+
 .service-item .s-item p.etc {
   margin-left: auto;
   margin-right: 40px;
@@ -1478,6 +1515,14 @@ h2 {
 .notice {
   margin: 20px 0;
   line-height: 1.0;
+}
+
+@media (min-width: 769px) {
+  .notice {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
 }
 
 .plan-campaign {
@@ -1494,7 +1539,7 @@ h2 {
 @media (min-width: 769px) {
   .plan-campaign {
     width: 700px;
-    margin: 0 auto;
+    margin: 75px auto;
   }
 }
 
