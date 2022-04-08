@@ -137,3 +137,82 @@ h2{
  font-weight: bold;
 
 }
+
+
+////////////////////////////////////////
+////////////////////////////// page-top
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background: $white-50;
+  border: 2px solid $dark-gray;
+	width: 80px;
+	height: 50px;
+	color: $dark-gray;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size: 1.0rem;
+	transition:all 0.3s;
+
+  @media (min-width: 769px) {
+    border: 3px solid $dark-gray;
+
+    width: 150px;
+
+
+  } 
+
+
+}
+
+#page-top a:hover{
+	background: $dark-gray-60;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 20px;
+	bottom:10px;
+	z-index: 10000;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(200px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(200px);
+  }
+}
