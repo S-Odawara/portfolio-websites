@@ -1322,6 +1322,66 @@ h2 {
   }
 }
 
+.pl-pr-plan {
+  padding: 20px;
+  background-color: rgba(92, 101, 102, 0.1);
+}
+
+.pl-pr-plan h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.pl-pr-plan p {
+  font-size: 1.4rem;
+}
+
+.plan-flex {
+  width: 100%;
+}
+
+.plan-flex .plus {
+  font-size: 3.0rem;
+  margin: 0;
+}
+
+.plan-flex .plan-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 30px;
+}
+
+.plan-flex .plan-upper i {
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 17.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 4.0rem;
+}
+
+.plan-flex .plan-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
 .plan-service {
   margin: 0 20px 50px 20px;
 }
