@@ -41,12 +41,17 @@
     }
 
     .sns{
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         font-size: 3.0rem;
-        margin: 20px 0;
+        width: 100%;
+        padding: 10px 0;
 
-        i{
+        .fab{
+            width: 55px;
+            height: auto;
             color: $dark-brown;
         }
 
