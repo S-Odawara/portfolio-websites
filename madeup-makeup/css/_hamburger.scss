@@ -12,7 +12,7 @@
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
-    z-index: 999;
+    z-index: 9999;
     /*ナビのスタート位置と形状*/
 	top:-120%;
     left:0;
@@ -32,7 +32,7 @@
 #g-nav.panelactive #g-nav-list{
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
-    z-index: 999; 
+    z-index: 9999; 
     width: 100%;
     height: 65vh;/*表示する高さ*/
     overflow: auto;
@@ -43,7 +43,7 @@
 #g-nav ul {
     /*ナビゲーション天地中央揃え*/
     position: absolute;
-    z-index: 999;
+    z-index: 9999;
     top: 55%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -187,4 +187,21 @@
     width: 30%;
 
     opacity: 0;
+}
+
+//////////////////////////////////////////
+
+.main-cover{
+    position: fixed;
+    width: 100%;
+    visibility: hidden;
+    z-index: -1;  
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.main-cover.active{
+    height:100%;
+    visibility: visible;
+    background:$dark-brown-80;
+    z-index:9002;
 }
