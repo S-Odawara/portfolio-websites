@@ -1,0 +1,17 @@
+@charset 'UTF-8'; /* 文字コードの指定 */
+
+
+// sass style.scss:style.css
+// sass --watch style.scss:style.css
+
+// Google Fontsの読み込み
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+// Scssファイルの読み込み
+@import "base";
+@import "header";
+//@import "hamburger";
+//@import "carousel";
+@import "top";
+//@import "footer";
+//@import "loading";

@@ -1,0 +1,230 @@
+//
+// base
+//
+//
+//   @media (min-width: 769px) {} 
+
+//////////////////////////////////
+//////////////////////// 変数 colour
+$invisible: rgba(0, 0, 0, 0);
+
+$white: #F7F7F7;
+$white-80: rgba(247, 247, 247, 0.8);
+
+$pink: #f2c2c5;
+$pink-80: rgba(242, 194, 197, 0.8);
+
+$orange: #F2CCC2;
+
+$light-orange: #F2DECE;
+$light-orange-80: rgba(242, 222, 206, 0.8);
+
+$brown: #997B74;
+$brown-50: rgba(153, 123, 116, 0.5); 
+$brown-80: rgba(153, 123, 116, 0.8); 
+
+$dark-brown: #594844;
+$dark-brown-80: rgba(89, 72, 68, 0.8);
+
+
+
+
+//////////////////////////////////
+//////////////////////// 変数 
+
+
+
+
+
+
+//////////////////////////////////
+//////////////////////// ベーススタイル
+html {
+  font-size: 62.5%;
+}
+
+body {
+
+  font-family: "Times", "Noto Sans JP", sans-serif;
+ // font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $dark-brown;
+  background-color: $white;
+
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+////////////////////////////////////////
+////////////////////////////// parallax-bg
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 30px 0 0 0;
+  box-sizing: border-box;
+
+
+}
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url('../images/sp/cover.jpg');
+}
+.img-bg-02 {
+  background-image: url('../images/sp/concept.jpg');
+}
+.img-bg-03 {
+  background-image: url('../images/sp/bg-eye.jpg');
+}
+.img-bg-04 {
+  background-image: url('../images/sp/bg-cheek.jpg');
+}
+.img-bg-05 {
+  background-image: url('../images/sp/bg-lip.jpg');
+}
+
+
+////////////////////////////////////////
+////////////////////////////// text-bg
+
+.text-bg{
+  height: auto;
+  width: 100%;
+  background-color: $white;
+  color: $white;
+  margin: 20px 0;
+  padding: 30px 0;
+  box-sizing: border-box;
+
+  .text-box{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+
+    h2{
+      font-size: 3.6rem;
+      margin: 20px 0;
+    }
+
+
+    .text-ja{
+      line-height: 1.25;
+    }
+
+    .text-en{
+      font-size: 1.4rem;
+      line-height: 1.0;
+    }
+  }
+}
+
+.text-bg{
+
+  &.concept{
+    background-color: $brown-50;
+    color:$brown;
+  }
+  &.eye{
+    background-color: $dark-brown-80;
+  }
+  &.cheek{
+    background-color: $light-orange-80;
+    color:$dark-brown;
+  }
+  &.lip{
+    background-color: $pink-80;
+  }
+
+
+}
+
+
+////////////////////////////////////////
+////////////////////////////// page-top-button
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background: $white;
+  border: 2px solid $dark-brown;
+	width: 80px;
+	height: 50px;
+	color: $dark-brown;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size: 1.0rem;
+	transition:all 0.3s;
+
+  @media (min-width: 769px) {
+    border: 3px solid $dark-brown;
+
+    width: 150px;
+
+
+  } 
+
+
+}
+
+#page-top a:hover{
+	background: $dark-brown-80;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 20px;
+	bottom:10px;
+	z-index: 10000;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(200px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(200px);
+  }
+}
