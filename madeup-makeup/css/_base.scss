@@ -138,6 +138,7 @@ body {
   }
   &.eye{
     background-color: $dark-brown-80;
+    text-align: right;
   }
   &.cheek{
     background-color: $light-orange-80;
@@ -145,6 +146,7 @@ body {
   }
   &.lip{
     background-color: $pink-80;
+    text-align: right;
   }
 
 
@@ -159,19 +161,22 @@ body {
 	display: flex;
 	justify-content:center;
 	align-items:center;
-	background: $white;
-  border: 2px solid $dark-brown;
-	width: 80px;
-	height: 50px;
-	color: $dark-brown;
+	background: $white-80;
+
+	width: 100px;
+	height: 100px;
+  border-radius: 100px;
+	color: $pink;
 	text-align: center;
-	text-transform: uppercase; 
+  //text-transform:lowercase;
 	text-decoration: none;
-	font-size: 1.0rem;
+  font-size: 2.0rem;
+  font-weight: 500;
 	transition:all 0.3s;
 
+
   @media (min-width: 769px) {
-    border: 3px solid $dark-brown;
+
 
     width: 150px;
 
@@ -182,7 +187,7 @@ body {
 }
 
 #page-top a:hover{
-	background: $dark-brown-80;
+	background: $brown-80;
 }
 
 /*リンクを右下に固定*/
@@ -190,7 +195,7 @@ body {
 	position: fixed;
 	right: 20px;
 	bottom:10px;
-	z-index: 10000;
+	z-index: 9999;
     /*はじめは非表示*/
 	opacity: 0;
 	transform: translateX(200px);
@@ -199,7 +204,7 @@ body {
 /*　左の動き　*/
 
 #page-top.LeftMove{
-	animation: LeftAnime 0.5s forwards;
+	animation: LeftAnime 0.3s forwards;
 }
 
 @keyframes LeftAnime{
@@ -216,7 +221,7 @@ body {
 /*　右の動き　*/
 
 #page-top.RightMove{
-	animation: RightAnime 0.5s forwards;
+	animation: RightAnime 0.3s forwards;
 }
 @keyframes RightAnime{
   from {

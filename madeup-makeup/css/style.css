@@ -90,6 +90,7 @@ body {
 
 .text-bg.eye {
   background-color: rgba(89, 72, 68, 0.8);
+  text-align: right;
 }
 
 .text-bg.cheek {
@@ -99,6 +100,7 @@ body {
 
 .text-bg.lip {
   background-color: rgba(242, 194, 197, 0.8);
+  text-align: right;
 }
 
 /*リンクの形状*/
@@ -112,28 +114,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F7F7F7;
-  border: 2px solid #594844;
-  width: 80px;
-  height: 50px;
-  color: #594844;
+  background: rgba(247, 247, 247, 0.8);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  color: #f2c2c5;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.0rem;
+  font-size: 2.0rem;
+  font-weight: 500;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 @media (min-width: 769px) {
   #page-top a {
-    border: 3px solid #594844;
     width: 150px;
   }
 }
 
 #page-top a:hover {
-  background: rgba(89, 72, 68, 0.8);
+  background: rgba(153, 123, 116, 0.8);
 }
 
 /*リンクを右下に固定*/
@@ -141,7 +142,7 @@ body {
   position: fixed;
   right: 20px;
   bottom: 10px;
-  z-index: 10000;
+  z-index: 9999;
   /*はじめは非表示*/
   opacity: 0;
   -webkit-transform: translateX(200px);
@@ -150,8 +151,8 @@ body {
 
 /*　左の動き　*/
 #page-top.LeftMove {
-  -webkit-animation: LeftAnime 0.5s forwards;
-          animation: LeftAnime 0.5s forwards;
+  -webkit-animation: LeftAnime 0.3s forwards;
+          animation: LeftAnime 0.3s forwards;
 }
 
 @-webkit-keyframes LeftAnime {
@@ -182,8 +183,8 @@ body {
 
 /*　右の動き　*/
 #page-top.RightMove {
-  -webkit-animation: RightAnime 0.5s forwards;
-          animation: RightAnime 0.5s forwards;
+  -webkit-animation: RightAnime 0.3s forwards;
+          animation: RightAnime 0.3s forwards;
 }
 
 @-webkit-keyframes RightAnime {
