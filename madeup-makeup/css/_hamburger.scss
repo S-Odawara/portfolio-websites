@@ -7,259 +7,182 @@
 
 
 
+/*========= ナビゲーションのためのCSS ===============*/
 
-
-//////////////////////////////////
-////////////////////////sp-nav
-
-
-
-
-
-//////////////////////////////////////////////////////////////////
-
-/*アクティブになったエリア*/
-#sp-nav.panelactive{
+#g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
-    z-index: 800;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+	top:-120%;
+    left:0;
+	width:100%;
+    height: 65vh;/*ナビの高さ*/
+	background: $orange;
+    /*動き*/
+	transition: all 0.4s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
     top: 0;
-    width: 100%;
-    height: 100vh;
-}
-
-/*丸の拡大*/
-.circle-bg{
-    position: fixed;
-    z-index: 790;
-    /*丸の形*/
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background:
-    linear-gradient(127deg, $white, $white-70 70.71%), 
-    linear-gradient(217deg, $light-blue, $light-blue-80 70.71%);
-
-
-
-    /*丸のスタート位置と形状*/
-    transform: scale(0);/*scaleをはじめは0に*/
-    right:-50px;
-    top:-50px;
-    transition: all .6s;/*0.6秒かけてアニメーション*/
-}
-
-.circle-bg.circleactive{
-  transform: scale(50);/*クラスが付与されたらscaleを拡大*/
 }
 
 /*ナビゲーションの縦スクロール*/
-#sp-nav-list{
-    display: none;/*はじめは表示なし*/
+#g-nav.panelactive #g-nav-list{
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
-    z-index: 900; 
+    z-index: 999; 
     width: 100%;
-    height: 100vh;
+    height: 65vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-#sp-nav.panelactive #sp-nav-list{
-     display: block; /*クラスが付与されたら出現*/
-}
-
 /*ナビゲーション*/
-#sp-nav ul {
-    opacity: 0;/*はじめは透過0*/
-    padding: 0;
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
     position: absolute;
-    z-index: 1000;
-    top: 200px;
-    left: 50%;
+    z-index: 999;
+    top: 55%;
+    left:50%;
     transform: translate(-50%,-50%);
-    font-size: 1.4rem;
 
-
-    width: auto; 
-    max-width: 450px;
-
-    small{
-        font-weight: bold;
-        margin: 0;
-    }
+    margin: 0;
+    padding: 0;
+    font-size: 2.8rem;
+    font-weight: 600;
 
 
 
 }
 
-/*ナビゲーション*/
-#sp-nav-list{
-    .contact-tel {
-        opacity: 0;/*はじめは透過0*/
-        padding: 0;
-        position: absolute;
-        z-index: 1000;
-        top: 475px;
-        left: 50%;
-        transform: translate(-50%,-50%);
+/////////////////////////////////////
+//////////////////////////////追加分
 
-        width: calc(100% - 80px);
-        max-width: 400px;
-        margin: 0px;
-        padding: 30px;
-        border: 1px solid $black;
+#g-nav img{
+    width: calc(100% - 60px);
+    margin: 30px 30px 0 30px;
+    position: relative;
+}
+
+
+#g-nav{
+    .sns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-    }
+        font-size: 3.0rem;
+        width: 100%;
+        padding: 10px 0;
 
-    .contact-web {
-        opacity: 0;/*はじめは透過0*/
-        padding: 0;
         position: absolute;
-        z-index: 1000;
-        top: 600px;
-        left: 50%;
+        top:85%;
 
-        transform: translate(-50%,-50%);
-
-        width: calc(100% - 80px);
-        max-width: 400px;
-        margin: 0px;
-        padding: 30px;
-        border: 1px solid $black;
-        text-align: center;
-    }
-    a{
-        //リンク付け足し色修正
-        .contact-web {
-            color: $black;
+        .fab{
+            width: 55px;
+            height: auto;
+            color: $white;
         }
+
     }
 }
 
+#g-nav{
+    .trapezoid{
 
-/*背景が出現後にナビゲーションを表示*/
-#sp-nav.panelactive ul {
-    opacity:1;
-}
-
-/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
-#sp-nav.panelactive ul li{
-    animation-name:gnaviAnime;
-    animation-duration: 0.5s;
-    animation-delay: 0.2s;/*0.2 秒遅らせて出現*/
-    animation-fill-mode:forwards;
-    opacity:0;
-}
-
-#sp-nav.panelactive div{
-    animation-name:gnaviAnime;
-    animation-duration: 0.5s;
-    animation-delay: 0.2s;/*0.2 秒遅らせて出現*/
-    animation-fill-mode:forwards;
-    opacity:0;
-}
+        position: absolute;
+        top: calc( 65vh - 1px);
+        width: 0px;
+        border-top: 50px solid $orange;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid $orange;
+        border-bottom: 50px solid transparent;
 
 
-
-@keyframes gnaviAnime{
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-}
+    }
 }
 
 
 /*リストのレイアウト設定*/
-#sp-nav li{
-  text-align: left; 
-  list-style: none;
 
-  &.spacer{
-    height: 15px;
-  }
-
-  img{
-    height: 35px;
-    padding: 0 10px;
-    width: auto;
-  }
+#g-nav li{
+	list-style: none;
+    text-align: center; 
 }
 
+#g-nav li a{
+	text-decoration: none;
+	//padding:10px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+    color: $white;
 
-#sp-nav li a{
-  color: $black;
-  text-decoration: none;
-  padding:10px;
-  display: block;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border-bottom: 1px solid $black;
-
-  &.logo{
-    border: none;
-
+    &.link-shop{
+        color: $dark-brown;
+        display: inline-block;
+        box-sizing: border-box;
     }
+
+
+
 }
 
-
-/////////////// ボタンのためのCSS
-.openbtn1{
-    position:fixed;
-    top: 0rem;
-    right: 0rem;
-    z-index: 999;
-    cursor: pointer;
-    width: 5rem;
-    height:5rem;
-
-    @media (min-width: 930px) {
-        display: none;
-    } 
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:absolute;
+    z-index: 9999;/*ボタンを最前面に*/
+	top:120px;
+	right: 30px;
+	cursor: pointer;
+    width: 75px;
+    height:50px;
 }
-  
-/*×に変化*/  
-.openbtn1 span{
+	
+/*×に変化*/	
+.openbtn span{
     display: inline-block;
-    transition: all 0.5s;
+    transition: all .4s;
     position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-    background-color: $black;
-    width: 45%;
+    left: 20px;
+    height: 2px;
+
+	background-color: $white;
+  	width: 60%;
   }
 
-.openbtn1 span:nth-of-type(1) {
-  top:15px; 
+.openbtn span:nth-of-type(1) {
+	top:15px;	
 }
 
-.openbtn1 span:nth-of-type(2) {
-  top:23px;
+.openbtn span:nth-of-type(2) {
+	top:23px;
 }
 
-.openbtn1 span:nth-of-type(3) {
-  top:31px;
+.openbtn span:nth-of-type(3) {
+	top:31px;
 }
 
-.openbtn1.active span:nth-of-type(1) {
+.openbtn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
+
+	opacity: 0;
 }
 
-.openbtn1.active span:nth-of-type(2) {
-    opacity: 0;
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
 }
 
-.openbtn1.active span:nth-of-type(3){
+.openbtn.active span:nth-of-type(3){
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
-}
 
+    opacity: 0;
+}

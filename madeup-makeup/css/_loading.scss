@@ -9,25 +9,25 @@
     width: 100vw;
     height: 100vh;
     transition: all 1s;
-    background-color: $brown;
+    background-color: $orange-80;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     opacity: 1;
     visibility: visible;
-  }
+}
   
-  .loading.is-active {
+.loading.is-active {
     opacity: 0;
     visibility: hidden;
-  }
+}
   
-  .loading-animation {
+.loading-animation {
     width: 100vw;
     height: 100vh;
     transition: all 1s;
-    background-color: $white;
+    background-color: $brown-80;
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -35,15 +35,15 @@
     opacity: 0;
     visibility: hidden;
     img{
-        width: 50vw;
+        width: 80vw;
         @media (min-width: 769px) {
         width: 20vw;
+        }
     }
-}
 
-  }
+}
   
-  .loading-animation.is-active {
+.loading-animation.is-active {
     opacity: 1;
     visibility: visible;
-  }
+}
