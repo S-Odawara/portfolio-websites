@@ -315,4 +315,63 @@ body {
   width: calc(100% - 60px);
   margin: 0 30px;
 }
+
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: #F2CCC2;
+  color: #594844;
+  padding: 30px 0 10px 0;
+}
+
+.footer .logo-top {
+  height: 50px;
+  width: 50px;
+  margin: 0 0 0 30px;
+}
+
+.footer ul {
+  text-align: center;
+  list-style: none;
+  margin: -20px 0 0 0;
+  padding: 0;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.footer ul a {
+  color: #594844;
+  text-decoration: none;
+}
+
+.footer ul a.link-shop {
+  color: #F7F7F7;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer .sns {
+  text-align: center;
+  font-size: 3.0rem;
+  margin: 20px 0;
+}
+
+.footer .sns i {
+  color: #594844;
+}
+
+.footer small {
+  text-align: center;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.footer-content {
+  padding-top: 20px;
+  line-height: 1.25;
+}
 /*# sourceMappingURL=style.css.map */
