@@ -103,6 +103,71 @@ body {
   text-align: right;
 }
 
+/*スクロールダウン全体の場所*/
+.scrolldown1 {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  height: 60px;
+}
+
+.scrolldown1 span {
+  position: absolute;
+  left: -15px;
+  top: -25px;
+  /*テキストの形状*/
+  color: #F7F7F7;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 60px;
+  background: #F7F7F7;
+  -webkit-animation: pathmove 1.4s ease-in-out infinite;
+          animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@-webkit-keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
 /*リンクの形状*/
 #page-top a {
   display: -webkit-box;
