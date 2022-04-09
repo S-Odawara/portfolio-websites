@@ -383,6 +383,8 @@ body {
   width: calc(100% - 60px);
   margin: 30px 30px 0 30px;
   position: relative;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 #g-nav .sns {
@@ -401,6 +403,8 @@ body {
   padding: 10px 0;
   position: absolute;
   top: 85%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 #g-nav .sns .fab {
@@ -417,6 +421,8 @@ body {
   border-left: 50vw solid transparent;
   border-right: 50vw solid #F2CCC2;
   border-bottom: 50px solid transparent;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 /*リストのレイアウト設定*/
