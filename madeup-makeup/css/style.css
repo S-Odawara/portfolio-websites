@@ -443,7 +443,7 @@ body {
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
   position: absolute;
-  z-index: 9999;
+  z-index: 9000;
   /*ボタンを最前面に*/
   top: 120px;
   right: 30px;
