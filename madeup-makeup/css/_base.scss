@@ -158,26 +158,26 @@ body {
     margin: 120px 0 0 0;
     background-color: $orange-50;
     color:$dark-brown;
-
-    border-bottom-right-radius: 50%;
+    
+    border-bottom-right-radius: 200px;
   }
   &.eye{
     background-color: $dark-brown-80;
     text-align: right;
 
-    border-bottom-left-radius: 50%;
+    border-bottom-left-radius: 150px;
   }
   &.cheek{
     background-color: $light-orange-80;
     color:$dark-brown;
 
-    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 150px;
   }
   &.lip{
     background-color: $pink-80;
     text-align: right;
 
-    border-bottom-left-radius: 50%;
+    border-bottom-left-radius: 150px;
   }
 
 
