@@ -93,37 +93,36 @@
     text-align: center;
     justify-content: center;
 
-    top:20vh;
-    left: 0px;
-    margin: 0% 0px;
+    height: 50vh;
+    width: 100%;
 
-    padding: 10px 50px;
-    height: 200px;
-    width: 100vw;
+    position: relative;
 
-    box-sizing: border-box;
 
-   // background-color: $pink;
+
+
+    //background-color: $pink;
 
 
     .c-item{
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content: center;
+        justify-content:center;
         flex-wrap: wrap;
 
         height: 150px;
-        width: 100px;
+        width: 100%;
 
 
        //background-color: $orange;
+       
         .c-item-text{
             width: 100%;
             font-family: "Noto Sans JP", sans-serif;
+            font-weight: 500;
             color: $dark-brown;
-            text-shadow: 0px 0px 3px $white;
-
+            //background-color: $white;
         }
 
     }
@@ -132,15 +131,12 @@
 
 
 .carousel{
-
     .c-item{
         .eye-color{
-            height: 60px;
-            width: 60px;
+            height: 70px;
+            width: 70px;
             object-fit: cover;
             border: 3px solid $dark-brown;
-            background-color: $white;
-            //box-shadow: 0px 0px 2px 0px $white;
 
             &.one{
                 background-color: $brown;
