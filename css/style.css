@@ -59,7 +59,7 @@ ul li{
 
 
 .undone a{
-
+  display: none;
   color: #ddd;
 }
 
