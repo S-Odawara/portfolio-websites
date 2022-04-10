@@ -290,7 +290,7 @@ body {
   height: 100vh;
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-color: rgba(242, 204, 194, 0.8);
+  background-color: #F2CCC2;
   position: fixed;
   top: 0;
   left: 0;
@@ -309,7 +309,7 @@ body {
   height: 100vh;
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-color: rgba(153, 123, 116, 0.8);
+  background-color: #997B74;
   z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
