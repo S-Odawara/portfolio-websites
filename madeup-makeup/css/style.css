@@ -95,28 +95,24 @@ body {
   margin: 120px 0 0 0;
   background-color: rgba(242, 204, 194, 0.5);
   color: #594844;
-  border-top-left-radius: 25%;
   border-bottom-right-radius: 50%;
 }
 
 .text-bg.eye {
   background-color: rgba(89, 72, 68, 0.8);
   text-align: right;
-  border-top-right-radius: 30%;
   border-bottom-left-radius: 50%;
 }
 
 .text-bg.cheek {
   background-color: rgba(242, 222, 206, 0.8);
   color: #594844;
-  border-top-left-radius: 30%;
   border-bottom-right-radius: 50%;
 }
 
 .text-bg.lip {
   background-color: rgba(242, 194, 197, 0.8);
   text-align: right;
-  border-top-right-radius: 30%;
   border-bottom-left-radius: 50%;
 }
 

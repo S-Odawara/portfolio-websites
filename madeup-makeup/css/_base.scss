@@ -159,28 +159,24 @@ body {
     background-color: $orange-50;
     color:$dark-brown;
 
-    border-top-left-radius: 25%;
     border-bottom-right-radius: 50%;
   }
   &.eye{
     background-color: $dark-brown-80;
     text-align: right;
 
-    border-top-right-radius: 30%;
     border-bottom-left-radius: 50%;
   }
   &.cheek{
     background-color: $light-orange-80;
     color:$dark-brown;
 
-    border-top-left-radius: 30%;
     border-bottom-right-radius: 50%;
   }
   &.lip{
     background-color: $pink-80;
     text-align: right;
 
-    border-top-right-radius: 30%;
     border-bottom-left-radius: 50%;
   }
 
