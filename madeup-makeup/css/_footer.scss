@@ -10,12 +10,17 @@
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    background-color: $orange;
+    background-color: $dark-brown;
     color: $dark-brown;
-    padding: 30px 0 10px 0;
-   
 
-    border-top-right-radius: 200px;
+
+    .footer-bg{
+        height: 100%;
+        width: 100%;
+        padding: 30px 0 10px 0;
+        background-color: $orange;
+        border-top-right-radius: 200px;
+    }
 
     .logo-top{
         height: 50px;
