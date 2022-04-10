@@ -2,6 +2,9 @@ $(document).ready(function(){
     $('.carousel-top').slick({
         autoplay: true, // 自動再生
         autoplaySpeed: 3000, // 自動再生の速さ、単位はミリ秒
+        speed: 1000,
+        cssEase: 'ease-out',
+
         arrows: false,
         //prevArrow:'<div class="prev">prev</div>',
         //nextArrow:'<div class="next">next</div>',
@@ -15,9 +18,6 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding:'15%',
         slidesToShow: 1,
-
-        cssEase: 'ease-out',
-
 
     });
 });
