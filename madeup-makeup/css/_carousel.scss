@@ -122,6 +122,9 @@
 
 
 
+
+///////////////////////////////////
+
 .carousel{
     .c-item{
         .eye-color{
@@ -140,6 +143,68 @@
 
             &.three{
                 background-color: $dark-brown;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+///////////////////////////////////
+
+.carousel{
+    .c-item{
+        .cheek-color{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+
+            &.one{
+                background-color: $orange;
+            }
+
+            &.two{
+                background-color: $pink;
+            }
+
+            &.three{
+                background-color: $pink2;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+///////////////////////////////////
+
+.carousel{
+    .c-item{
+        .lip-color{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+
+            &.one{
+                background-color: $pink;
+            }
+
+            &.two{
+                background-color: $pink2;
+            }
+
+            &.three{
+                background-color: $orange;
             }
 
         }

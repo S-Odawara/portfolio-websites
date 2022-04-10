@@ -651,6 +651,46 @@ body {
   background-color: #594844;
 }
 
+.carousel .c-item .cheek-color {
+  height: 70px;
+  width: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #594844;
+}
+
+.carousel .c-item .cheek-color.one {
+  background-color: #F2CCC2;
+}
+
+.carousel .c-item .cheek-color.two {
+  background-color: #f2c2c5;
+}
+
+.carousel .c-item .cheek-color.three {
+  background-color: #F2C2EA;
+}
+
+.carousel .c-item .lip-color {
+  height: 70px;
+  width: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #594844;
+}
+
+.carousel .c-item .lip-color.one {
+  background-color: #f2c2c5;
+}
+
+.carousel .c-item .lip-color.two {
+  background-color: #F2C2EA;
+}
+
+.carousel .c-item .lip-color.three {
+  background-color: #F2CCC2;
+}
+
 .parallax-bg .logo-top {
   width: calc(100% - 60px);
   margin: 0 30px;
