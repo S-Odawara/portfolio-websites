@@ -13,17 +13,16 @@
     text-align: center;
     justify-content: center;
 
-    top:20vh;
+    top:10vh;
     left: 0px;
-    margin: 0% 0px;
 
-    padding: 10px 50px;
-    height: 200px;
+    padding: 0px 0px;
+    height: 50vh;
     width: 100%;
 
     box-sizing: border-box;
 
-  //  background-color: $pink;
+    //background-color: $pink;
 
 
     .c-item{
@@ -33,22 +32,15 @@
         justify-content: center;
         flex-wrap: wrap;
 
-    //    background-color: $orange;
-        height: 150px;
-        width: 100px;
+        //background-color: $orange;
+        height: 100%;
+        width: 100%;
 
         img{
-            height: 60px;
-            width: 60px;
+            height: 30vh;
+            width: 30vh;
             object-fit: cover;
-            border: 3px solid $dark-brown;
-            background-color: $brown;
-        }
-
-        .c-item-text{
-            width: 100%;
-            font-family: "Noto Sans JP", sans-serif;
-            color: $dark-brown;
+            filter: opacity(0.8) drop-shadow( 0px 0px 0px $dark-brown);
         }
 
     }
