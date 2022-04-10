@@ -424,7 +424,7 @@ body {
 
 #g-nav .trapezoid {
   position: absolute;
-  top: calc( 65vh - 1px);
+  top: calc(65vh - 0.01rem);
   width: 0px;
   border-top: 50px solid #F2CCC2;
   border-left: 50vw solid transparent;
