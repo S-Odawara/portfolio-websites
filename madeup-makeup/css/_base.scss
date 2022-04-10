@@ -246,19 +246,15 @@ opacity:0;
 
 
   @media (min-width: 769px) {
-
-
-    width: 150px;
-
-
+    #page-top a:hover{
+      background: $brown-80;
+    }
   } 
 
 
 }
 
-#page-top a:hover{
-	background: $brown-80;
-}
+
 
 /*リンクを右下に固定*/
 #page-top {

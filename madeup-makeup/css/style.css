@@ -200,13 +200,9 @@ body {
 }
 
 @media (min-width: 769px) {
-  #page-top a {
-    width: 150px;
+  #page-top a #page-top a:hover {
+    background: rgba(153, 123, 116, 0.8);
   }
-}
-
-#page-top a:hover {
-  background: rgba(153, 123, 116, 0.8);
 }
 
 /*リンクを右下に固定*/
