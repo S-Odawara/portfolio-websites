@@ -6,3 +6,36 @@
 
 
 
+.carousel{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    top:10vh;
+    left: 0px;
+    margin: 0% 0px;
+    //padding: 10px;
+    height: auto;
+    width: 100vw;
+
+    box-sizing: border-box;
+
+    //background-color: $pink;
+
+
+    .c-item{
+        
+        //background-color: $orange;
+
+        img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+
+          //  box-shadow: 0px 10px 10px 0 $brown;
+        }
+
+    }
+}
