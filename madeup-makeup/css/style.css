@@ -30,6 +30,14 @@ body {
   padding: 30px 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* Avoid Chrome to see Safari hack */
+}
+
+@supports (-webkit-touch-callout: none) {
+  .parallax-bg body {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
 }
 
 /*各背景の画像*/
