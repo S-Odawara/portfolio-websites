@@ -520,6 +520,75 @@ body {
   z-index: 9002;
 }
 
+.carousel-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 20vh;
+  left: 0px;
+  margin: 0% 0px;
+  padding: 10px 50px;
+  height: 200px;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel-top .c-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 150px;
+  width: 100px;
+}
+
+.carousel-top .c-item img {
+  height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #594844;
+  background-color: #997B74;
+}
+
+.carousel-top .c-item .c-item-text {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #594844;
+}
+
+.prev {
+  height: 20px;
+  width: 20px;
+  background-color: #594844;
+  border-radius: 50px;
+  color: transparent;
+}
+
+.next {
+  height: 20px;
+  width: 20px;
+  background-color: #594844;
+  border-radius: 50px;
+  color: transparent;
+}
+
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,20 +600,59 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 10vh;
+  top: 20vh;
   left: 0px;
   margin: 0% 0px;
-  height: auto;
+  padding: 10px 50px;
+  height: 200px;
   width: 100vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.carousel .c-item img {
-  height: 200px;
-  width: 200px;
+.carousel .c-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 150px;
+  width: 100px;
+}
+
+.carousel .c-item .c-item-text {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #594844;
+  text-shadow: 0px 0px 3px #F7F7F7;
+}
+
+.carousel .c-item .eye-color {
+  height: 60px;
+  width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 3px solid #594844;
+  background-color: #F7F7F7;
+}
+
+.carousel .c-item .eye-color.one {
+  background-color: #997B74;
+}
+
+.carousel .c-item .eye-color.two {
+  background-color: #f2c2c5;
+}
+
+.carousel .c-item .eye-color.three {
+  background-color: #594844;
 }
 
 .parallax-bg .logo-top {

@@ -6,6 +6,86 @@
 
 
 
+.carousel-top{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    top:20vh;
+    left: 0px;
+    margin: 0% 0px;
+
+    padding: 10px 50px;
+    height: 200px;
+    width: 100vw;
+
+    box-sizing: border-box;
+
+  //  background-color: $pink;
+
+
+    .c-item{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    //    background-color: $orange;
+        height: 150px;
+        width: 100px;
+
+        img{
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+            background-color: $brown;
+        }
+
+        .c-item-text{
+            width: 100%;
+            font-family: "Noto Sans JP", sans-serif;
+            color: $dark-brown;
+        }
+
+    }
+}
+
+
+
+
+
+///////////////////////////////////////////////////
+
+.prev{
+    height: 20px;
+    width: 20px;
+    background-color: $dark-brown;
+    border-radius: 50px;
+    //margin: 5px;
+
+    color: transparent;
+}
+
+
+
+.next{
+    height: 20px;
+    width: 20px;
+    background-color: $dark-brown;
+    border-radius: 50px;
+    //margin: 5px;
+
+    color: transparent;
+}
+
+
+
+///////////////////////////////////////////////////
+
 .carousel{
     
     display: flex;
@@ -13,29 +93,69 @@
     text-align: center;
     justify-content: center;
 
-    top:10vh;
+    top:20vh;
     left: 0px;
     margin: 0% 0px;
-    //padding: 10px;
-    height: auto;
+
+    padding: 10px 50px;
+    height: 200px;
     width: 100vw;
 
     box-sizing: border-box;
 
-    //background-color: $pink;
+   // background-color: $pink;
 
 
     .c-item{
-        
-        //background-color: $orange;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        img{
-            height: 200px;
-            width: 200px;
-            object-fit: cover;
+        height: 150px;
+        width: 100px;
 
-          //  box-shadow: 0px 10px 10px 0 $brown;
+
+       //background-color: $orange;
+        .c-item-text{
+            width: 100%;
+            font-family: "Noto Sans JP", sans-serif;
+            color: $dark-brown;
+            text-shadow: 0px 0px 3px $white;
+
         }
 
     }
+}
+
+
+
+.carousel{
+
+    .c-item{
+        .eye-color{
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+            background-color: $white;
+            //box-shadow: 0px 0px 2px 0px $white;
+
+            &.one{
+                background-color: $brown;
+            }
+
+            &.two{
+                background-color: $pink;
+            }
+
+            &.three{
+                background-color: $dark-brown;
+            }
+
+        }
+
+    }
+
 }
