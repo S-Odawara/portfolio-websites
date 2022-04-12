@@ -1,0 +1,100 @@
+//
+// faq
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+
+.faq{
+
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: 10;
+
+    @media (min-width: 769px) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    } 
+
+    .tytle{
+        @media (min-width: 769px) {
+
+            width: 200px;
+            margin:0 auto;
+            border-top: 10px double $light-gray;
+            padding-top: 20px;
+    
+        } 
+    
+    }
+
+
+
+
+
+}
+
+
+.question{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid $dark-gray;
+    border-radius: 30px;
+    line-height: 1;
+    text-align: left;
+    z-index: 20;
+
+    &.white-shadow{
+        opacity: 0.5;
+    }
+
+    @media (min-width: 769px) {
+        max-width: 550px;
+    } 
+
+
+
+}
+
+.ques{
+    margin-left: 20px;
+}
+
+
+//////////////////////////////////
+//////////////////////// more-button
+
+.more-button{
+    &.faq-b{
+        margin-top: -20px;
+        position: relative;
+        z-index: 40;
+
+    }
+} 
+
+//////////////////////////////////
+//////////////////////// 下層ページ
+.cover{
+    &.faq-c{
+        background-image: none;
+        background-color: $white;
+        background: linear-gradient(90deg, $dark-gray, $white 90.100%);
+
+        border: none;
+        height: 200px;
+    }
+}
+
+
+.section{
+    &.s_01{
+        margin-top: $margin-top;
+        margin-bottom: 100px;
+
+
+    }
+}
+
