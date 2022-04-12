@@ -10,7 +10,8 @@
     margin-top: $margin-top;
     margin-bottom: 0px;
     padding-bottom: 50px;
-
+    
+    
     background:
         linear-gradient(127deg, $black, $invisible 70.71%), 
         linear-gradient(217deg, $dark-gray, $invisible 70.71%),
@@ -18,8 +19,6 @@
 
 
     color: $white;
-    
-    
     text-align: center;
 
     @media (min-width: 769px) {
@@ -54,17 +53,14 @@
     margin-top: $margin-top;
 
     display: flex;
-    flex-wrap: wrap;
-
-    margin-left:20px;
-    margin-right: 20px;
+   // flex-wrap: wrap;
 
     &.two{
-        margin-top: 20px; 
+        margin-top: 5px; 
         flex-direction: row-reverse;
     }
     &.three{
-        margin-top: 20px; 
+        margin-top: 5px; 
         
     }
 
@@ -74,9 +70,8 @@
 
 
 .office-image { 
-    width: 100%;
-    height: auto;
-
+    width: 80vw;
+    height: 60vw;
     //border: 1px solid $white;
    // box-shadow: 5px 10px 10px 0 $dark-gray-80;
     box-sizing: border-box;
@@ -96,15 +91,19 @@
 }
 
 .office-detail{
-    position: absolute;
-    margin-top: 20px;
-    //margin-left: -140px;
+    margin-top: 40vw;
+    margin-left: -140px;
     height: 60px;
     width: 50%;
     
-    background-color:$black-80;
+    background-color:$black-50;
     box-shadow: 0px 5px 5px 0 $dark-gray-80;
     line-height: 0.5;
+
+    &.two{
+        margin-right: -140px;
+    }
+
 
     .office-access{
         font-size: 1.2rem;
@@ -196,7 +195,7 @@
     .office-image{
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         box-shadow: none;
 
         @media (min-width: 769px) {
@@ -319,17 +318,15 @@
 
     @media (min-width: 769px) {
         max-height: calc(2000px / 3);
-        height:calc(2000px / 6);
-        //height: calc(calc(100vw - 40px) / 3);
+        height: calc(calc(100vw - 40px) / 3);
         width: 100%;
-        margin: 0px;
+        margin: 0;
     }
 }
 
 .office-detail{
 
     @media (min-width: 769px) {
-        position: relative;
         height: 100px;
         width: 100%;
         margin: 0 auto;

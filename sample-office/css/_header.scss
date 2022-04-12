@@ -65,26 +65,33 @@
             max-width: 750px;
 
             li{
-                height: 50px;
+                height: 33px;
+                width: 200px;
                 list-style: none;
                 display: block;
-                font-size: 1.6rem;
-                line-height: 3.0;
+                font-size: 1.4rem;
+                line-height: 1.0;
                 font-weight: 500;
-                padding-bottom: 10px;
+                text-align: center;
+                padding: 15px 0 0 0;
 
-                a:hover{
-                    padding-bottom: 10px;
-                    border-bottom: 5px solid $light-blue;
-                  
-                }
+                //border: 1px solid $black;
 
 
-
-                
+               
             }
 
+            li:hover{
+                color: $light-blue;
+                border-bottom: 3px solid $dark-gray;
+                background-color: $dark-gray-10;
+            }
+
+  
         }
+
+
+
 
         .pc-nav-contact{
             width: 220px;
