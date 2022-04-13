@@ -381,4 +381,50 @@ a {
 .button-07 a:hover span {
   border-bottom: 2px solid #99C5CC;
 }
+
+.button-08 {
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-08 a {
+  margin: 0;
+  height: 100%;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-08 a span {
+  padding: 5px 0px;
+  height: 100%;
+  width: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-08 a:hover span {
+  background-color: rgba(153, 197, 204, 0.3);
+}
 /*# sourceMappingURL=style.css.map */

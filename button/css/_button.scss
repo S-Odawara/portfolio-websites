@@ -387,3 +387,49 @@
 
 
 ///////////////////////////////////////////////////// 08
+
+.button-08{
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //border: 2px solid $light-blue;
+
+
+
+  a{
+    margin: 0;
+    height: 100%;
+    width: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      //background-color: $light-blue;
+      padding: 5px 0px;
+      height: 100%;
+      width: 150px;
+      box-sizing: border-box;
+
+      
+      transition: 0.2s;
+      //color: $light-blue;
+
+    }
+  }
+  a:hover{
+    span{
+      background-color: $light-blue-30;
+    }
+
+  }
+
+}
