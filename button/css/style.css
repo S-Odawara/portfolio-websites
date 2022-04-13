@@ -75,11 +75,11 @@ a {
 }
 
 .button-02 {
-  height: 30px;
+  height: 50px;
   width: 150px;
   position: relative;
   text-align: center;
-  border: 2px solid #2E3233;
+  border: 1px solid #2E3233;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,9 +119,10 @@ a {
 
 .button-03 {
   height: 50px;
-  width: 140px;
+  width: 150px;
   position: relative;
   text-align: center;
+  vertical-align: middle;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,32 +133,41 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .button-03 a {
   padding: 4px 0 0 4px;
-  background-color: rgba(153, 197, 204, 0.3);
   height: 100%;
-  width: 140px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button-03 a span {
+  background-color: transparent;
+  background-color: #99C5CC;
   -webkit-transform: translate(-4px, -4px) translateZ(0);
           transform: translate(-4px, -4px) translateZ(0);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background-color: rgba(46, 50, 51, 0.5);
   padding: 10px 20px;
+  height: 100%;
+  width: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #2E3233;
-  width: 100%;
 }
 
 .button-03 a:hover span {
   -webkit-transform: translate(0px, 0px) translateZ(0);
           transform: translate(0px, 0px) translateZ(0);
-  background-color: rgba(153, 197, 204, 0.3);
 }
 
 .button-03 a:after {
@@ -173,12 +183,12 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
-  width: 140px;
+  width: 150px;
 }
 
 .button-04 {
-  height: 50px;
-  width: 150px;
+  height: 100px;
+  width: 250px;
   position: relative;
   text-align: center;
   vertical-align: middle;
@@ -191,17 +201,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.4rem;
-  background-color: #99C5CC;
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .button-04 a {
-  padding: 4px 0 0 4px;
+  padding: 10px 0 0 10px;
   height: 100%;
-  width: 150px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #2E3233;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,21 +223,65 @@ a {
 
 .button-04 a span {
   background-color: transparent;
+  background-color: #99C5CC;
+  -webkit-transform: translate(-10px, -10px) translateZ(0);
+          transform: translate(-10px, -10px) translateZ(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 5px 0px;
+  height: 100%;
+  width: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 10px solid #2E3233;
+}
+
+.button-04 a:hover span {
+  -webkit-transform: translate(0px, 0px) translateZ(0);
+          transform: translate(0px, 0px) translateZ(0);
 }
 
 .button-04 a:after {
   content: '';
   display: block;
-  border-right: 1px solid #2E3233;
-  border-bottom: 1px solid #2E3233;
+  border-right: 10px solid #2E3233;
+  border-bottom: 10px solid #2E3233;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 10px;
+  left: 10px;
   bottom: 0;
   right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
+  width: 250px;
+}
+
+.button-05 {
+  height: 40px;
   width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #5C6566;
+  background-color: rgba(206, 215, 217, 0.8);
+}
+
+.button-05 a {
+  margin: 0;
+  line-height: 1;
+}
+
+.button-05 a:hover {
+  border-bottom: 2px solid #5C6566;
 }
 /*# sourceMappingURL=style.css.map */
