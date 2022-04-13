@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.carousel-top').slick({
         autoplay: true, // 自動再生
         autoplaySpeed: 3000, // 自動再生の速さ、単位はミリ秒
-        speed: 1000,
+        speed: 600,
         cssEase: 'ease-out',
 
         arrows: false,
@@ -26,8 +26,8 @@ $(document).ready(function(){
     $('.carousel').slick({
         autoplay: true,
         autoplaySpeed: 3000, // 自動再生の速さ、単位はミリ秒
+        speed: 1000,
         arrows: false,
-
         dots: false, 
         fade: true, 
         centerMode: true,
