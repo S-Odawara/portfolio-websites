@@ -922,8 +922,8 @@ h2 {
   margin-top: 50px;
   margin-bottom: 0px;
   padding-bottom: 50px;
-  background: linear-gradient(127deg, #2E3233, rgba(0, 0, 0, 0) 70.71%), linear-gradient(217deg, #5C6566, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #2E3233, rgba(0, 0, 0, 0) 70.71%);
-  color: #F7F7F7;
+  background-color: rgba(92, 101, 102, 0.1);
+  color: #2E3233;
   text-align: center;
 }
 
@@ -931,9 +931,6 @@ h2 {
   .office {
     margin-top: 100px;
     padding-bottom: 100px;
-    background: none;
-    background-color: rgba(92, 101, 102, 0.1);
-    color: #2E3233;
   }
 }
 
@@ -956,6 +953,7 @@ h2 {
       flex-wrap: wrap;
   margin-left: 20px;
   margin-right: 20px;
+  color: #F7F7F7;
 }
 
 .office-content.two {
@@ -1005,14 +1003,6 @@ h2 {
 
 .office-detail .office-access {
   font-size: 1.2rem;
-}
-
-@media (min-width: 769px) {
-  .office-detail {
-    background-color: rgba(247, 247, 247, 0.5);
-    -webkit-box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
-            box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
-  }
 }
 
 .more-button.office-b {
@@ -1164,27 +1154,37 @@ h2 {
 }
 
 @media (min-width: 769px) {
+  .pc-office {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 50px auto;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 769px) {
   .office-content {
-    display: inline-block;
-    max-width: calc(1500px / 3);
-    width: calc(calc(100vw - 40px) / 3);
-    padding: 0 20px;
-    margin: 50px 0 0 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    width: calc(calc(100% - 40px) / 3);
+    margin: 0 auto;
   }
   .office-content.two {
-    margin: 50px 0 0 0;
+    margin: 0 auto;
   }
   .office-content.three {
-    margin: 50px 0 0 0;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 769px) {
   .office-image {
-    max-height: calc(2000px / 3);
-    height: calc(2000px / 6);
+    min-height: 300px;
+    height: auto;
     width: 100%;
     margin: 0px;
   }
@@ -1193,27 +1193,28 @@ h2 {
 @media (min-width: 769px) {
   .office-detail {
     position: relative;
-    height: 100px;
+    height: 80px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 10px;
-    padding: 20px 0 0 0;
-    font-size: 1.8rem;
+    margin-top: -80px;
+    padding: 15px;
+    font-size: 1.6rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    color: #F7F7F7;
     -webkit-box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
             box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
   }
   .office-detail.two {
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: -80px;
   }
   .office-detail .office-name {
     line-height: 1.75;
     margin: 0;
   }
   .office-detail .office-access {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     margin: 0;
   }

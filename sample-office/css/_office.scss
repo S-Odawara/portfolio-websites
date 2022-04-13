@@ -11,13 +11,17 @@
     margin-bottom: 0px;
     padding-bottom: 50px;
 
-    background:
-        linear-gradient(127deg, $black, $invisible 70.71%), 
-        linear-gradient(217deg, $dark-gray, $invisible 70.71%),
-        linear-gradient(336deg, $black, $invisible 70.71%);
+    background-color: $dark-gray-10;
+    color:$black;
 
 
-    color: $white;
+    //background:
+    //    linear-gradient(127deg, $dark-gray, $invisible 70.71%), 
+    //    linear-gradient(217deg, $dark-gray-10, $invisible 70.71%),
+    //    linear-gradient(336deg, $dark-gray, $invisible 70.71%);
+
+
+    //color: $white;
     
     
     text-align: center;
@@ -26,9 +30,9 @@
         margin-top: $margin-top-pc;
         padding-bottom: 100px;
 
-        background:none;
-        background-color: $dark-gray-10;
-        color: $black;
+        //background:none;
+        //background-color: $dark-gray-10;
+        //color: $black;
 
 
     } 
@@ -58,6 +62,7 @@
 
     margin-left:20px;
     margin-right: 20px;
+    color: $white;
 
     &.two{
         margin-top: 20px; 
@@ -120,11 +125,7 @@
        
     }
 
-    @media (min-width: 769px) {
-        background-color:$white-50;
-        box-shadow: 0px 5px 5px 0 $dark-gray-80;
-        
-    } 
+
 
 
 }
@@ -300,35 +301,39 @@
 
 ///////////////////////////////////////////////////////
 
+.pc-office{
+    @media (min-width: 769px) {
+        display: flex;
+        align-items: center;
+        
+        width: calc(100% - 40px);
+        max-width: 1440px;
+        margin: 50px auto;
+
+        gap: 20px;
+    }
+}
+
 
 .office-content{
     @media (min-width: 769px) {
-
-        display: inline-block;
-        max-width: calc(1500px / 3);
-        width: calc(calc(100vw - 40px) / 3);
-        padding: 0 20px;
-        margin: 50px 0 0 0;
-        box-sizing: border-box;
+        width: calc(calc(100% - 40px) / 3);
+        margin: 0 auto;
 
         &.two{
-            margin: 50px 0 0 0;
+            margin: 0 auto;
         }
-
         &.three{
-            margin: 50px 0 0 0;
+            margin: 0 auto;
         }
-
-
     } 
 }
 
 .office-image { 
 
     @media (min-width: 769px) {
-        max-height: calc(2000px / 3);
-        height:calc(2000px / 6);
-        //height: calc(calc(100vw - 40px) / 3);
+        min-height: 300px;
+        height: auto;
         width: 100%;
         margin: 0px;
     }
@@ -338,28 +343,33 @@
 
     @media (min-width: 769px) {
         position: relative;
-        height: 100px;
+        height: 80px;
         width: 100%;
         margin: 0 auto;
-        margin-top: 10px;
-        padding: 20px 0 0 0;
-        font-size: 1.8rem;
+        margin-top: -80px;
+        padding: 15px;
+        font-size: 1.6rem;
+        //font-weight: bold;
         box-sizing: border-box;
-        //color: $black;
+        color: $white;
+        //text-shadow: 0px 0px 3px $white;
         box-shadow: 0px 5px 5px 0 $dark-gray-80;
+        //background: linear-gradient(90deg, $black, $invisible 100.0%);
+
         &.two{
             margin: 0 auto;
-            margin-top: 10px;
+            margin-top: -80px;
         }
         .office-name{
             line-height: 1.75;
             margin: 0;
         }
         .office-access{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             line-height: 1.5;
             margin: 0;
         }
 
     }
 }
+
