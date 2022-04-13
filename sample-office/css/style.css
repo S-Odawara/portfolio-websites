@@ -960,10 +960,6 @@ h2 {
 
 .office-content.two {
   margin-top: 20px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 .office-content.three {
@@ -994,13 +990,16 @@ h2 {
 }
 
 .office-detail {
-  position: absolute;
-  margin-top: 20px;
+  margin: -60px 0 0 0;
   height: 60px;
-  width: 50%;
-  background-color: rgba(46, 50, 51, 0.8);
-  -webkit-box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
-          box-shadow: 0px 5px 5px 0 rgba(92, 101, 102, 0.8);
+  width: 70%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  padding: 0 0 0 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#2E3233), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, #2E3233, rgba(0, 0, 0, 0) 100%);
+  text-shadow: 0px 0px 3px #CED7D9;
   line-height: 0.5;
 }
 
