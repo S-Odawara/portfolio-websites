@@ -1,0 +1,237 @@
+//
+// button
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+///////////////////////////////////////////////////// 01
+
+.button-01{
+  height: 30px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  border: 2px solid $black;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: transparent;
+  }
+ 
+  :hover{
+  background-color: $light-blue;
+  }
+
+  :after{
+    position: absolute;
+    left: 6px;
+    bottom: -8px;
+
+    content: "";
+    display: table;
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    width: calc(100% - 12px);
+    height: 3px;
+    margin: 0;
+    border-radius: 4px;
+
+  }
+
+
+}
+
+
+///////////////////////////////////////////////////// 02
+
+.button-02{
+  height: 30px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  border: 2px solid $black;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  :before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    background: $light-blue;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+  }
+  :hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+
+
+}
+
+
+///////////////////////////////////////////////////// 03
+
+.button-03{
+  height: 50px;
+  width: 140px;
+  position: relative;
+  text-align: center;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  //font-weight: 300;
+
+  //background-color: $light-blue;
+
+  //background-color: $light-blue-30;
+
+
+
+  a{
+    padding: 4px 0 0 4px;
+    background-color: $light-blue-30;
+
+    height: 100%;
+    width: 140px;
+    box-sizing: border-box;
+
+
+    span{
+      transform: translate(-4px, -4px) translateZ(0);
+      transition: 0.2s;
+      background-color: $black-50;
+
+      padding: 10px 20px;
+      border: 1px solid $black;
+      width: 100%;
+
+    }
+  }
+
+  a:hover{
+    span{
+    transform: translate(0px, 0px) translateZ(0);
+    background-color: $light-blue-30;
+    }
+  }
+
+  a:after {
+    content: '';
+    display: block;
+    border-right: 1px solid $black;
+    border-bottom: 1px solid $black;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 0;
+    right: 0;
+
+    box-sizing: border-box;
+
+    height: 100%;
+    width: 140px;
+
+
+  }
+
+
+
+
+}
+
+
+
+///////////////////////////////////////////////////// 04
+
+.button-04{
+  height: 50px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  //font-weight: 300;
+
+  background-color: $light-blue;
+
+  //background-color: $light-blue-30;
+
+
+
+  a{
+    padding: 4px 0 0 4px;
+    background-color: $light-blue-30;
+
+    height: 100%;
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid $black;
+
+
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+    span{
+      back
+    }
+
+
+  }
+
+
+
+  a:after {
+    content: '';
+    display: block;
+    border-right: 1px solid $black;
+    border-bottom: 1px solid $black;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 0;
+    right: 0;
+
+    box-sizing: border-box;
+
+    height: 100%;
+    width: 150px;
+
+
+  }
+
+
+
+
+}

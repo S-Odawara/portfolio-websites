@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+.margin {
+  margin: 20px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #2E3233;
+  background-color: #F7F7F7;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: #2E3233;
+  text-decoration: none;
+}
+
+.button-01 {
+  height: 30px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #2E3233;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-01 a {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.button-01 :hover {
+  background-color: #99C5CC;
+}
+
+.button-01 :after {
+  position: absolute;
+  left: 6px;
+  bottom: -8px;
+  content: "";
+  display: table;
+  border-left: 2px solid #2E3233;
+  border-right: 2px solid #2E3233;
+  border-bottom: 2px solid #2E3233;
+  width: calc(100% - 12px);
+  height: 3px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.button-02 {
+  height: 30px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #2E3233;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-02 :before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: #99C5CC;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.button-02 :hover::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.button-03 {
+  height: 50px;
+  width: 140px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+
+.button-03 a {
+  padding: 4px 0 0 4px;
+  background-color: rgba(153, 197, 204, 0.3);
+  height: 100%;
+  width: 140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button-03 a span {
+  -webkit-transform: translate(-4px, -4px) translateZ(0);
+          transform: translate(-4px, -4px) translateZ(0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: rgba(46, 50, 51, 0.5);
+  padding: 10px 20px;
+  border: 1px solid #2E3233;
+  width: 100%;
+}
+
+.button-03 a:hover span {
+  -webkit-transform: translate(0px, 0px) translateZ(0);
+          transform: translate(0px, 0px) translateZ(0);
+  background-color: rgba(153, 197, 204, 0.3);
+}
+
+.button-03 a:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #2E3233;
+  border-bottom: 1px solid #2E3233;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 140px;
+}
+
+.button-04 {
+  height: 50px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+
+.button-04 a {
+  background-color: rgba(153, 197, 204, 0.3);
+  height: 100%;
+  width: 150px;
+  border: 1px solid #2E3233;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-04 a:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #2E3233;
+  border-bottom: 1px solid #2E3233;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 150px;
+}
+/*# sourceMappingURL=style.css.map */
