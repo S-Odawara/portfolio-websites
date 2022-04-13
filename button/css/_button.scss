@@ -189,7 +189,7 @@
 
   a{
     padding: 4px 0 0 4px;
-    background-color: $light-blue-30;
+    //background-color: $light-blue-30;
 
     height: 100%;
     width: 150px;
@@ -204,7 +204,7 @@
   
 
     span{
-      back
+     // background-color: $light-blue-30;
     }
 
 
@@ -212,7 +212,7 @@
 
 
 
-  a:after {
+  a:after{
     content: '';
     display: block;
     border-right: 1px solid $black;
