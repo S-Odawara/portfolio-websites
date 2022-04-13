@@ -117,7 +117,7 @@
 
     span{
       background-color: transparent;
-      background-color: $light-blue;
+      //background-color: $light-blue;
       transform: translate(-4px, -4px) translateZ(0);
       transition: 0.2s;
       padding: 10px 20px;
@@ -132,7 +132,7 @@
   a:hover{
     span{
     transform: translate(0px, 0px) translateZ(0);
-
+    background-color: $light-blue;
     }
   }
 
@@ -201,9 +201,9 @@
 
     span{
       background-color: transparent;
-      background-color: $light-blue;
+      
       transform: translate(-10px, -10px) translateZ(0);
-      transition: 0.5s;
+      transition: 0.6s;
       padding: 5px 0px;
       height: 100%;
       width: 250px;
@@ -216,6 +216,7 @@
   a:hover{
     span{
     transform: translate(0px, 0px) translateZ(0);
+    background-color: $light-blue;
 
     }
   }
@@ -269,6 +270,10 @@
   a{
     margin: 0;
     line-height: 1;
+
+    span{
+      padding: 0 0 0 10px;
+    }
   }
 
 
@@ -283,10 +288,102 @@
 
 ///////////////////////////////////////////////////// 06
 
+.button-06{
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid $dark-gray;
+  border-radius: 100px;
+
+
+  a{
+    margin: 0;
+    height: 100%;
+    width: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      //background-color: $light-blue;
+      padding: 5px 0px;
+      height: 100%;
+      width: 150px;
+      border-radius: 100px;
+      box-sizing: border-box;
+      transition: 0.2s;
+      
+
+    }
+  }
+  a:hover{
+    span{
+      background-color: $light-blue;
+      //color: $black-50;
+    }
+
+  }
+
+}
 
 
 ///////////////////////////////////////////////////// 07
 
+.button-07{
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid $light-blue;
+  border-radius: 100px;
+
+
+  a{
+    margin: 0;
+    height: 100%;
+    width: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      //background-color: $light-blue;
+      //padding: 5px 0px;
+      //height: 100%;
+      //width: 150px;
+      //border-radius: 100px;
+      //box-sizing: border-box;
+
+      margin: 0;
+      line-height: 1;
+      //transition: 0.2s;
+      color: $light-blue;
+
+    }
+  }
+  a:hover{
+    span{
+      border-bottom: 2px solid $light-blue;
+    }
+
+  }
+
+}
 
 
 ///////////////////////////////////////////////////// 08
