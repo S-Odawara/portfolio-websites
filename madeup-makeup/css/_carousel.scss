@@ -103,7 +103,7 @@
         justify-content:center;
         flex-wrap: wrap;
 
-        height: 150px;
+        height: 250px;
         width: 100%;
 
 
@@ -128,21 +128,28 @@
 .carousel{
     .c-item{
         .eye-color{
-            height: 70px;
-            width: 70px;
+            height: 150px;
+            width: 150px;
             object-fit: cover;
             border: 3px solid $dark-brown;
 
             &.one{
-                background-color: $brown;
+                background-image: url("../images/eye/eye-one.png");
+                background-size: cover;
+                //background-color: $brown;
+
             }
 
             &.two{
-                background-color: $pink;
+                background-image: url("../images/eye/eye-two.png");
+                background-size: cover;
+                //background-color: $pink;
             }
 
             &.three{
-                background-color: $dark-brown;
+                background-image: url("../images/eye/eye-three.png");
+                background-size: cover;
+                //background-color: $dark-brown;
             }
 
         }
@@ -159,21 +166,27 @@
 .carousel{
     .c-item{
         .cheek-color{
-            height: 70px;
-            width: 70px;
+            height: 150px;
+            width: 150px;
             object-fit: cover;
             border: 3px solid $dark-brown;
 
             &.one{
-                background-color: $orange;
+                background-image: url("../images/cheek/cheek-one.png");
+                background-size: cover;
+                //background-color: $orange;
             }
 
             &.two{
-                background-color: $pink;
+                background-image: url("../images/cheek/cheek-two.png");
+                background-size: cover;
+                //background-color: $pink;
             }
 
             &.three{
-                background-color: $pink2;
+                background-image: url("../images/cheek/cheek-three.png");
+                background-size: cover;
+                //background-color: $pink2;
             }
 
         }
@@ -190,21 +203,27 @@
 .carousel{
     .c-item{
         .lip-color{
-            height: 70px;
-            width: 70px;
+            height: 150px;
+            width: 150px;
             object-fit: cover;
             border: 3px solid $dark-brown;
 
             &.one{
-                background-color: $pink;
+                background-image: url("../images/lip/lip-one.png");
+                background-size: cover;
+                //background-color: $pink;
             }
 
             &.two{
                 background-color: $pink2;
+                background-image: url("../images/lip/lip-two.png");
+                background-size: cover;
             }
 
             &.three{
                 background-color: $orange;
+                background-image: url("../images/lip/lip-three.png");
+                background-size: cover;
             }
 
         }

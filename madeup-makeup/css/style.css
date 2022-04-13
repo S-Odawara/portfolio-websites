@@ -637,7 +637,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 150px;
+  height: 250px;
   width: 100%;
 }
 
@@ -649,63 +649,74 @@ body {
 }
 
 .carousel .c-item .eye-color {
-  height: 70px;
-  width: 70px;
+  height: 150px;
+  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid #594844;
 }
 
 .carousel .c-item .eye-color.one {
-  background-color: #997B74;
+  background-image: url("../images/eye/eye-one.png");
+  background-size: cover;
 }
 
 .carousel .c-item .eye-color.two {
-  background-color: #f2c2c5;
+  background-image: url("../images/eye/eye-two.png");
+  background-size: cover;
 }
 
 .carousel .c-item .eye-color.three {
-  background-color: #594844;
+  background-image: url("../images/eye/eye-three.png");
+  background-size: cover;
 }
 
 .carousel .c-item .cheek-color {
-  height: 70px;
-  width: 70px;
+  height: 150px;
+  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid #594844;
 }
 
 .carousel .c-item .cheek-color.one {
-  background-color: #F2CCC2;
+  background-image: url("../images/cheek/cheek-one.png");
+  background-size: cover;
 }
 
 .carousel .c-item .cheek-color.two {
-  background-color: #f2c2c5;
+  background-image: url("../images/cheek/cheek-two.png");
+  background-size: cover;
 }
 
 .carousel .c-item .cheek-color.three {
-  background-color: #F2C2EA;
+  background-image: url("../images/cheek/cheek-three.png");
+  background-size: cover;
 }
 
 .carousel .c-item .lip-color {
-  height: 70px;
-  width: 70px;
+  height: 150px;
+  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid #594844;
 }
 
 .carousel .c-item .lip-color.one {
-  background-color: #f2c2c5;
+  background-image: url("../images/lip/lip-one.png");
+  background-size: cover;
 }
 
 .carousel .c-item .lip-color.two {
   background-color: #F2C2EA;
+  background-image: url("../images/lip/lip-two.png");
+  background-size: cover;
 }
 
 .carousel .c-item .lip-color.three {
   background-color: #F2CCC2;
+  background-image: url("../images/lip/lip-three.png");
+  background-size: cover;
 }
 
 .parallax-bg .logo-top {
