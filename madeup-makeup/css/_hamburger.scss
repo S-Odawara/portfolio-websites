@@ -1,0 +1,207 @@
+//
+// hamburger
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 9999;
+    /*ナビのスタート位置と形状*/
+	top:-120%;
+    left:0;
+	width:100%;
+    height: 55vh;/*ナビの高さ*/
+	background: $orange;
+    /*動き*/
+	transition: all 0.4s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    top: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 9999; 
+    width: 100%;
+    height: 60vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 9999;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+
+
+}
+
+/////////////////////////////////////
+//////////////////////////////追加分
+
+#g-nav img{
+    width: calc(100% - 60px);
+    margin: 30px 30px 0 30px;
+    position: relative;
+    transition: all .4s;
+}
+
+
+#g-nav{
+    .sns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 3.0rem;
+        width: 100%;
+        padding: 10px 0;
+
+        position: absolute;
+        top:77.5%;
+        transition: all .4s;
+        .fab{
+            width: 55px;
+            height: auto;
+            color: $white;
+        }
+
+    }
+}
+
+#g-nav{
+    .trapezoid{
+
+        position: absolute;
+        top: calc(55vh - 0.05rem);
+        width: 0px;
+        border-top: 50px solid $orange;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid $orange;
+        border-bottom: 50px solid transparent;
+        transition: all .4s;
+
+
+    }
+}
+
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+	list-style: none;
+    text-align: center; 
+}
+
+#g-nav li a{
+	text-decoration: none;
+	//padding:10px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+    color: $white;
+
+    &.link-shop{
+        color: $dark-brown;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+
+
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:absolute;
+    z-index: 9000;/*ボタンを最前面に*/
+	top:120px;
+	right: 30px;
+	cursor: pointer;
+    width: 75px;
+    height:50px;
+}
+	
+/*×に変化*/	
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 20px;
+    height: 2px;
+
+	background-color: $white;
+  	width: 60%;
+  }
+
+.openbtn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+
+    opacity: 0;
+}
+
+//////////////////////////////////////////
+
+.main-cover{
+    position: fixed;
+    width: 100%;
+    visibility: hidden;
+    z-index: -1;  
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.main-cover.active{
+    height:100%;
+    visibility: visible;
+    background:$dark-brown-80;
+    z-index:9002;
+}

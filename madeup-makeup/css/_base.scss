@@ -1,0 +1,329 @@
+//
+// base
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+//////////////////////////////////
+//////////////////////// 変数 colour
+$invisible: rgba(0, 0, 0, 0);
+
+$white: #F7F7F7;
+$white-50: rgba(247, 247, 247, 0.5);
+$white-80: rgba(247, 247, 247, 0.8);
+
+$pink: #f2c2c5;
+$pink-50: rgba(242, 194, 197, 0.5);
+$pink-80: rgba(242, 194, 197, 0.8);
+
+$pink2:#F2C2EA;
+
+$orange: #F2CCC2;
+$orange-50: rgba(242, 204, 194, 0.5);
+$orange-80: rgba(242, 204, 194, 0.8);
+
+$light-orange: #F2DECE;
+$light-orange-50: rgba(242, 222, 206, 0.5);
+$light-orange-80: rgba(242, 222, 206, 0.8);
+
+$brown: #997B74;
+$brown-50: rgba(153, 123, 116, 0.5); 
+$brown-80: rgba(153, 123, 116, 0.8); 
+
+$dark-brown: #594844;
+$dark-brown-50: rgba(89, 72, 68, 0.5);
+$dark-brown-80: rgba(89, 72, 68, 0.8);
+
+
+
+//////////////////////////////////
+//////////////////////// ベーススタイル
+html {
+  font-size: 62.5%;
+}
+
+body {
+
+  font-family: "Times", "Noto Sans JP", sans-serif;
+ // font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $dark-brown;
+  background-color: $white;
+
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+//////////////////////////////////
+//////////////////////// 変数 
+
+
+
+
+
+
+
+////////////////////////////////////////
+////////////////////////////// parallax-bg
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Avoid Chrome to see Safari hack */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+  }
+
+
+  @media (min-width: 769px) {
+    height: 100vh;
+    width: 50%;
+
+
+  } 
+
+
+
+}
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url('../images/sp/sp-cover.jpg');
+}
+.img-bg-02 {
+  background-image: url('../images/sp/sp-concept.jpg');
+}
+.img-bg-03 {
+  background-image: url('../images/sp/sp-bg-eye.jpg');
+}
+.img-bg-04 {
+  background-image: url('../images/sp/sp-bg-cheek.jpg');
+}
+.img-bg-05 {
+  background-image: url('../images/sp/sp-bg-lip.jpg');
+}
+
+.section-right{
+  @media (min-width: 769px) {
+
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    
+    left:50%;
+    background-color: $orange-50;
+  } 
+}
+
+////////////////////////////////////////
+////////////////////////////// text-bg
+
+.text-bg{
+  height: auto;
+  width: 100%;
+  background-color: $white;
+  color: $white;
+  margin: 0;
+  //margin: 20px 0;
+  padding: 30px 0 50px 0;
+  box-sizing: border-box;
+
+  .text-box{
+    width: calc(100% - 60px);
+    margin: 0 auto;
+
+    h2{
+      font-size: 3.6rem;
+      margin: 20px 0;
+    }
+
+
+    .text-ja{
+      line-height: 1.25;
+    }
+
+    .text-en{
+      font-size: 1.4rem;
+      line-height: 1.0;
+    }
+  }
+}
+
+.text-bg{
+
+  &.concept{
+    margin: 0;
+    //margin: 120px 0 0 0;
+    background-color: $orange-50;
+    color:$dark-brown;
+
+    border-bottom-right-radius: 200px;
+  }
+  &.eye{
+    background-color: $dark-brown-80;
+    text-align: right;
+
+    border-bottom-left-radius: 150px;
+  }
+  &.cheek{
+    background-color: $light-orange-80;
+    color:$dark-brown;
+
+    border-bottom-right-radius: 150px;
+  }
+  &.lip{
+    background-color: $pink-80;
+    text-align: right;
+
+    border-bottom-left-radius: 150px;
+  }
+
+
+}
+////////////////////////////////////////
+
+/*スクロールダウン全体の場所*/
+.scrolldown1{
+position:absolute;
+left:50%;
+bottom:50px;
+height: 60px;
+}
+
+.scrolldown1 span{
+position: absolute;
+left:-15px;
+top: -25px;
+  /*テキストの形状*/
+color: $white;
+font-size: 1.4rem;
+}
+
+/* 線の描写 */
+.scrolldown1::after{
+content: "";
+
+position: absolute;
+top: 0;
+
+width: 2px;
+height: 60px;
+background: $white;
+
+animation: pathmove 1.4s ease-in-out infinite;
+opacity:0;
+}
+
+@keyframes pathmove{
+0%{
+  height:0;
+  top:0;
+  opacity: 0;
+}
+30%{
+  height:60px;
+  opacity: 1;
+}
+100%{
+  height:0;
+  top:50px;
+  opacity: 0;
+}
+}
+
+////////////////////////////////////////
+////////////////////////////// page-top-button
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background: $white-80;
+
+	width: 80px;
+	height: 80px;
+  border-radius: 80px;
+	color: $pink;
+	text-align: center;
+  //text-transform:lowercase;
+	text-decoration: none;
+  font-size: 1.4rem;
+	transition:all 0.3s;
+
+
+  @media (min-width: 769px) {
+    #page-top a:hover{
+      background: $brown-80;
+    }
+  } 
+
+
+}
+
+
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 20px;
+	bottom:10px;
+	z-index: 9001;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(200px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.3s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.3s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(200px);
+  }
+}

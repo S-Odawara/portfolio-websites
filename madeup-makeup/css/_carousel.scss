@@ -1,0 +1,214 @@
+//
+// carousel
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+
+.carousel-top{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    top:10vh;
+    left: 0px;
+
+    padding: 0px 0px;
+    height: 50vh;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    //background-color: $pink;
+
+
+    .c-item{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        //background-color: $orange;
+        height: 100%;
+        width: 100%;
+
+        img{
+            height: 30vh;
+            width: 30vh;
+            object-fit: cover;
+            filter: opacity(0.8) drop-shadow( 0px 0px 0px $dark-brown);
+        }
+
+    }
+}
+
+
+
+
+
+///////////////////////////////////////////////////
+
+.prev{
+    height: 20px;
+    width: 20px;
+    background-color: $dark-brown;
+    border-radius: 50px;
+    //margin: 5px;
+
+    color: transparent;
+}
+
+
+
+.next{
+    height: 20px;
+    width: 20px;
+    background-color: $dark-brown;
+    border-radius: 50px;
+    //margin: 5px;
+
+    color: transparent;
+}
+
+
+
+///////////////////////////////////////////////////
+
+.carousel{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    height: 50vh;
+    width: 100%;
+
+    position: relative;
+
+
+
+
+    //background-color: $pink;
+
+
+    .c-item{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content:center;
+        flex-wrap: wrap;
+
+        height: 150px;
+        width: 100%;
+
+
+       //background-color: $orange;
+       
+        .c-item-text{
+            width: 100%;
+            font-family: "Noto Sans JP", sans-serif;
+            font-weight: 500;
+            color: $dark-brown;
+            //background-color: $white;
+        }
+
+    }
+}
+
+
+
+
+///////////////////////////////////
+
+.carousel{
+    .c-item{
+        .eye-color{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+
+            &.one{
+                background-color: $brown;
+            }
+
+            &.two{
+                background-color: $pink;
+            }
+
+            &.three{
+                background-color: $dark-brown;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+///////////////////////////////////
+
+.carousel{
+    .c-item{
+        .cheek-color{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+
+            &.one{
+                background-color: $orange;
+            }
+
+            &.two{
+                background-color: $pink;
+            }
+
+            &.three{
+                background-color: $pink2;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+///////////////////////////////////
+
+.carousel{
+    .c-item{
+        .lip-color{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 3px solid $dark-brown;
+
+            &.one{
+                background-color: $pink;
+            }
+
+            &.two{
+                background-color: $pink2;
+            }
+
+            &.three{
+                background-color: $orange;
+            }
+
+        }
+
+    }
+
+}

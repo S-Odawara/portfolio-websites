@@ -1,0 +1,49 @@
+//
+// loading
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: $orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+}
+  
+.loading.is-active {
+    opacity: 0;
+    visibility: hidden;
+}
+  
+.loading-animation {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: $brown;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    img{
+        width: 80vw;
+        @media (min-width: 769px) {
+        width: 20vw;
+        }
+    }
+
+}
+  
+.loading-animation.is-active {
+    opacity: 1;
+    visibility: visible;
+}

@@ -52,9 +52,17 @@ ul li{
   font-weight: bold;
 }
 
-.undone{
-  display: none;
+.doing a{
+
+  color: #bbb;
 }
+
+
+.undone a{
+  display: none;
+  color: #ddd;
+}
+
 
 
 
@@ -80,5 +88,3 @@ h4 .fa-splotch{
   0%{ transform:rotate(0);}
   100%{ transform:rotate(360deg); }
 }
-
-
