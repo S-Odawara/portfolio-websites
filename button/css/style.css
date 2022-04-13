@@ -213,6 +213,10 @@ a {
           align-items: center;
 }
 
+.button-04 a span {
+  background-color: transparent;
+}
+
 .button-04 a:after {
   content: '';
   display: block;
