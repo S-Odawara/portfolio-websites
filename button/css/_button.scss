@@ -817,6 +817,58 @@
 
 ///////////////////////////////////////////////////// 14
 
+
+
+.button-14{
+  height: 60px;
+  width: 180px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  a{
+    height: 100%;
+    width: 100%;
+
+    span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      border: 5px solid $black;
+
+      border-image: linear-gradient(to right, 
+      $black 0%, 
+      $black-80 15%,
+      $black-50 40%,
+      $light-gray-80 60%, 
+      $light-blue-60 80%, 
+      $light-blue 100%);
+
+      border-image-slice: 1;
+
+      //background-color:  $dark-gray;
+      //color: $white;
+    }
+
+
+    
+  }
+
+  a:hover{
+    span{
+
+//      color: $white;
+    }
+  }
+  
+
+}
+
 ///////////////////////////////////////////////////// 15
 
 ///////////////////////////////////////////////////// 16
