@@ -5,6 +5,14 @@
 //   @media (min-width: 769px) {} 
 
 
+.flex-box{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 ///////////////////////////////////////////////////// 01
 
 .button-01{
@@ -570,4 +578,184 @@
 ///////////////////////////////////////////////////// 11
 
 
+.button-11{
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid $light-blue-30;
+  border-image: linear-gradient(to right, $white 0%, $light-blue 100%);
+  border-image-slice: 1;
+
+  box-shadow: 0px 5px 10px 5px $light-blue-30;
+
+
+
+  a{
+    margin: 0;
+    height: 100%;
+    width: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      background-color: none;
+
+      padding: 5px 0px;
+      height: 100%;
+      width: 150px;
+      box-sizing: border-box;
+
+      
+      transition: 0.2s;
+
+    }
+  }
+  a:hover{
+    span{
+      //background-color: $light-blue;
+      //color: $white;
+      background: linear-gradient(270deg, $light-blue, $invisible 100.1%);
+      //linear-gradient(135deg, $white, $invisible 70.71%);
+
+    }
+
+  }
+
+}
+
+.button-11{
+  &.derived{
+    //background-color: $light-blue;
+    border: none;
+    box-shadow: none;
+
+    a{
+      span{
+       // background: linear-gradient(270deg, $dark-gray, $invisible 70.71%);
+        background: linear-gradient(217deg, $light-blue, $invisible 70.71%),
+        linear-gradient(127deg, $light-gray, $invisible 70.71%),
+        linear-gradient(336deg, $white, $invisible 70.71%);
+        border-radius: 40px;
+        color: $white;
+        text-shadow: 0px 0px 5px $light-blue;
+        text-shadow: 0px 0px 15px $dark-gray;
+      }
+    }
+    a:hover{
+      span{
+        //background-color: $light-blue;
+        background: linear-gradient(217deg, $light-blue-80, $invisible 70.71%),
+        linear-gradient(127deg, $light-gray-60, $invisible 70.71%),
+        linear-gradient(336deg, $white, $invisible 70.71%);
+  
+      }
+    }
+  }
+}
+
+
+
+
+
 ///////////////////////////////////////////////////// 12
+
+.button-12{
+  height: 80px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  a{
+    span{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: $light-blue-30;
+      border-radius:  100% 80px / 80px 100%;
+      filter: drop-shadow(5px 5px 5px $light-blue);
+
+      color: $white;
+    }
+  }
+
+  a:hover{
+    span{
+      background-color: $light-blue-60;
+      border-radius: 80px 100% /  100% 70px;
+    }
+  }
+}
+
+
+.button-12{
+  &.derived{
+    height: 80px;
+    width: 150px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      //background-color: $black;
+      span{
+        background-color: $light-gray;
+        border-radius:   110px 50% / 100% 15px; /* (最初の半径の値) / 左上と右下 | 右上と左下 */
+        box-shadow: 5px 5px 5px 0px $dark-gray;
+        filter: none;
+
+        color: $dark-gray;
+      }
+    }
+
+
+
+    a:hover{
+      span{
+        transform: translateY(5px);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+///////////////////////////////////////////////////// 13
+
+///////////////////////////////////////////////////// 14
+
+///////////////////////////////////////////////////// 15
+
+///////////////////////////////////////////////////// 16
+
+
+
+
+
+

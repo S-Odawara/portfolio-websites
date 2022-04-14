@@ -29,6 +29,20 @@ a {
   text-decoration: none;
 }
 
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .button-01 {
   height: 30px;
   width: 150px;
@@ -540,5 +554,159 @@ a {
 .button-10 a:hover span {
   background-color: #99C5CC;
   color: #F7F7F7;
+}
+
+.button-11 {
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid rgba(153, 197, 204, 0.3);
+  -o-border-image: linear-gradient(to right, #F7F7F7 0%, #99C5CC 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#F7F7F7), to(#99C5CC));
+     border-image: linear-gradient(to right, #F7F7F7 0%, #99C5CC 100%);
+  border-image-slice: 1;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(153, 197, 204, 0.3);
+          box-shadow: 0px 5px 10px 5px rgba(153, 197, 204, 0.3);
+}
+
+.button-11 a {
+  margin: 0;
+  height: 100%;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-11 a span {
+  background-color: none;
+  padding: 5px 0px;
+  height: 100%;
+  width: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-11 a:hover span {
+  background: -webkit-gradient(linear, right top, left top, from(#99C5CC), color-stop(100.1%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(270deg, #99C5CC, rgba(0, 0, 0, 0) 100.1%);
+}
+
+.button-11.derived {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-11.derived a span {
+  background: linear-gradient(217deg, #99C5CC, rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, #CED7D9, rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #F7F7F7, rgba(0, 0, 0, 0) 70.71%);
+  border-radius: 40px;
+  color: #F7F7F7;
+  text-shadow: 0px 0px 5px #99C5CC;
+  text-shadow: 0px 0px 15px #5C6566;
+}
+
+.button-11.derived a:hover span {
+  background: linear-gradient(217deg, rgba(153, 197, 204, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(206, 215, 217, 0.6), rgba(0, 0, 0, 0) 70.71%), linear-gradient(336deg, #F7F7F7, rgba(0, 0, 0, 0) 70.71%);
+}
+
+.button-12 {
+  height: 80px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button-12 a span {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(153, 197, 204, 0.3);
+  border-radius: 100% 80px / 80px 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px #99C5CC);
+          filter: drop-shadow(5px 5px 5px #99C5CC);
+  color: #F7F7F7;
+}
+
+.button-12 a:hover span {
+  background-color: rgba(153, 197, 204, 0.6);
+  border-radius: 80px 100% /  100% 70px;
+}
+
+.button-12.derived {
+  height: 80px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-12.derived a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-12.derived a span {
+  background-color: #CED7D9;
+  border-radius: 110px 50% / 100% 15px;
+  /* (最初の半径の値) / 左上と右下 | 右上と左下 */
+  -webkit-box-shadow: 5px 5px 5px 0px #5C6566;
+          box-shadow: 5px 5px 5px 0px #5C6566;
+  -webkit-filter: none;
+          filter: none;
+  color: #5C6566;
+}
+
+.button-12.derived a:hover span {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */
