@@ -748,6 +748,73 @@
 
 ///////////////////////////////////////////////////// 13
 
+
+
+.button-13{
+  height: 50px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  
+
+
+
+
+  a{
+    height: 100%;
+    width: 100%;
+    //padding: 20px 30px;
+    box-sizing: border-box;
+
+    //border: 1px solid $black;
+
+
+
+    span{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      height: 100%;
+      width: 100%;
+      background-color:  $dark-gray;
+      color: $white;
+    }
+
+    :before,:after{
+      content: '';
+      position: absolute;
+      top: 15px;
+      height: 20px;
+      width: 20px;
+
+      border-radius: 50%;
+      background-color: $white;
+    }
+
+    :before{
+      left: -10px;
+    }
+
+    :after{
+      right: -10px;
+    }
+    
+  }
+
+  a:hover{
+    span{
+      background-color: $dark-gray-80;
+    }
+  }
+  
+
+}
+
 ///////////////////////////////////////////////////// 14
 
 ///////////////////////////////////////////////////// 15
