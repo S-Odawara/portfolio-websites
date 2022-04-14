@@ -429,6 +429,7 @@ a {
 }
 
 .button-08 a span {
+  background-color: rgba(153, 197, 204, 0.3);
   padding: 5px 0px;
   height: 100%;
   width: 150px;
@@ -439,6 +440,105 @@ a {
 }
 
 .button-08 a:hover span {
-  background-color: rgba(153, 197, 204, 0.3);
+  background-color: #99C5CC;
+}
+
+.button-09 a {
+  display: inline-block;
+  padding: 0.8em 3em;
+  background-color: #99C5CC;
+  -webkit-box-shadow: 0 5px 0 #CED7D9;
+          box-shadow: 0 5px 0 #CED7D9;
+  border-radius: 60px;
+  color: #F7F7F7;
+  cursor: pointer;
+  text-decoration: none;
+  /* 文字の下線を消す */
+}
+
+.button-09 a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.button-09.derived a {
+  background-color: #CED7D9;
+  -webkit-box-shadow: 0 5px 0 #5C6566;
+          box-shadow: 0 5px 0 #5C6566;
+  color: #5C6566;
+}
+
+.button-09.derived a:hover {
+  -webkit-box-shadow: 0 5px 0 #5C6566;
+          box-shadow: 0 5px 0 #5C6566;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.button-09.derived a:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.button-10 {
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #2E3233;
+}
+
+.button-10 a {
+  margin: 0;
+  height: 100%;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-10 a :before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 30px;
+  width: 5px;
+  background-color: #99C5CC;
+}
+
+.button-10 a span {
+  padding: 5px 0px;
+  height: 100%;
+  width: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-10 a:hover span {
+  background-color: #99C5CC;
+  color: #F7F7F7;
 }
 /*# sourceMappingURL=style.css.map */

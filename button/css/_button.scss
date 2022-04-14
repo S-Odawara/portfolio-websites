@@ -438,7 +438,7 @@
     align-items: center;
 
     span{
-      //background-color: $light-blue;
+      background-color: $light-blue-30;
       padding: 5px 0px;
       height: 100%;
       width: 150px;
@@ -452,9 +452,122 @@
   }
   a:hover{
     span{
-      background-color: $light-blue-30;
+      background-color: $light-blue;
     }
 
   }
 
 }
+
+
+
+///////////////////////////////////////////////////// 09
+
+.button-09 {
+  a{
+  display: inline-block;
+  padding: 0.8em 3em;
+  background-color: $light-blue;
+  box-shadow: 0 5px 0 $light-gray;
+  border-radius: 60px;
+  color: $white;
+  cursor: pointer;
+  text-decoration: none; /* 文字の下線を消す */
+  }
+  a:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+
+}
+
+
+.button-09{
+  &.derived{
+    a{
+      background-color: $light-gray;
+      box-shadow: 0 5px 0 $dark-gray;
+      color: $dark-gray;
+    }
+    a:hover{
+      box-shadow: 0 5px 0 $dark-gray;
+      transform: none;
+    }
+    a:active{
+      box-shadow: none;
+      transform: translateY(5px);
+    }
+
+  }
+}
+
+
+
+///////////////////////////////////////////////////// 10
+
+
+.button-10{
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid $black;
+
+
+
+  a{
+    margin: 0;
+    height: 100%;
+    width: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //background-color: $light-blue-30;
+
+    :before{
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 30px;
+      width: 5px;
+      background-color: $light-blue;
+    }
+
+    span{
+      //background-color: $light-blue-30;
+      padding: 5px 0px;
+      height: 100%;
+      width: 150px;
+      box-sizing: border-box;
+
+      
+      transition: 0.2s;
+      //color: $light-blue;
+
+
+
+    }
+  }
+  a:hover{
+    span{
+      background-color: $light-blue;
+      color: $white;
+    }
+
+  }
+
+}
+
+///////////////////////////////////////////////////// 11
+
+
+///////////////////////////////////////////////////// 12
