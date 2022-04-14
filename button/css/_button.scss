@@ -843,9 +843,9 @@
 
       border-image: linear-gradient(to right, 
       $black 0%, 
-      $black-80 15%,
-      $black-50 40%,
-      $light-gray-80 60%, 
+      $black-80 20%,
+      $black-50 30%,
+      $light-gray-80 55%, 
       $light-blue-60 80%, 
       $light-blue 100%);
 
@@ -869,7 +869,74 @@
 
 }
 
+
+.button-14{
+  &.derived{
+    height: 150px;
+    width: 150px;
+    a{
+      span{
+        border: none;
+        //border: 1px solid $light-blue;
+        background-image:  radial-gradient(
+        150px at 150px 150px,
+        $black 40%, $light-gray-60 100%);
+
+        color:$white;
+
+      }
+    }
+  }
+}
+
 ///////////////////////////////////////////////////// 15
+
+
+.button-15{
+  height: 150px;
+  width: 200px;
+
+  background-color: $light-blue;
+
+  a{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+
+    span{
+      position: relative;
+
+      display: flex;
+      //justify-content: center;
+      align-items: center;
+     
+      height: 100%;
+      width: 180px;
+      padding: 20px;
+      box-sizing: border-box;
+
+      background-color: $white-50;
+      color: $white;
+      text-shadow: 0px 0px 5px $light-blue;
+
+    }
+
+    
+    :after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      height: 100%;
+      width: 75px;
+      border-radius: 75px 0 0 0;
+
+      background-color: $light-blue;
+    }
+  }
+}
 
 ///////////////////////////////////////////////////// 16
 

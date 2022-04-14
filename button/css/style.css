@@ -793,9 +793,61 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 5px solid #2E3233;
-  -o-border-image: linear-gradient(to right, #2E3233 0%, rgba(46, 50, 51, 0.8) 15%, rgba(46, 50, 51, 0.5) 40%, rgba(206, 215, 217, 0.8) 60%, rgba(153, 197, 204, 0.6) 80%, #99C5CC 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(#2E3233), color-stop(15%, rgba(46, 50, 51, 0.8)), color-stop(40%, rgba(46, 50, 51, 0.5)), color-stop(60%, rgba(206, 215, 217, 0.8)), color-stop(80%, rgba(153, 197, 204, 0.6)), to(#99C5CC));
-     border-image: linear-gradient(to right, #2E3233 0%, rgba(46, 50, 51, 0.8) 15%, rgba(46, 50, 51, 0.5) 40%, rgba(206, 215, 217, 0.8) 60%, rgba(153, 197, 204, 0.6) 80%, #99C5CC 100%);
+  -o-border-image: linear-gradient(to right, #2E3233 0%, rgba(46, 50, 51, 0.8) 20%, rgba(46, 50, 51, 0.5) 30%, rgba(206, 215, 217, 0.8) 55%, rgba(153, 197, 204, 0.6) 80%, #99C5CC 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#2E3233), color-stop(20%, rgba(46, 50, 51, 0.8)), color-stop(30%, rgba(46, 50, 51, 0.5)), color-stop(55%, rgba(206, 215, 217, 0.8)), color-stop(80%, rgba(153, 197, 204, 0.6)), to(#99C5CC));
+     border-image: linear-gradient(to right, #2E3233 0%, rgba(46, 50, 51, 0.8) 20%, rgba(46, 50, 51, 0.5) 30%, rgba(206, 215, 217, 0.8) 55%, rgba(153, 197, 204, 0.6) 80%, #99C5CC 100%);
   border-image-slice: 1;
+}
+
+.button-14.derived {
+  height: 150px;
+  width: 150px;
+}
+
+.button-14.derived a span {
+  border: none;
+  background-image: radial-gradient(150px at 150px 150px, #2E3233 40%, rgba(206, 215, 217, 0.6) 100%);
+  color: #F7F7F7;
+}
+
+.button-15 {
+  height: 150px;
+  width: 200px;
+  background-color: #99C5CC;
+}
+
+.button-15 a {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.button-15 a span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 180px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(247, 247, 247, 0.5);
+  color: #F7F7F7;
+  text-shadow: 0px 0px 5px #99C5CC;
+}
+
+.button-15 a :after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 75px;
+  border-radius: 75px 0 0 0;
+  background-color: #99C5CC;
 }
 /*# sourceMappingURL=style.css.map */
