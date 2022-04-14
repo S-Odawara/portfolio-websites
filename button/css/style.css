@@ -338,6 +338,20 @@ a {
   background-color: #99C5CC;
 }
 
+.button-06.derived {
+  border-radius: 10px;
+  border: none;
+  background-color: #99C5CC;
+}
+
+.button-06.derived a span {
+  border-radius: 10px;
+}
+
+.button-06.derived a:hover span {
+  background-color: rgba(247, 247, 247, 0.5);
+}
+
 .button-07 {
   height: 40px;
   width: 150px;

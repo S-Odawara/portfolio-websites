@@ -335,6 +335,31 @@
 }
 
 
+.button-06{
+  &.derived{
+    border-radius: 10px;
+    border: none;
+    background-color: $light-blue;
+
+    a{
+      span{
+        border-radius: 10px;
+      }
+    }
+
+    a:hover{
+      span{
+        background-color: $white-50;
+      }
+    }
+
+
+
+  }
+}
+
+
+
 ///////////////////////////////////////////////////// 07
 
 .button-07{
