@@ -941,7 +941,100 @@
 ///////////////////////////////////////////////////// 16
 
 
+.button-16{
+  height: 60px;
+  width: 180px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
 
+  //border: 1px solid $black;
+
+  a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    //border: 5px solid $black;
+    //background-color: $light-gray;
+
+    span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 30px;
+      transition: 0.3s;
+
+      background-color: $black;
+      color: $white;
+
+    }
+  }
+
+
+  a:hover{
+    span{
+      border-radius: 0px;
+      //background-color: $light-blue;
+    }
+  }
+}
+
+.button-16{
+  &.derived{
+    a{
+      span{
+        border: 3px solid $black;
+        background-color: $white;
+        color: $black;
+      }
+    }
+
+
+  }
+}
+
+
+.button-16{
+  &.derived{
+    &.more{
+      a{
+        span{
+          border: 3px solid $light-blue;
+          background-color: $white;
+          color: $light-blue;
+          border-radius: 0px;
+        }
+      }
+
+      a:hover{
+        span{
+          border-radius: 30px;
+        }
+      }
+  
+    }
+  }
+}
+
+
+
+
+
+
+///////////////////////////////////////////////////// 17
+
+
+
+///////////////////////////////////////////////////// 18
+
+
+
+///////////////////////////////////////////////////// 19
 
 
 

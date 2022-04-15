@@ -850,4 +850,61 @@ a {
   border-radius: 75px 0 0 0;
   background-color: #99C5CC;
 }
+
+.button-16 {
+  height: 60px;
+  width: 180px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button-16 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.button-16 a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #2E3233;
+  color: #F7F7F7;
+}
+
+.button-16 a:hover span {
+  border-radius: 0px;
+}
+
+.button-16.derived a span {
+  border: 3px solid #2E3233;
+  background-color: #F7F7F7;
+  color: #2E3233;
+}
+
+.button-16.derived.more a span {
+  border: 3px solid #99C5CC;
+  background-color: #F7F7F7;
+  color: #99C5CC;
+  border-radius: 0px;
+}
+
+.button-16.derived.more a:hover span {
+  border-radius: 30px;
+}
 /*# sourceMappingURL=style.css.map */
