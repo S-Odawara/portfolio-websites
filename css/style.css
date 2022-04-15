@@ -88,3 +88,8 @@ h4 .fa-splotch{
   0%{ transform:rotate(0);}
   100%{ transform:rotate(360deg); }
 }
+
+
+.fas.fa-cookie-bite{
+  color: #bb833b;
+}
