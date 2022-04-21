@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+.margin {
+  margin: 50px 30px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #2E3233;
+  background-color: #F7F7F7;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: #2E3233;
+  text-decoration: none;
+}
+
+.flex-box {
+  height: auto;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #2E3233;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.flex-box .item {
+  width: 7%;
+}
+
+.flex-box .item.ok:active {
+  background-color: #99C5CC;
+}
+/*# sourceMappingURL=style.css.map */

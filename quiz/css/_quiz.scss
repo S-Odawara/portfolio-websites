@@ -1,0 +1,43 @@
+//
+// quiz
+//
+//
+//   @media (min-width: 769px) {} 
+
+
+.flex-box{
+  height: auto;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid $black;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  //gap: 5px;
+
+  font-size: 2.4rem;
+  //font-weight: 700;
+
+
+
+  //background-color: #fff;
+
+  .item{
+    width: 7%;
+  
+
+    &.ok:active{
+      background-color: $light-blue;
+    }
+  }
+
+
+
+}
