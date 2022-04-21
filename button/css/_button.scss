@@ -468,6 +468,25 @@
 }
 
 
+.button-08{
+  &.derived{
+    a{
+      span{
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    a:hover{
+      span{
+        background-color: $light-blue;
+      }
+  
+    }
+
+  }
+}
+
 
 ///////////////////////////////////////////////////// 09
 
@@ -1150,7 +1169,24 @@
 
 .button-19{
   &.derived{
-    :
+    border: double 5px $white;
+
+    :after{
+      content: '';
+      position: absolute;
+      right: -1.0rem;
+      top: -1.0rem;
+      border-width: 0px 2rem 2rem 0px;
+      border-style: solid;
+      border-color: $light-blue $white $light-blue;
+      box-shadow: -1px 1px 1px $black-10;
+      }
+
+
+
+
+
+
   }
 }
 

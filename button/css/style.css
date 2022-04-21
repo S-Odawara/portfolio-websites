@@ -457,6 +457,15 @@ a {
   background-color: #99C5CC;
 }
 
+.button-08.derived a span {
+  background-color: #2E3233;
+  color: #F7F7F7;
+}
+
+.button-08.derived a:hover span {
+  background-color: #99C5CC;
+}
+
 .button-09 a {
   display: inline-block;
   padding: 0.8em 3em;
@@ -1015,6 +1024,22 @@ a {
   position: absolute;
   right: -0.8rem;
   top: -0.8rem;
+  border-width: 0px 2rem 2rem 0px;
+  border-style: solid;
+  border-color: #99C5CC #F7F7F7 #99C5CC;
+  -webkit-box-shadow: -1px 1px 1px rgba(46, 50, 51, 0.1);
+          box-shadow: -1px 1px 1px rgba(46, 50, 51, 0.1);
+}
+
+.button-19.derived {
+  border: double 5px #F7F7F7;
+}
+
+.button-19.derived :after {
+  content: '';
+  position: absolute;
+  right: -1.0rem;
+  top: -1.0rem;
   border-width: 0px 2rem 2rem 0px;
   border-style: solid;
   border-color: #99C5CC #F7F7F7 #99C5CC;
