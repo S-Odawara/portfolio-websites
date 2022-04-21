@@ -999,4 +999,26 @@ a {
 .button-18.derived a:hover {
   background-color: #99C5CC;
 }
+
+.button-19 {
+  position: relative;
+  background: rgba(153, 197, 204, 0.6);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(153, 197, 204, 0.6);
+          box-shadow: 0px 0px 0px 5px rgba(153, 197, 204, 0.6);
+  border: dashed 2px #F7F7F7;
+  padding: 1rem 2rem;
+  color: #2E3233;
+}
+
+.button-19 :after {
+  content: '';
+  position: absolute;
+  right: -0.8rem;
+  top: -0.8rem;
+  border-width: 0px 2rem 2rem 0px;
+  border-style: solid;
+  border-color: #99C5CC #F7F7F7 #99C5CC;
+  -webkit-box-shadow: -1px 1px 1px rgba(46, 50, 51, 0.1);
+          box-shadow: -1px 1px 1px rgba(46, 50, 51, 0.1);
+}
 /*# sourceMappingURL=style.css.map */
