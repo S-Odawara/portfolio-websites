@@ -907,4 +907,96 @@ a {
 .button-16.derived.more a:hover span {
   border-radius: 30px;
 }
+
+.button-17 {
+  height: 80px;
+  width: 80px;
+  position: relative;
+}
+
+.button-17 a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #99C5CC;
+  color: #F7F7F7;
+}
+
+.button-17 a:hover {
+  background-color: rgba(153, 197, 204, 0.6);
+}
+
+.button-18 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem;
+  width: 150px;
+  background-color: rgba(206, 215, 217, 0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-18 a::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #99C5CC;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-18 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #2E3233;
+  border-right: 2px solid #2E3233;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.button-18 a:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.button-18 a:hover {
+  text-decoration: none;
+  background-color: #99C5CC;
+}
+
+.button-18.derived a {
+  background-color: rgba(153, 197, 204, 0.6);
+}
+
+.button-18.derived a::before {
+  border: 2px solid #2E3233;
+}
+
+.button-18.derived a:hover {
+  background-color: #99C5CC;
+}
 /*# sourceMappingURL=style.css.map */

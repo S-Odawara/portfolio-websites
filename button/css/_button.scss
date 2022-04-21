@@ -1029,10 +1029,100 @@
 ///////////////////////////////////////////////////// 17
 
 
+.button-17{
+  height: 80px;
+  width: 80px;
+  position: relative;
+
+
+  //border: 3px solid $black;
+  //background-color: $black-50;
+
+  a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: $light-blue;
+    color: $white;
+
+  }
+
+  a:hover{
+    background-color: $light-blue-60;
+  }
+
+
+}
 
 ///////////////////////////////////////////////////// 18
 
+.button-18 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem;
+  width: 150px;
+  background-color: $light-gray-60;
+  transition: 0.3s;
+}
 
+.button-18 a::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid $light-blue;
+  transition: 0.2s;
+}
+
+.button-18 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid $black;
+  border-right: 2px solid $black;
+  transform: rotate(45deg);
+}
+
+.button-18 a:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.button-18 a:hover {
+  text-decoration: none;
+  background-color: $light-blue;
+}
+
+
+.button-18{
+  &.derived{
+    a{
+    background-color: $light-blue-60;
+    //color: $light-blue;
+    }
+
+    a::before{
+      border: 2px solid $black;
+    }
+
+    a:hover {
+      background-color: $light-blue;
+    }
+
+
+  }
+}
 
 ///////////////////////////////////////////////////// 19
 
