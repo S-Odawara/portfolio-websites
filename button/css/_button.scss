@@ -1090,6 +1090,7 @@
   padding: 1.5rem 2.5rem;
   width: 150px;
   background-color: $light-gray-60;
+  color: $light-blue;
   transition: 0.3s;
 }
 
@@ -1108,8 +1109,8 @@
   content: '';
   width: 5px;
   height: 5px;
-  border-top: 2px solid $black;
-  border-right: 2px solid $black;
+  border-top: 2px solid $light-blue;
+  border-right: 2px solid $light-blue;
   transform: rotate(45deg);
 }
 
@@ -1128,7 +1129,7 @@
   &.derived{
     a{
     background-color: $light-blue-60;
-    //color: $light-blue;
+    color: $black;
     }
 
     a::before{
@@ -1158,8 +1159,8 @@
   :after{
   content: '';
   position: absolute;
-  right: -0.8rem;
-  top: -0.8rem;
+  right: -0.7rem;
+  top: -0.7rem;
   border-width: 0px 2rem 2rem 0px;
   border-style: solid;
   border-color: $light-blue $white $light-blue;

@@ -961,6 +961,7 @@ a {
   padding: 1.5rem 2.5rem;
   width: 150px;
   background-color: rgba(206, 215, 217, 0.6);
+  color: #99C5CC;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -981,8 +982,8 @@ a {
   content: '';
   width: 5px;
   height: 5px;
-  border-top: 2px solid #2E3233;
-  border-right: 2px solid #2E3233;
+  border-top: 2px solid #99C5CC;
+  border-right: 2px solid #99C5CC;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -999,6 +1000,7 @@ a {
 
 .button-18.derived a {
   background-color: rgba(153, 197, 204, 0.6);
+  color: #2E3233;
 }
 
 .button-18.derived a::before {
@@ -1022,8 +1024,8 @@ a {
 .button-19 :after {
   content: '';
   position: absolute;
-  right: -0.8rem;
-  top: -0.8rem;
+  right: -0.7rem;
+  top: -0.7rem;
   border-width: 0px 2rem 2rem 0px;
   border-style: solid;
   border-color: #99C5CC #F7F7F7 #99C5CC;
