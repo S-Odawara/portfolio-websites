@@ -6,6 +6,7 @@
 
 
 .flex-box{
+  position: relative;
   height: auto;
   width: 80%;
   max-width: 400px;
@@ -27,7 +28,7 @@
 
 
 
-  //background-color: #fff;
+  background-color: $white;
 
   .item{
     width: 10%;
@@ -40,4 +41,15 @@
 
 
 
+}
+
+
+.qz-tytle{
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+
+  background-color: $white;
 }

@@ -30,6 +30,7 @@ a {
 }
 
 .flex-box {
+  position: relative;
   height: auto;
   width: 80%;
   max-width: 400px;
@@ -50,6 +51,7 @@ a {
           align-items: center;
   text-align: center;
   font-size: 2.4rem;
+  background-color: #F7F7F7;
 }
 
 .flex-box .item {
@@ -58,5 +60,14 @@ a {
 
 .flex-box .item.ok:active {
   background-color: #99C5CC;
+}
+
+.qz-tytle {
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  background-color: #F7F7F7;
 }
 /*# sourceMappingURL=style.css.map */
