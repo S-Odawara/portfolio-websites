@@ -1,0 +1,219 @@
+//
+// base
+//
+//
+//   @media (min-width: 769px) {} 
+
+//////////////////////////////////
+//////////////////////// 変数 colour
+$invisible: rgba(0, 0, 0, 0);
+
+$white: #F7F7F7;
+$white-50: rgba(247, 247, 247, 0.5);
+$white-70: rgba(247, 247, 247, 0.7);
+$white-80: rgba(247, 247, 247, 0.8);
+$white-90: rgba(247, 247, 247, 0.9);
+
+
+
+$light-gray: #CED7D9;
+$light-gray-30: rgba(206, 215, 217, 0.3);
+$light-gray-60: rgba(206, 215, 217, 0.6);
+$light-gray-80: rgba(206, 215, 217, 0.8);
+
+$light-blue: #99C5CC;
+$light-blue-30: rgba(153, 197, 204, 0.3);
+$light-blue-60: rgba(153, 197, 204, 0.6);
+$light-blue-80: rgba(153, 197, 204, 0.8);
+$light-blue-90: rgba(153, 197, 204, 0.9);
+
+$dark-gray: #5C6566;
+$dark-gray-10: rgba(92, 101, 102, 0.1);
+$dark-gray-60: rgba(92, 101, 102, 0.6);
+$dark-gray-80: rgba(92, 101, 102, 0.8);
+
+
+$pure-black: #000000; 
+$black: #2E3233;
+$black-10: rgba(46, 50, 51, 0.1);
+$black-50: rgba(46, 50, 51, 0.5);
+$black-80: rgba(46, 50, 51, 0.8);
+$black-90: #2e3233e6;
+
+$light-pink:#f1dde2;
+
+//////////////////////////////////
+//////////////////////// 変数 margin
+$margin-top: 50px;
+$margin-bottom: 50px;
+
+$margin-top-pc: 100px;
+
+
+$padding-top: 50px;
+$margin-bottom: 25px;
+
+
+//////////////////////////////////
+//////////////////////// ベーススタイル
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $black;
+  background-color: $white;
+
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+
+em {
+  font-style: normal;
+  background:linear-gradient(transparent 65%, $light-blue-60 0%);
+}
+
+h2{
+  font-size: 2.4rem;
+}
+
+
+.section-tytle{
+  padding-top: $padding-top;
+  
+  .sub-tytle{
+    line-height: 1;
+  }
+}
+
+
+.more-button {
+  height: 40px;
+  width: 120px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 auto;
+  background-color: $white;
+  border: 2px solid $light-blue;
+  box-shadow: 10px 10px 0px 0 $light-blue;
+  text-align: center;
+  line-height: 2.25;
+
+}
+.more-button{
+
+  @media (min-width: 769px) {
+    height: 50px;
+    width: 180px;
+    font-size: 1.8rem;
+    line-height: 2.75;
+
+    border: 3px solid $light-blue;
+    box-shadow: 10px 10px 0px 0 $light-blue;
+
+  }
+
+}
+
+
+.more-button:hover{
+ font-weight: bold;
+
+}
+
+
+////////////////////////////////////////
+////////////////////////////// page-top
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background: $white-50;
+  border: 2px solid $dark-gray;
+	width: 80px;
+	height: 50px;
+	color: $dark-gray;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size: 1.0rem;
+	transition:all 0.3s;
+
+  @media (min-width: 769px) {
+    border: 3px solid $dark-gray;
+
+    width: 150px;
+
+
+  } 
+
+
+}
+
+#page-top a:hover{
+	background: $dark-gray-60;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 20px;
+	bottom:10px;
+	z-index: 10000;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(200px);
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(200px);
+  }
+}
